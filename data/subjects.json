@@ -1,0 +1,21 @@
+{
+  "subjects": [
+    {
+      "id": "maths",
+      "name": "Mathematics",
+      "short": "Maths",
+      "status": "active",
+      "colour": "#2563eb",
+      "board": "AQA 8300 · Edexcel 1MA1 · OCR J560",
+      "content": "data/maths/content.json",
+      "state": "data/maths/state.json"
+    },
+    {
+      "id": "science",
+      "name": "Science",
+      "short": "Science",
+      "status": "coming-soon",
+      "colour": "#16a34a"
+    }
+  ]
+}

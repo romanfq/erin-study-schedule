@@ -1,0 +1,523 @@
+{
+  "subject": "Mathematics",
+  "board": "AQA 8300 · Edexcel 1MA1 · OCR J560",
+  "tiers": { "F": "Foundation (grades 1–5)", "H": "Higher (grades 4–9)" },
+  "examTechnique": {
+    "papers": "Three papers × 1 h 30 min, 80 marks each. Paper 1 is non-calculator; Papers 2 & 3 allow a calculator. Any topic can appear on any paper — content is mixed.",
+    "timing": "80 marks in 90 minutes is just over one minute per mark. A 5-mark question deserves about 6 minutes, not 15. If stuck after two minutes, write anything true (a formula, a sketch, an inequality) and move on; return in the last 15 minutes. Never leave a multi-mark question blank.",
+    "markTypes": [
+      { "code": "M", "meaning": "Method mark — a correct method, even if the arithmetic later fails. Write the method so a stranger can follow it." },
+      { "code": "A", "meaning": "Accuracy mark — depends on the method. Follow-through (ft) is often allowed after an earlier slip." },
+      { "code": "B", "meaning": "Independent mark — a correct value or statement on its own." },
+      { "code": "QWC", "meaning": "Communication — correct notation, units, and named reasons in geometry and proof." }
+    ],
+    "commandWords": [
+      { "word": "Work out / Find / Calculate", "meaning": "Give a numerical or algebraic answer. Show method." },
+      { "word": "Show that", "meaning": "Arrive at the given result. Do not use the result at the start." },
+      { "word": "Explain / Give a reason", "meaning": "A short sentence or a named theorem. Not a number alone." },
+      { "word": "Describe fully", "meaning": "Transformations: type + all parameters. Correlation: strength + direction + context." },
+      { "word": "Estimate", "meaning": "Round first (usually 1 s.f.), then calculate. Do not give an exact calculator value." },
+      { "word": "Hence", "meaning": "Use the previous result. A new method may score zero." },
+      { "word": "Exact value", "meaning": "Leave in terms of π, √, or a fraction. Do not write a rounded decimal." }
+    ],
+    "exactValues": "sin 0=0, sin 30=½, sin 45=√2/2, sin 60=√3/2, sin 90=1.  cos 0=1, cos 30=√3/2, cos 45=√2/2, cos 60=½, cos 90=0.  tan 0=0, tan 30=1/√3, tan 45=1, tan 60=√3. These appear on non-calculator papers every year.",
+    "lastFiveMinutes": [
+      "Check units on every answer.",
+      "Check probabilities lie between 0 and 1.",
+      "Check a length is not negative.",
+      "Check an angle in a triangle is less than 180°.",
+      "Check you answered the actual question — sometimes part (b) asks for the difference, not the value you just found."
+    ]
+  },
+  "strands": [
+    {
+      "id": "number",
+      "name": "Number",
+      "weightF": "25%",
+      "weightH": "15%",
+      "note": "Number underpins every other strand. On Foundation it is a quarter of the marks. Practise without a calculator every week.",
+      "subtopics": [
+        {
+          "id": "ordering-operations-negatives",
+          "title": "Ordering; four operations; negatives",
+          "tier": "F",
+          "formulae": [],
+          "method": "BIDMAS / BODMAS sets the order: Brackets, Indices, Division and Multiplication (left to right), Addition and Subtraction (left to right). Two minuses make a plus: 3 − (−5) = 8. Multiplying or dividing two negatives gives a positive; a single negative in a product makes it negative. Order fractions and decimals by place value or by converting to a common form.",
+          "tips": [
+            "Practise the four operations without a calculator at least weekly.",
+            "Line up decimal points when adding or subtracting."
+          ]
+        },
+        {
+          "id": "factors-multiples-primes",
+          "title": "Factors, multiples, primes, HCF & LCM",
+          "tier": "F",
+          "formulae": [],
+          "method": "Prime numbers have exactly two factors (1 and themselves); 1 is not prime. Prime factorisation writes a number as a product of primes in index form: 360 = 2³ × 3² × 5. HCF: take the lowest power of each shared prime. LCM: take the highest power of every prime that appears. These are often set in worded contexts (tiling, bus timetables, packing).",
+          "tips": [
+            "Know square numbers to 15² = 225 and cubes to 10³ = 1000.",
+            "Method — HCF/LCM via primes: factor trees → index form → HCF = lowest shared powers, LCM = highest powers of all."
+          ]
+        },
+        {
+          "id": "fractions",
+          "title": "Fractions: four operations, mixed numbers",
+          "tier": "F",
+          "formulae": [],
+          "method": "Equivalent fractions by multiplying or dividing numerator and denominator by the same number — always cancel before multiplying. Add/subtract: common denominator. Multiply: numerators together, denominators together. Divide: keep, change, flip (multiply by the reciprocal). Convert mixed numbers to improper fractions first.",
+          "tips": ["Cancelling early prevents large, messy numbers."]
+        },
+        {
+          "id": "fdp-percentages",
+          "title": "FDP conversions; percentages of amounts; increase/decrease",
+          "tier": "F",
+          "formulae": ["Percentage change = (new − original) ÷ original × 100"],
+          "method": "Always convert the percentage to a decimal multiplier. Increase of 12% → × 1.12. Decrease of 15% → × 0.85. Find 17% of 80 → 80 × 0.17. Express 18 as a percentage of 24 → (18 ÷ 24) × 100 = 75%.",
+          "tips": ["Worked template — % increase/decrease: 1) write the multiplier, 2) multiply, 3) if 'how much more' subtract original from new, 4) units."]
+        },
+        {
+          "id": "reverse-pct-interest-growth",
+          "title": "Reverse percentages; interest; growth & decay",
+          "tier": "F",
+          "formulae": [
+            "Compound interest / growth: final = original × (1 + r/100)ⁿ",
+            "Depreciation / decay: final = original × (1 − r/100)ⁿ"
+          ],
+          "method": "Reverse percentages: the given amount is already the result after a change. A sale price of £68 at 15% off is 85% of the original, so original = 68 ÷ 0.85. Never add or subtract the percentage of the new amount — that is the classic trap. Simple interest is on the original principal each year; compound growth/decay uses the power formula. 'Compounded annually for 4 years at 3%' is × (1.03)⁴, not × 1.12.",
+          "tips": ["Worked template — reverse %: 1) identify what 100% represents, 2) write the given value as a % of the original, 3) divide by that multiplier."]
+        },
+        {
+          "id": "index-laws",
+          "title": "Index laws (including zero and negative)",
+          "tier": "F",
+          "formulae": [
+            "aᵐ × aⁿ = aᵐ⁺ⁿ",
+            "aᵐ ÷ aⁿ = aᵐ⁻ⁿ",
+            "(aᵐ)ⁿ = aᵐⁿ",
+            "a⁰ = 1",
+            "a⁻ⁿ = 1 / aⁿ"
+          ],
+          "method": "Write these laws fluently and apply them one step at a time.",
+          "tips": []
+        },
+        {
+          "id": "standard-form",
+          "title": "Standard form calculations",
+          "tier": "F",
+          "formulae": ["a × 10ⁿ where 1 ≤ a < 10 and n is an integer"],
+          "method": "To multiply: multiply the a-parts and add the indices. To divide: divide the a-parts and subtract the indices. Then renormalise if a is no longer between 1 and 10. On calculator papers use the ×10ˣ or EXP key — never type 2.4 × 10 ^ 7 as 2.4 × 10 × 7.",
+          "tips": []
+        },
+        {
+          "id": "rounding-bounds",
+          "title": "Rounding, estimation, error intervals & bounds",
+          "tier": "F",
+          "formulae": [],
+          "method": "Significant figures: count from the first non-zero digit. Decimal places: count from the decimal point. Look at the next digit — 5 or more rounds up. Error interval: a length of 8.3 cm to 1 d.p. means 8.25 ≤ x < 8.35 (≤ on the lower bound, < on the upper). Truncation is different — check the wording. Bounds in calculations: maximum of a sum or product uses both upper bounds; maximum of a quotient uses the upper of the numerator and the lower of the denominator. Write UB and LB explicitly.",
+          "tips": ["Estimate questions: round each value to 1 s.f. first, then calculate."]
+        },
+        {
+          "id": "surds-frac-indices-recurring",
+          "title": "Fractional indices; surds; rationalising; recurring decimals",
+          "tier": "H",
+          "formulae": [
+            "a^(1/n) = ⁿ√a",
+            "a^(m/n) = (ⁿ√a)ᵐ"
+          ],
+          "method": "Fractional indices — do the root first to keep numbers small: 8^(2/3) = (∛8)² = 2² = 4. Surds — simplify by extracting square factors: √50 = √(25×2) = 5√2. Rationalise the denominator: single term × the surd; binomial × the conjugate, e.g. 1/(√5 − 2) × (√5 + 2)/(√5 + 2) = √5 + 2. Recurring decimals → fractions: let x = 0.1̇7̇, multiply by 10 or 100 to line up the repeat, subtract, then divide. Show the algebra — it is an AO2 mark.",
+          "tips": []
+        }
+      ]
+    },
+    {
+      "id": "algebra",
+      "name": "Algebra",
+      "weightF": "20%",
+      "weightH": "30%",
+      "note": "On Higher, algebra is the largest single strand and the language of almost every problem-solving question. Keep clean layout: one equals sign per line, aligned, with a short reason where a step is not obvious.",
+      "subtopics": [
+        {
+          "id": "expand-factorise",
+          "title": "Simplify, expand & factorise (including DOTS)",
+          "tier": "F",
+          "formulae": ["Difference of two squares: a² − b² = (a + b)(a − b)"],
+          "method": "Collect like terms (powers of x are not like x): 3x + 5 − x + 2 = 2x + 7. Expand a single bracket: 3(2x − 5) = 6x − 15; watch a negative outside: −2(x − 4) = −2x + 8. Expand double brackets with FOIL or a grid: (x + 3)(x − 7) = x² − 4x − 21. Factorise: always take out the highest common factor first. Trinomials: find two numbers that multiply to c and add to b. DOTS: x² − 9 = (x + 3)(x − 3); 4y² − 25 = (2y + 5)(2y − 5).",
+          "tips": ["Triple brackets [H]: expand two first, then multiply by the third."]
+        },
+        {
+          "id": "linear-equations-inequalities",
+          "title": "Linear equations; inequalities; number lines",
+          "tier": "F",
+          "formulae": [],
+          "method": "Do the same operation to both sides. Collect unknowns on one side; expand brackets first unless a common factor makes factorising faster. Substitute your answer back as a 10-second check. Inequalities are solved like equations, with one extra rule: if you multiply or divide by a negative, reverse the inequality sign. On a number line use a filled circle for ≤ or ≥, an open circle for < or >.",
+          "tips": ["Quadratic inequalities [H]: sketch the parabola, find roots, then read the region required."]
+        },
+        {
+          "id": "rearranging-formulae",
+          "title": "Rearranging formulae (change the subject)",
+          "tier": "F",
+          "formulae": [],
+          "method": "Treat the new subject like the 'x' you are solving for and use inverse operations in reverse BIDMAS order. If the new subject appears twice, factorise it out. Example: make x the subject of y = (x + 3)/(x − 1) — multiply both sides by (x − 1), expand, collect x-terms, factorise x, divide.",
+          "tips": ["Worked template: 1) expand if needed, 2) collect subject terms on one side, 3) factorise the subject if it appears twice, 4) divide, 5) check by substituting a number."]
+        },
+        {
+          "id": "linear-graphs",
+          "title": "Linear graphs y = mx + c; parallel lines; real-life graphs",
+          "tier": "F",
+          "formulae": [
+            "Gradient m = (y₂ − y₁) / (x₂ − x₁)",
+            "Equation of a straight line: y = mx + c"
+          ],
+          "method": "m is the gradient (rise/run), c is the y-intercept. Parallel lines have equal gradients. To find the equation from two points: find m, then substitute one point to find c. On real-life graphs the gradient is a rate.",
+          "tips": ["Perpendicular lines [H]: m₁ × m₂ = −1."]
+        },
+        {
+          "id": "sequences",
+          "title": "Sequences: linear nth term; special sequences",
+          "tier": "F",
+          "formulae": ["Linear nth term: dn + c"],
+          "method": "Linear (arithmetic): find the common difference d, then adjust the constant so it fits term 1. Recognise square, cube, triangular and Fibonacci-style sequences. Fibonacci-style sequences are defined by a rule relating previous terms — write the next terms, do not force an nth term unless asked.",
+          "tips": ["Quadratic sequences [H]: second differences are constant; the coefficient of n² is (second difference) ÷ 2."]
+        },
+        {
+          "id": "quadratic-graphs-factorising",
+          "title": "Quadratic graphs; solving by factorising",
+          "tier": "F",
+          "formulae": [],
+          "method": "Sketch the parabola (U or ∩); the roots are where y = 0. Solve by factorising: set each bracket equal to 0. Read turning points and intercepts from the graph.",
+          "tips": ["Worked template — quadratic equation: 1) set equal to zero, 2) try factorising, 3) each factor = 0 gives a solution."]
+        },
+        {
+          "id": "simultaneous-linear",
+          "title": "Simultaneous equations (two linear)",
+          "tier": "F",
+          "formulae": [],
+          "method": "Elimination (make the coefficients of one variable equal, then add or subtract) or substitution. Label the equations clearly. After finding one variable, substitute back — and check in the equation you did not just use.",
+          "tips": []
+        },
+        {
+          "id": "quadratics-higher",
+          "title": "Quadratic formula; completing the square; quadratic inequalities",
+          "tier": "H",
+          "formulae": [
+            "x = [ −b ± √(b² − 4ac) ] / 2a",
+            "Completing the square: x² + bx = (x + b/2)² − (b/2)²"
+          ],
+          "method": "Use the quadratic formula when factorising is messy or impossible over the integers — write the formula first, then substitute (use brackets for negatives). The discriminant b² − 4ac tells you the number of real roots: positive → two, zero → one repeated, negative → none. Completing the square gives turning points and exact form: x² + 6x + 5 = (x + 3)² − 4, minimum −4 at x = −3. Quadratic inequalities: sketch the parabola, find the roots, read the region.",
+          "tips": []
+        },
+        {
+          "id": "algebra-higher-2",
+          "title": "Linear + quadratic simultaneous; algebraic fractions; functions",
+          "tier": "H",
+          "formulae": [],
+          "method": "Linear + quadratic: rearrange the linear equation for y (or x), substitute into the quadratic, solve, then find the paired values — these are the intersection points of a line and a curve. Algebraic fractions: factorise everything first, cancel common factors (never cancel terms that are added), use a common denominator to add/subtract. Functions: fg(x) means apply g first, then f; the inverse f⁻¹(x) swaps x and y then rearranges.",
+          "tips": []
+        },
+        {
+          "id": "algebra-higher-3",
+          "title": "Iteration; proof; circle & tangent; graph transformations",
+          "tier": "H",
+          "formulae": [
+            "Equation of a circle centre origin: x² + y² = r²",
+            "Tangent at (x₁, y₁) has gradient −x₁/y₁"
+          ],
+          "method": "Iteration: rearrange into xₙ₊₁ = …, substitute repeatedly, show convergence to the required decimal places. Proof: start from the given expression, use algebra (odd = 2n+1, consecutive = n, n+1, n+2), and finish with a sentence such as 'which is always a multiple of 4'. Do not start from what you are trying to prove. Transformations: y = f(x) + a is a vertical shift; y = f(x − a) is a horizontal shift the opposite way; y = −f(x) reflects in the x-axis; y = f(−x) reflects in the y-axis; y = af(x) stretches parallel to the y-axis.",
+          "tips": ["The tangent to a circle is perpendicular to the radius at the point of contact."]
+        }
+      ]
+    },
+    {
+      "id": "ratio",
+      "name": "Ratio, proportion & rates of change",
+      "weightF": "25%",
+      "weightH": "20%",
+      "note": "Joint-largest strand at Foundation. Beyond simple sharing, the marks are in algebraic proportion, compound measures and multi-step best-buy / recipe questions.",
+      "subtopics": [
+        {
+          "id": "ratio-basics",
+          "title": "Simplify, share & combine ratios; difference problems",
+          "tier": "F",
+          "formulae": [],
+          "method": "Simplify by dividing by the HCF: 18 : 24 = 3 : 4. To share an amount in a ratio a : b, find a + b parts, then one part = total ÷ (a + b). For a difference ('A has £12 more than B'), let the parts be 3x and 2x, then 3x − 2x = 12. Combining ratios: if A : B = 2 : 3 and B : C = 4 : 5, make the B parts equal (12) so A : B : C = 8 : 12 : 15.",
+          "tips": []
+        },
+        {
+          "id": "direct-proportion",
+          "title": "Direct proportion (including y = kx²)",
+          "tier": "F",
+          "formulae": ["y ∝ x → y = kx"],
+          "method": "Find k from one pair of values, then use it. Direct-proportion graphs are straight lines through the origin. y ∝ x², y ∝ √x and other powers follow the same 'find k' method.",
+          "tips": []
+        },
+        {
+          "id": "inverse-proportion",
+          "title": "Inverse proportion",
+          "tier": "F",
+          "formulae": ["y ∝ 1/x → y = k/x, or xy = k"],
+          "method": "If one quantity doubles, the other halves. Graphs are reciprocal curves. Worded clues: 'constant product', 'more workers, less time'.",
+          "tips": []
+        },
+        {
+          "id": "percentage-change-context",
+          "title": "Percentage change in context; successive percentages",
+          "tier": "F",
+          "formulae": [],
+          "method": "Best-buy and successive-change questions: apply one multiplier after another. A 10% increase followed by a 10% decrease is × 1.10 × 0.90 = × 0.99, not back to the start. Compound growth uses the power formula; exponential decay (half-life wording) is the same structure with a multiplier less than 1.",
+          "tips": []
+        },
+        {
+          "id": "compound-measures",
+          "title": "Compound measures: speed, density, pressure",
+          "tier": "F",
+          "formulae": [
+            "Speed = distance ÷ time",
+            "Density = mass ÷ volume",
+            "Pressure = force ÷ area"
+          ],
+          "method": "Rearrange with a formula triangle. Units must match: convert minutes to hours, cm³ to m³, before substituting. Most compound-measure marks are lost on units, not the formula — write the converted values on the page first. 45 minutes is 0.75 hours, not 0.45. 500 m is 0.5 km.",
+          "tips": []
+        },
+        {
+          "id": "rate-graphs",
+          "title": "Distance–time and velocity–time graphs",
+          "tier": "F",
+          "formulae": [],
+          "method": "Distance–time graphs: gradient = speed; horizontal = stationary; steeper = faster. Velocity–time graphs: gradient = acceleration; area under the line = distance.",
+          "tips": []
+        },
+        {
+          "id": "similar-shapes",
+          "title": "Similar shapes: length, area & volume scale factors",
+          "tier": "F",
+          "formulae": [
+            "Length scale factor k",
+            "Area scale factor k²",
+            "Volume scale factor k³"
+          ],
+          "method": "Similar shapes have equal angles and proportional sides. Ratios of areas and volumes of similar shapes use the square and cube of the length scale factor.",
+          "tips": []
+        }
+      ]
+    },
+    {
+      "id": "geometry",
+      "name": "Geometry & measures",
+      "weightF": "15%",
+      "weightH": "20%",
+      "note": "Marks come from diagrams. Redraw if the printed one is cramped. Mark every equal angle, parallel line and given length. Name the rule you use — communication is AO2.",
+      "subtopics": [
+        {
+          "id": "angle-facts",
+          "title": "Angle facts: lines, points, triangles, parallels, polygons",
+          "tier": "F",
+          "formulae": [
+            "Interior angle of a regular n-gon = ((n − 2) × 180°) / n",
+            "Exterior angle = 360° / n  (interior + exterior = 180°)"
+          ],
+          "method": "Angles on a straight line sum to 180°; around a point sum to 360°; vertically opposite angles are equal. Triangle = 180°, quadrilateral = 360°, equilateral all 60°, isosceles base angles equal. Parallel lines: corresponding angles equal, alternate angles equal, co-interior (allied) angles sum to 180°. State the rule you use by name.",
+          "tips": []
+        },
+        {
+          "id": "area-perimeter",
+          "title": "Area & perimeter (compound shapes, trapezium)",
+          "tier": "F",
+          "formulae": [
+            "Area of triangle = ½ × base × height",
+            "Area of parallelogram = base × perpendicular height",
+            "Area of trapezium = ½ (a + b) h"
+          ],
+          "method": "Split compound shapes into known rectangles and triangles, work out each part, then add or subtract. Keep units consistent.",
+          "tips": []
+        },
+        {
+          "id": "circles",
+          "title": "Circles: circumference, area, arcs, sectors",
+          "tier": "F",
+          "formulae": [
+            "Circumference = 2πr = πd",
+            "Area = πr²",
+            "Arc length = (θ/360) × 2πr",
+            "Sector area = (θ/360) × πr²"
+          ],
+          "method": "Leave answers in terms of π unless told otherwise — that is an exact-value instruction. A segment is the area between a chord and the arc: sector area minus the triangle.",
+          "tips": []
+        },
+        {
+          "id": "volume-surface-area",
+          "title": "Volume & surface area: prisms, cylinders, cones, spheres, pyramids",
+          "tier": "F",
+          "formulae": [
+            "Volume of prism = area of cross-section × length",
+            "Volume of cylinder = πr²h · Curved SA = 2πrh",
+            "Volume of pyramid = ⅓ × base area × height",
+            "Volume of cone = ⅓πr²h · Curved SA = πrl",
+            "Volume of sphere = 4⁄3 πr³ · Surface area = 4πr²"
+          ],
+          "method": "Identify the solid, pick the formula, substitute carefully and keep units consistent (a volume is cm³, a surface area is cm²).",
+          "tips": []
+        },
+        {
+          "id": "pythagoras",
+          "title": "Pythagoras in 2D (and 3D if Higher)",
+          "tier": "F",
+          "formulae": [
+            "a² + b² = c²  (c is the hypotenuse)",
+            "Shorter side: a = √(c² − b²)"
+          ],
+          "method": "Use Pythagoras for right-angled triangles when you have two sides and want the third. c is always the hypotenuse (opposite the right angle). 3D Pythagoras [H / top F]: find a face diagonal first, then the space diagonal.",
+          "tips": []
+        },
+        {
+          "id": "trigonometry-rightangle",
+          "title": "Right-angled trigonometry (SOH CAH TOA) & exact values",
+          "tier": "F",
+          "formulae": [
+            "sin θ = O/H",
+            "cos θ = A/H",
+            "tan θ = O/A"
+          ],
+          "method": "Label Opposite, Adjacent and Hypotenuse from the angle you are using. Choose the ratio that uses the two sides you have or want, substitute, then rearrange. Use inverse sin/cos/tan to find an angle. On non-calculator papers use exact values.",
+          "tips": ["Exact values: sin 30=½, cos 60=½, sin/cos 45=√2/2, sin 60=cos 30=√3/2, tan 45=1, tan 30=1/√3, tan 60=√3."]
+        },
+        {
+          "id": "transformations",
+          "title": "Transformations: translate, rotate, reflect, enlarge",
+          "tier": "F",
+          "formulae": [],
+          "method": "Describe fully: translation (vector); rotation (centre, angle, direction); reflection (mirror line); enlargement (centre and scale factor). A missing centre loses the mark. Negative scale factors [H] rotate 180° as well as enlarge.",
+          "tips": []
+        },
+        {
+          "id": "congruence-similarity",
+          "title": "Congruence & similarity",
+          "tier": "F",
+          "formulae": ["Length k · Area k² · Volume k³"],
+          "method": "Congruent triangles: SSS, SAS, ASA, RHS (SSA is not a congruence rule). Similar shapes have equal angles and proportional sides; scale lengths by k, areas by k², volumes by k³.",
+          "tips": []
+        },
+        {
+          "id": "bearings-constructions-loci-units",
+          "title": "Bearings, constructions, loci, unit conversions",
+          "tier": "F",
+          "formulae": [
+            "1 km = 1000 m · 1 m = 100 cm = 1000 mm",
+            "1 kg = 1000 g · 1 litre = 1000 cm³ · 1 m³ = 1 000 000 cm³",
+            "1 hour = 60 min = 3600 s"
+          ],
+          "method": "Constructions use ruler and compasses only: perpendicular bisector, angle bisector, perpendicular from/to a point on a line, equilateral triangle, 60° and 90°. A locus is the set of points satisfying a rule (all points 4 cm from a point = a circle). Bearings are three-figure angles measured clockwise from North; the back bearing differs by 180°.",
+          "tips": ["Do not mix 12-hour clock notation into calculations."]
+        },
+        {
+          "id": "vectors",
+          "title": "Vectors: column vectors, resultant, magnitude",
+          "tier": "F",
+          "formulae": ["Magnitude of (a, b) = √(a² + b²)"],
+          "method": "A vector has magnitude and direction. A column vector (a above b) means a right and b up. Addition is 'follow the path'. Parallel vectors are scalar multiples.",
+          "tips": ["Vector proof [H]: show one vector is a scalar multiple of another sharing a point to prove collinearity."]
+        },
+        {
+          "id": "geometry-higher",
+          "title": "Sine & cosine rules; ½ab sin C; circle theorems; vector proof",
+          "tier": "H",
+          "formulae": [
+            "Sine rule: a/sin A = b/sin B = c/sin C",
+            "Cosine rule: a² = b² + c² − 2bc cos A",
+            "Area of triangle = ½ ab sin C"
+          ],
+          "method": "Sine rule: when you have a side and its opposite angle, plus one more side or angle (watch the ambiguous case when finding an angle). Cosine rule: two sides and the included angle (to find the third side), or all three sides (to find an angle). Area = ½ ab sin C with two sides and the included angle. State circle theorems by name as your reason.",
+          "tips": [
+            "Circle theorems: angle in a semicircle = 90°; angle at the centre = twice the angle at the circumference; angles in the same segment are equal; opposite angles of a cyclic quadrilateral sum to 180°; tangent ⊥ radius; two tangents from a point are equal; alternate segment theorem; the perpendicular from the centre to a chord bisects it."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stats",
+      "name": "Probability & statistics",
+      "weightF": "15%",
+      "weightH": "15%",
+      "note": "Often underestimated — easy marks if practised. A calculation without a sentence in context often loses the final mark.",
+      "subtopics": [
+        {
+          "id": "single-event-probability",
+          "title": "Single-event probability; expected & relative frequency",
+          "tier": "F",
+          "formulae": [
+            "P(event) = favourable outcomes ÷ equally likely outcomes",
+            "Relative frequency = successes ÷ trials",
+            "Expected frequency = probability × number of trials"
+          ],
+          "method": "Probability is a number from 0 to 1 inclusive; write it as a fraction in simplest form unless a decimal or percentage is asked. The probabilities of all mutually exclusive outcomes sum to 1. Relative frequency estimates probability and improves with more trials.",
+          "tips": []
+        },
+        {
+          "id": "mutually-exclusive-independent",
+          "title": "Mutually exclusive & independent events",
+          "tier": "F",
+          "formulae": [
+            "Mutually exclusive: P(A or B) = P(A) + P(B)",
+            "Independent: P(A and B) = P(A) × P(B)"
+          ],
+          "method": "Mutually exclusive events cannot happen together — add. Independent events do not affect each other — multiply. If events are not independent, use conditional values on the second branch of a tree.",
+          "tips": []
+        },
+        {
+          "id": "tree-diagrams",
+          "title": "Tree diagrams (including without replacement)",
+          "tier": "F",
+          "formulae": [],
+          "method": "Write a probability on every branch. Multiply along a path; add different paths that give the same overall event. Without-replacement (dependent) questions change the second-branch fractions — write the new denominators, that is the key step. Check every pair of second branches sums to 1.",
+          "tips": []
+        },
+        {
+          "id": "venn-set-notation",
+          "title": "Venn diagrams & set notation",
+          "tier": "F",
+          "formulae": ["P(A ∪ B) = P(A) + P(B) − P(A ∩ B)"],
+          "method": "ξ is the universal set; ∩ is intersection (AND); ∪ is union (OR); A′ is the complement (NOT A). Fill the overlap first.",
+          "tips": []
+        },
+        {
+          "id": "averages-range",
+          "title": "Mean, median, mode & range (lists and tables)",
+          "tier": "F",
+          "formulae": [
+            "Mean from a frequency table = Σfx ÷ Σf",
+            "Median position = (n + 1) / 2",
+            "Range = largest − smallest"
+          ],
+          "method": "Mean = total ÷ number of values. Median = the middle value once ordered (or the midpoint of the two middle values); from a table, find the position and walk the cumulative frequency. Mode = most common value or modal class. Range measures spread, not an average. Outliers pull the mean and the range; the median is more resistant.",
+          "tips": []
+        },
+        {
+          "id": "charts-graphs",
+          "title": "Bar charts, pie charts, pictograms, time series, scatter graphs",
+          "tier": "F",
+          "formulae": ["Pie chart angle = (frequency ÷ total) × 360°"],
+          "method": "Bar charts (with gaps) for categories; pictograms need a key. Scatter graphs: describe correlation as strong/weak and positive/negative, then interpret in context ('as revision hours increase, scores tend to increase'). Draw a line of best fit through the data cloud; do not extrapolate far beyond the data.",
+          "tips": []
+        },
+        {
+          "id": "stats-higher-1",
+          "title": "Conditional probability; histograms",
+          "tier": "H",
+          "formulae": [
+            "Frequency density = frequency ÷ class width",
+            "P(A | B) = P(A ∩ B) / P(B)"
+          ],
+          "method": "Histograms (grouped continuous data): the area of each bar is the frequency. Conditional probability: restrict the sample space to B, then look at the overlap; in two-way tables, restrict to the given row or column.",
+          "tips": []
+        },
+        {
+          "id": "stats-higher-2",
+          "title": "Cumulative frequency; box plots; comparing distributions",
+          "tier": "H",
+          "formulae": ["IQR = UQ − LQ"],
+          "method": "Cumulative frequency: plot at the upper class boundary; median is the reading at n/2; LQ and UQ at 25% and 75%. Box plots show min, LQ, median, UQ, max. To compare distributions, comment on a measure of average and a measure of spread — in context.",
+          "tips": ["Sampling: a sample should be representative; random sampling gives every member a chance; larger samples are more reliable but costlier; bias comes from a poor sampling frame or a leading question."]
+        }
+      ]
+    }
+  ]
+}
