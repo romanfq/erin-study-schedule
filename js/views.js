@@ -120,21 +120,22 @@ export async function renderSubject(root, subjectId, profile) {
           </a>`;
         }).join('');
       if (!rows) return '';
+      const weight = strand.weightF ? `<span class="weight">F ${esc(strand.weightF)} · H ${esc(strand.weightH)}</span>` : '';
       return `<section class="strand">
-        <div class="strand-head"><h2>${esc(strand.name)}</h2>
-          <span class="weight">F ${esc(strand.weightF)} · H ${esc(strand.weightH)}</span></div>
+        <div class="strand-head"><h2>${esc(strand.name)}</h2>${weight}</div>
         <div class="rows">${rows}</div>
       </section>`;
     }).join('');
 
-    root.innerHTML = `${header(content.subject, content.board)}
-      <div class="toolbar">
-        <div class="seg">
+    const hasHigher = content.strands.some((s) => s.subtopics.some((st) => st.tier === 'H'));
+    const tierToggle = hasHigher ? `<div class="seg">
           <button class="${tier === 'F' ? 'on' : ''}" data-tier="F">Foundation</button>
           <button class="${tier === 'H' ? 'on' : ''}" data-tier="H">Higher</button>
-        </div>
-        <a class="btn ghost" href="${esc(subjectId)}/exam-technique" data-link>Exam technique</a>
-      </div>
+        </div>` : '<span></span>';
+    const etBtn = content.examTechnique ? `<a class="btn ghost" href="${esc(subjectId)}/exam-technique" data-link>Exam technique</a>` : '';
+
+    root.innerHTML = `${header(content.subject, content.board)}
+      <div class="toolbar">${tierToggle}${etBtn}</div>
       <p class="legend">${chip('N')} not started ${chip('W')} working on it ${chip('C')} confident</p>
       ${strands}`;
 
@@ -181,6 +182,9 @@ export async function renderTopic(root, subjectId, topicId, profile) {
       ? `<section class="card"><h2>Formulae</h2><ul class="formulae">${t.formulae.map((f) => `<li>${esc(f)}</li>`).join('')}</ul></section>` : '';
     const tips = (t.tips || []).length
       ? `<section class="card"><h2>Tips</h2><ul>${t.tips.map((x) => `<li>${esc(x)}</li>`).join('')}</ul></section>` : '';
+    const sections = (t.sections || []).map((s) => `<section class="card"><h2>${esc(s.heading)}</h2>${
+      s.text ? `<p>${esc(s.text)}</p>` : ''}${
+      s.list ? `<ul>${s.list.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>` : ''}</section>`).join('');
 
     // Schedule split into upcoming / past.
     const today = todayISO();
@@ -218,6 +222,7 @@ export async function renderTopic(root, subjectId, topicId, profile) {
       <section class="card"><h2>Method</h2><p>${esc(t.method || '')}</p></section>
       ${formulae}
       ${tips}
+      ${sections}
 
       <section class="card"><h2>Review schedule</h2>
         <ul class="sessions">${sessionRows}</ul>

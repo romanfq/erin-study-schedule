@@ -11,11 +11,14 @@
       "state": "data/maths/state.json"
     },
     {
-      "id": "science",
-      "name": "Science",
-      "short": "Science",
-      "status": "coming-soon",
-      "colour": "#16a34a"
+      "id": "biology",
+      "name": "Biology",
+      "short": "Biology",
+      "status": "active",
+      "colour": "#16a34a",
+      "board": "AQA GCSE Biology · 7 core topics",
+      "content": "data/biology/content.json",
+      "state": "data/biology/state.json"
     }
   ]
 }

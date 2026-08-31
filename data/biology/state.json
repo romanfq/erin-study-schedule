@@ -1,0 +1,60 @@
+{
+  "updatedAt": "2026-08-31T22:33:55Z",
+  "topics": {
+    "cell-biology": {
+      "status": "N",
+      "links": [],
+      "sessions": []
+    },
+    "organisation": {
+      "status": "N",
+      "links": [],
+      "sessions": []
+    },
+    "infection-response": {
+      "status": "N",
+      "links": [],
+      "sessions": []
+    },
+    "bioenergetics": {
+      "status": "N",
+      "links": [],
+      "sessions": []
+    },
+    "homeostasis-response": {
+      "status": "N",
+      "links": [],
+      "sessions": []
+    },
+    "inheritance-variation-evolution": {
+      "status": "N",
+      "links": [],
+      "sessions": []
+    },
+    "ecology": {
+      "status": "N",
+      "links": [],
+      "sessions": []
+    },
+    "revise-biology": {
+      "status": "N",
+      "links": [],
+      "sessions": []
+    },
+    "biology-calculations": {
+      "status": "N",
+      "links": [],
+      "sessions": []
+    },
+    "required-practicals": {
+      "status": "N",
+      "links": [],
+      "sessions": []
+    },
+    "final-checklist": {
+      "status": "N",
+      "links": [],
+      "sessions": []
+    }
+  }
+}
