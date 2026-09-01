@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-31T21:51:27Z",
+  "updatedAt": "2026-09-01T20:56:47Z",
   "topics": {
     "ordering-operations-negatives": {
       "status": "N",
@@ -132,49 +132,68 @@
       "sessions": []
     },
     "angle-facts": {
-      "status": "N",
+      "status": "C",
       "links": [],
       "sessions": []
     },
     "area-perimeter": {
-      "status": "N",
+      "status": "C",
       "links": [],
       "sessions": []
     },
     "circles": {
-      "status": "N",
+      "status": "W",
       "links": [],
       "sessions": []
     },
     "volume-surface-area": {
-      "status": "N",
+      "status": "C",
       "links": [],
       "sessions": []
     },
     "pythagoras": {
-      "status": "N",
+      "status": "W",
       "links": [],
       "sessions": []
     },
     "trigonometry-rightangle": {
-      "status": "N",
+      "status": "W",
       "links": [],
       "sessions": []
     },
     "transformations": {
-      "status": "N",
+      "status": "C",
       "links": [],
       "sessions": []
     },
     "congruence-similarity": {
-      "status": "N",
+      "status": "C",
       "links": [],
       "sessions": []
     },
     "bearings-constructions-loci-units": {
-      "status": "N",
+      "status": "W",
       "links": [],
-      "sessions": []
+      "sessions": [
+        {
+          "date": "2026-09-02",
+          "time": "19:30",
+          "type": "Review",
+          "done": false
+        },
+        {
+          "date": "2026-09-05",
+          "time": "09:00",
+          "type": "Practice",
+          "done": false
+        },
+        {
+          "date": "2026-09-04",
+          "time": "18:30",
+          "type": "Practice",
+          "done": false
+        }
+      ]
     },
     "vectors": {
       "status": "N",
@@ -182,7 +201,7 @@
       "sessions": []
     },
     "geometry-higher": {
-      "status": "N",
+      "status": "C",
       "links": [],
       "sessions": []
     },
