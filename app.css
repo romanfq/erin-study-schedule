@@ -154,7 +154,7 @@ h2 { font-size: 1.15rem; margin: 0 0 .5em; }
 .cal-time { font-weight: 700; font-variant-numeric: tabular-nums; font-size: .85rem; }
 .cal-topic { font-size: .85rem; }
 .cal-topic em { color: var(--muted); font-style: normal; font-size: .75rem; }
-.cal-subject { display: inline-block; background: var(--accent); color: #fff; font-size: .62rem; font-weight: 700; text-transform: uppercase; letter-spacing: .03em; padding: 1px 6px; border-radius: 6px; margin-right: 6px; vertical-align: middle; }
+.cal-subject { display: inline-block; background: var(--accent); color: #fff; font-size: .68rem; font-weight: 700; padding: 1px 7px; border-radius: 6px; margin-right: 6px; vertical-align: middle; }
 .merge-link { margin-top: 26px; text-align: center; font-size: .85rem; }
 .month { overflow-x: auto; }
 .mrow.head, .mgrid { display: grid; grid-template-columns: repeat(7, 1fr); }
