@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-01T20:56:47Z",
+  "updatedAt": "2026-09-02T07:33:10Z",
   "topics": {
     "ordering-operations-negatives": {
       "status": "N",
@@ -173,7 +173,20 @@
     },
     "bearings-constructions-loci-units": {
       "status": "W",
-      "links": [],
+      "links": [
+        {
+          "label": "Loci",
+          "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-4/MA/Loci%20and%20Construction%20MA.pdf"
+        },
+        {
+          "label": "Bearings",
+          "url": "https://www.physicsandmathstutor.com/pdf-pages/?pdf=https%3A%2F%2Fpmt.physicsandmathstutor.com%2Fdownload%2FMaths%2FGCSE%2FTopic-Qs%2FEdexcel%2FSet-4%2FGeometry-and-Measures%2FHigher%2FMensuration-and-Calculation%2FQP%2FBearings%20(H)%20QP.pdf"
+        },
+        {
+          "label": "Constructions",
+          "url": "https://www.physicsandmathstutor.com/pdf-pages/?pdf=https%3A%2F%2Fpmt.physicsandmathstutor.com%2Fdownload%2FMaths%2FGCSE%2FTopic-Qs%2FEdexcel%2FSet-4%2FGeometry-and-Measures%2FFoundation%2FProperties-and-Constructions%2FQP%2FConstructions%20(F)%20QP.pdf"
+        }
+      ],
       "sessions": [
         {
           "date": "2026-09-02",
