@@ -313,17 +313,66 @@ export async function renderCalendar(root, { profile }) {
     const iso = new Date(cur.getFullYear(), cur.getMonth(), d).toLocaleDateString('en-CA');
     const items = sessions.filter((s) => s.date === iso);
     const dots = items.slice(0, 4).map((s) => `<span class="dot" style="background:${esc(s.colour || '#2563eb')}"></span>`).join('');
-    cells += `<div class="mcell ${iso === today ? 'today' : ''}"><span class="mnum">${d}</span><div class="mdots">${dots}</div></div>`;
+    cells += `<div class="mcell ${iso === today ? 'today' : ''}" data-date="${iso}"><span class="mnum">${d}</span><div class="mdots">${dots}</div></div>`;
   }
   const dow = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'].map((x) => `<div class="mhd">${x}</div>`).join('');
 
   root.insertAdjacentHTML('beforeend', `
     <a class="back" href="" data-link>‹ Home</a>
     <section class="three-day">${days}</section>
-    <section class="card">
-      <h2>${monthName}</h2>
-      <div class="month"><div class="mrow head">${dow}</div><div class="mgrid">${cells}</div></div>
-    </section>`);
+    <div class="cal-body">
+      <section class="card month-card">
+        <h2>${monthName}</h2>
+        <div class="month"><div class="mrow head">${dow}</div><div class="mgrid">${cells}</div></div>
+      </section>
+      <section class="card day-panel" id="day-panel"></section>
+    </div>`);
+
+  // --- Outlook-style day panel (9am–8pm) ---
+  const START = 9, END = 20, PXH = 46;
+  const hm = (min) => `${String(Math.floor(min / 60)).padStart(2, '0')}:${String(min % 60).padStart(2, '0')}`;
+  const hourLabel = (h) => h < 12 ? `${h} am` : h === 12 ? '12 pm' : `${h - 12} pm`;
+  const panel = root.querySelector('#day-panel');
+
+  const drawDay = (iso) => {
+    const items = sessions.filter((s) => s.date === iso)
+      .sort((a, b) => (a.time || '').localeCompare(b.time || ''));
+    const head = new Date(iso + 'T00:00').toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' });
+
+    let lines = '';
+    for (let h = START; h <= END; h++) {
+      lines += `<div class="hourline" style="top:${(h - START) * PXH}px"><span class="hlabel">${hourLabel(h)}</span></div>`;
+    }
+    const events = items.map((s) => {
+      const [hh, mm] = (s.time || '09:00').split(':').map(Number);
+      const start = hh * 60 + (mm || 0);
+      const dur = s.duration || (s.end ? (Number(s.end.split(':')[0]) * 60 + Number(s.end.split(':')[1]) - start) : 60);
+      const end = start + Math.max(dur, 30);
+      const top = Math.max(0, (start - START * 60) / 60 * PXH);
+      const bottom = Math.min((END - START) * PXH, (end - START * 60) / 60 * PXH);
+      const height = Math.max(bottom - top, 22);
+      return `<a class="day-event ${s.done ? 'done' : ''}" href="${esc(s.subjectId)}/${esc(s.topicId)}" data-link
+        style="top:${top}px;height:${height}px;--evt:${esc(s.colour || '#2563eb')}">
+        <span class="de-time">${hm(start)}–${hm(end)}</span>
+        <span class="de-title"><span class="cal-subject">${esc(s.subjectName)}</span>${esc(s.topicTitle)}</span>
+      </a>`;
+    }).join('');
+
+    panel.innerHTML = `
+      <div class="day-head"><h2>${esc(head)}</h2>
+        <span class="muted small">${items.length} session${items.length === 1 ? '' : 's'}</span></div>
+      <div class="day-grid" style="height:${(END - START) * PXH}px">
+        ${lines}<div class="day-track">${events}</div>
+      </div>`;
+  };
+
+  root.querySelectorAll('.mcell[data-date]').forEach((c) => c.onclick = () => {
+    root.querySelectorAll('.mcell.selected').forEach((x) => x.classList.remove('selected'));
+    c.classList.add('selected');
+    drawDay(c.dataset.date);
+  });
+  const initial = root.querySelector(`.mcell[data-date="${today}"]`) || root.querySelector('.mcell[data-date]');
+  if (initial) { initial.classList.add('selected'); drawDay(initial.dataset.date); }
 }
 
 export function renderNotFound(root) {
