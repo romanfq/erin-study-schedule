@@ -336,36 +336,40 @@ export async function renderCalendar(root, { profile }) {
       <section class="card day-panel" id="day-panel"></section>
     </div>`);
 
-  // --- Outlook-style day panel (full 24h, scrolls the current hour to the top) ---
-  const START = 0, END = 24, PXH = 44;
+  // --- Outlook-style day panel: 24h + roll-over into the (greyed) next day ---
+  const PXH = 44, DAY = 24, ROLL = 13, TOTAL = DAY + ROLL;   // hours rendered
   const hm = (min) => `${String(Math.floor(min / 60) % 24).padStart(2, '0')}:${String(min % 60).padStart(2, '0')}`;
-  const hourLabel = (h) => (h % 24 === 0) ? '12 am' : h < 12 ? `${h} am` : h === 12 ? '12 pm' : `${h - 12} pm`;
+  const hourLabel = (h) => { const x = h % 24; return x === 0 ? '12 am' : x < 12 ? `${x} am` : x === 12 ? '12 pm' : `${x - 12} pm`; };
   const panel = root.querySelector('#day-panel');
 
+  const eventBlock = (s, offset) => {
+    const [hh, mm] = (s.time || '09:00').split(':').map(Number);
+    const base = hh * 60 + (mm || 0);
+    const dur = s.duration || (s.end ? (Number(s.end.split(':')[0]) * 60 + Number(s.end.split(':')[1]) - base) : 60);
+    const start = base + offset, end = start + Math.max(dur, 30);
+    const top = start / 60 * PXH;
+    const height = Math.max((Math.min(TOTAL * 60, end) - start) / 60 * PXH, 22);
+    return `<a class="day-event ${s.done ? 'done' : ''}${offset ? ' next' : ''}" href="${esc(s.subjectId)}/${esc(s.topicId)}" data-link
+      title="${esc(s.topicTitle)}${s.type ? ' · ' + esc(s.type) : ''}"
+      style="top:${top}px;height:${height}px;--evt:${esc(s.colour || '#2563eb')}">
+      <span class="de-time">${hm(start)}–${hm(end)}</span>
+      <span class="de-title"><span class="cal-subject">${esc(s.subjectName)}</span></span>
+    </a>`;
+  };
+
   const drawDay = (iso) => {
-    const items = sessions.filter((s) => s.date === iso)
-      .sort((a, b) => (a.time || '').localeCompare(b.time || ''));
+    const items = sessions.filter((s) => s.date === iso).sort((a, b) => (a.time || '').localeCompare(b.time || ''));
+    const nextISO = new Date(new Date(iso + 'T00:00').getTime() + 864e5).toLocaleDateString('en-CA');
+    const nextItems = sessions.filter((s) => s.date === nextISO && Number((s.time || '0').split(':')[0]) < ROLL);
     const head = new Date(iso + 'T00:00').toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' });
+    const nextShort = new Date(nextISO + 'T00:00').toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' });
 
     let lines = '';
-    for (let h = START; h <= END; h++) {
-      lines += `<div class="hourline" style="top:${(h - START) * PXH}px"><span class="hlabel">${hourLabel(h)}</span></div>`;
+    for (let h = 0; h <= TOTAL; h++) {
+      lines += `<div class="hourline" style="top:${h * PXH}px"><span class="hlabel">${hourLabel(h)}</span></div>`;
     }
-    const events = items.map((s) => {
-      const [hh, mm] = (s.time || '09:00').split(':').map(Number);
-      const start = hh * 60 + (mm || 0);
-      const dur = s.duration || (s.end ? (Number(s.end.split(':')[0]) * 60 + Number(s.end.split(':')[1]) - start) : 60);
-      const end = start + Math.max(dur, 30);
-      const top = start / 60 * PXH;
-      const height = Math.max((Math.min(END * 60, end) - start) / 60 * PXH, 22);
-      return `<a class="day-event ${s.done ? 'done' : ''}" href="${esc(s.subjectId)}/${esc(s.topicId)}" data-link
-        title="${esc(s.topicTitle)}${s.type ? ' · ' + esc(s.type) : ''}"
-        style="top:${top}px;height:${height}px;--evt:${esc(s.colour || '#2563eb')}">
-        <span class="de-time">${hm(start)}–${hm(end)}</span>
-        <span class="de-title"><span class="cal-subject">${esc(s.subjectName)}</span></span>
-      </a>`;
-    }).join('');
-
+    const events = [...items.map((s) => eventBlock(s, 0)), ...nextItems.map((s) => eventBlock(s, DAY * 60))].join('');
+    const overlay = `<div class="next-day" style="top:${DAY * PXH}px;height:${ROLL * PXH}px"><span>${esc(nextShort)} →</span></div>`;
     const nowLine = iso === today
       ? `<div class="now-line" style="top:${(new Date().getHours() * 60 + new Date().getMinutes()) / 60 * PXH}px"></div>`
       : '';
@@ -374,10 +378,9 @@ export async function renderCalendar(root, { profile }) {
       <div class="day-head"><h2>${esc(head)}</h2>
         <span class="muted small">${items.length} session${items.length === 1 ? '' : 's'}</span></div>
       <div class="day-scroll">
-        <div class="day-grid" style="height:${(END - START) * PXH}px">
-          ${lines}${nowLine}<div class="day-track">${events}</div>
+        <div class="day-grid" style="height:${TOTAL * PXH}px">
+          ${lines}${overlay}${nowLine}<div class="day-track">${events}</div>
         </div>
-        <div class="day-tail"></div>
       </div>`;
     const scroll = panel.querySelector('.day-scroll');
     if (scroll) scroll.scrollTop = new Date().getHours() * PXH;   // current hour at the top

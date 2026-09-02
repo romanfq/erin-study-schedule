@@ -163,9 +163,10 @@ h2 { font-size: 1.15rem; margin: 0 0 .5em; }
 .mhd { text-align: center; font-size: .7rem; color: var(--muted); padding: 4px 0; font-weight: 700; }
 .mcell { min-height: 62px; border: 1px solid var(--line); padding: 4px; }
 .mcell.empty { background: #f8fafc; }
-.mcell.today { outline: 2px solid var(--accent); outline-offset: -2px; }
+.mcell.today { background: #dbeafe; }
+.mcell.today .mnum { background: var(--accent); color: #fff; border-radius: 999px; padding: 2px 8px; font-weight: 700; }
 .mcell[data-date] { cursor: pointer; }
-.mcell.selected { background: #eff6ff; box-shadow: inset 0 0 0 2px var(--accent); }
+.mcell.selected { box-shadow: inset 0 0 0 2px var(--accent); }
 
 /* two-column calendar body + Outlook-style day panel */
 .cal-body { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; align-items: start; }
@@ -173,7 +174,9 @@ h2 { font-size: 1.15rem; margin: 0 0 .5em; }
 .day-head { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 10px; }
 .day-head h2 { margin: 0; font-size: 1.05rem; }
 .day-scroll { height: 560px; overflow-y: auto; position: relative; border-top: 1px solid var(--line); }
-.day-tail { height: 540px; }   /* lets any hour scroll to the very top */
+.next-day { position: absolute; left: 0; right: 0; background: rgba(148, 163, 184, .16); pointer-events: none; }
+.next-day > span { position: absolute; top: 5px; left: 54px; font-size: .64rem; font-weight: 700; color: var(--muted); background: var(--card); padding: 1px 6px; border-radius: 6px; }
+.day-event.next { opacity: .9; }
 .day-grid { position: relative; margin-top: 8px; }
 .now-line { position: absolute; left: 52px; right: 4px; border-top: 2px solid #ef4444; z-index: 3; }
 .now-line::before { content: ''; position: absolute; left: -5px; top: -5px; width: 8px; height: 8px; border-radius: 50%; background: #ef4444; }
