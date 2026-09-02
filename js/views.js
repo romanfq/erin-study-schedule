@@ -9,6 +9,7 @@ const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) =>
 const el = (html) => { const t = document.createElement('template'); t.innerHTML = html.trim(); return t.content.firstElementChild; };
 const todayISO = () => new Date().toLocaleDateString('en-CA'); // YYYY-MM-DD, local
 const fmtDay = (iso) => new Date(iso + 'T00:00').toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' });
+const addMinutes = (t, d) => { const [h, m] = String(t).split(':').map(Number); const tot = h * 60 + (m || 0) + (Number(d) || 60); return `${String(Math.floor(tot / 60) % 24).padStart(2, '0')}:${String(tot % 60).padStart(2, '0')}`; };
 const nextStatus = (s) => STATUS_CYCLE[(STATUS_CYCLE.indexOf(s) + 1) % STATUS_CYCLE.length];
 
 function chip(status) {
@@ -195,7 +196,7 @@ export async function renderTopic(root, subjectId, topicId, profile) {
     const sessionRows = sessions.length ? sessions.map((s) => `
       <li class="ses ${s.done ? 'done' : s.date < today ? 'past' : 'future'}">
         <label><input type="checkbox" data-done="${s.i}" ${s.done ? 'checked' : ''}> </label>
-        <span class="ses-when">${esc(fmtDay(s.date))}${s.time ? ' · ' + esc(s.time) : ''}</span>
+        <span class="ses-when">${esc(fmtDay(s.date))}${s.time ? ' · ' + esc(s.time) + '–' + esc(addMinutes(s.time, s.duration)) : ''}</span>
         <span class="ses-type">${esc(s.type || 'Review')}</span>
         <button class="link-x" data-del="${s.i}" title="Remove">✕</button>
       </li>`).join('') : '<li class="muted">No sessions scheduled yet.</li>';
@@ -231,6 +232,13 @@ export async function renderTopic(root, subjectId, topicId, profile) {
           <input type="date" id="s-date" value="${today}">
           <input type="time" id="s-time" value="16:00">
           <select id="s-type"><option>Review</option><option>Practice</option><option>Test</option></select>
+          <select id="s-dur" title="Duration">
+            <option value="30">30 min</option>
+            <option value="45">45 min</option>
+            <option value="60" selected>1 hour</option>
+            <option value="90">1.5 hours</option>
+            <option value="120">2 hours</option>
+          </select>
           <button class="btn" id="s-add">Add session</button>
         </div>
       </section>
@@ -259,7 +267,7 @@ export async function renderTopic(root, subjectId, topicId, profile) {
     root.querySelector('#s-add').onclick = () => {
       const date = root.querySelector('#s-date').value;
       if (!date) return;
-      store.addSession(subjectId, topicId, { date, time: root.querySelector('#s-time').value, type: root.querySelector('#s-type').value, done: false });
+      store.addSession(subjectId, topicId, { date, time: root.querySelector('#s-time').value, type: root.querySelector('#s-type').value, duration: Number(root.querySelector('#s-dur').value), done: false });
       draw();
     };
     root.querySelectorAll('[data-done]').forEach((c) => c.onchange = () => { store.updateSession(subjectId, topicId, +c.dataset.done, { done: c.checked }); draw(); });
