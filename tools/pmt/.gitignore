@@ -4,3 +4,4 @@ downloads/
 .ratelimit
 *.log
 candidates.json
+__pycache__/
