@@ -1,8 +1,15 @@
 {
-  "updatedAt": "2026-09-02T21:54:57Z",
-  "topics": {
+  "proposal": {
     "ordering-operations-negatives": {
-      "status": "N",
+      "title": "Ordering; four operations; negatives",
+      "tier": "F",
+      "confidence": "HIGH",
+      "source": "Higher+Set-0",
+      "worksheets": [
+        "Four Operations [Higher]",
+        "Addition and Subtraction [Set-0]",
+        "Multiplication and Division [Set-0]"
+      ],
       "links": [
         {
           "label": "Four Operations",
@@ -21,10 +28,18 @@
           "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Number/Higher/Structure-and-Calculation/MS/Four%20Operations%20(H)%20MS.pdf"
         }
       ],
-      "sessions": []
+      "reason": "keyword match"
     },
     "factors-multiples-primes": {
-      "status": "N",
+      "title": "Factors, multiples, primes, HCF & LCM",
+      "tier": "F",
+      "confidence": "HIGH",
+      "source": "Higher+Set-0",
+      "worksheets": [
+        "Primes, Factors and Multiples [Higher]",
+        "Factors and Multiples [Set-0]",
+        "HCF and LCM [Set-0]"
+      ],
       "links": [
         {
           "label": "Primes, Factors and Multiples",
@@ -43,10 +58,17 @@
           "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Number/Higher/Structure-and-Calculation/MS/Primes,%20Factors%20and%20Multiples%20(H)%20MS.pdf"
         }
       ],
-      "sessions": []
+      "reason": "keyword match"
     },
     "fractions": {
-      "status": "N",
+      "title": "Fractions: four operations, mixed numbers",
+      "tier": "F",
+      "confidence": "HIGH",
+      "source": "Higher+Set-0",
+      "worksheets": [
+        "Fractions [Higher]",
+        "Fractions of an Amount [Set-0]"
+      ],
       "links": [
         {
           "label": "Fractions",
@@ -61,10 +83,17 @@
           "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Number/Higher/Fractions-Decimals-and-Percentages/MS/Fractions%20(H)%20MS.pdf"
         }
       ],
-      "sessions": []
+      "reason": "keyword match"
     },
     "fdp-percentages": {
-      "status": "N",
+      "title": "FDP conversions; percentages of amounts; increase/decrease",
+      "tier": "F",
+      "confidence": "HIGH",
+      "source": "Set-0",
+      "worksheets": [
+        "Fractions, Decimals and Percentages [Set-0]",
+        "Percentages [Set-0]"
+      ],
       "links": [
         {
           "label": "Fractions, Decimals and Percentages",
@@ -79,10 +108,17 @@
           "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-1-2/MA/Fractions,%20Decimals%20and%20Percentages%20MA.pdf"
         }
       ],
-      "sessions": []
+      "reason": "keyword match"
     },
     "reverse-pct-interest-growth": {
-      "status": "N",
+      "title": "Reverse percentages; interest; growth & decay",
+      "tier": "F",
+      "confidence": "HIGH",
+      "source": "Set-0",
+      "worksheets": [
+        "Compound Interest and Depreciation [Set-0]",
+        "Reverse Percentages [Set-0]"
+      ],
       "links": [
         {
           "label": "Compound Interest and Depreciation",
@@ -97,10 +133,18 @@
           "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-4/MA/Compound%20Interest%20and%20Depreciation%20MA.pdf"
         }
       ],
-      "sessions": []
+      "reason": "keyword match"
     },
     "index-laws": {
-      "status": "N",
+      "title": "Index laws (including zero and negative)",
+      "tier": "F",
+      "confidence": "HIGH",
+      "source": "Higher+Set-0",
+      "worksheets": [
+        "Roots and Powers [Higher]",
+        "Indices [Higher]",
+        "Powers and Roots [Set-0]"
+      ],
       "links": [
         {
           "label": "Roots and Powers",
@@ -119,10 +163,16 @@
           "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Number/Higher/Structure-and-Calculation/MS/Roots%20and%20Powers%20(H)%20MS.pdf"
         }
       ],
-      "sessions": []
+      "reason": "keyword match"
     },
     "standard-form": {
-      "status": "N",
+      "title": "Standard form calculations",
+      "tier": "F",
+      "confidence": "HIGH",
+      "source": "Higher",
+      "worksheets": [
+        "Standard Form [Higher]"
+      ],
       "links": [
         {
           "label": "Standard Form",
@@ -133,10 +183,18 @@
           "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Number/Higher/Structure-and-Calculation/MS/Standard%20Form%20(H)%20MS.pdf"
         }
       ],
-      "sessions": []
+      "reason": "keyword match"
     },
     "rounding-bounds": {
-      "status": "N",
+      "title": "Rounding, estimation, error intervals & bounds",
+      "tier": "F",
+      "confidence": "HIGH",
+      "source": "Higher",
+      "worksheets": [
+        "Approximation and Estimation [Higher]",
+        "Bounds [Higher]",
+        "Rounding [Higher]"
+      ],
       "links": [
         {
           "label": "Approximation and Estimation",
@@ -155,10 +213,18 @@
           "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Number/Higher/Measures-and-Accuracy/MS/Approximation%20and%20Estimation%20(H)%20MS.pdf"
         }
       ],
-      "sessions": []
+      "reason": "keyword match"
     },
     "surds-frac-indices-recurring": {
-      "status": "N",
+      "title": "Fractional indices; surds; rationalising; recurring decimals",
+      "tier": "H",
+      "confidence": "HIGH",
+      "source": "Higher+Set-0",
+      "worksheets": [
+        "Recurring Decimals into Fractions [Higher]",
+        "Surds [Higher]",
+        "Fractional and Negative Indices [Set-0]"
+      ],
       "links": [
         {
           "label": "Recurring Decimals into Fractions",
@@ -177,10 +243,18 @@
           "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Number/Higher/Fractions-Decimals-and-Percentages/MS/Recurring%20Decimals%20into%20Fractions%20(H)%20MS.pdf"
         }
       ],
-      "sessions": []
+      "reason": "keyword match"
     },
     "expand-factorise": {
-      "status": "N",
+      "title": "Simplify, expand & factorise (including DOTS)",
+      "tier": "F",
+      "confidence": "HIGH",
+      "source": "Higher+Set-0",
+      "worksheets": [
+        "Expanding Triple Brackets [Higher]",
+        "Simplifying Expressions [Higher]",
+        "Expanding and Factorising [Set-0]"
+      ],
       "links": [
         {
           "label": "Expanding Triple Brackets",
@@ -199,10 +273,18 @@
           "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Algebra/Higher/Notation-Vocabulary-and-Manipulation/MS/Expanding%20Triple%20Brackets%20(H)%20MS.pdf"
         }
       ],
-      "sessions": []
+      "reason": "keyword match"
     },
     "linear-equations-inequalities": {
-      "status": "N",
+      "title": "Linear equations; inequalities; number lines",
+      "tier": "F",
+      "confidence": "HIGH",
+      "source": "Higher+Set-0",
+      "worksheets": [
+        "Forming Equations [Higher]",
+        "Solving Equations with an Unknown on Both Sides [Set-0]",
+        "Forming and Solving Equations [Set-0]"
+      ],
       "links": [
         {
           "label": "Forming Equations",
@@ -221,10 +303,18 @@
           "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Algebra/Higher/Notation-Vocabulary-and-Manipulation/MS/Forming%20Equations%20(H)%20MS.pdf"
         }
       ],
-      "sessions": []
+      "reason": "keyword match"
     },
     "rearranging-formulae": {
-      "status": "N",
+      "title": "Rearranging formulae (change the subject)",
+      "tier": "F",
+      "confidence": "HIGH",
+      "source": "Higher+Set-0",
+      "worksheets": [
+        "Manipulation of Formulae [Higher]",
+        "Changing the Subject of a Formula [Set-0]",
+        "Rearranging Harder Formulae [Set-0]"
+      ],
       "links": [
         {
           "label": "Manipulation of Formulae",
@@ -243,10 +333,17 @@
           "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Algebra/Higher/Notation-Vocabulary-and-Manipulation/MS/Manipulation%20of%20Formulae%20(H)%20MS.pdf"
         }
       ],
-      "sessions": []
+      "reason": "keyword match"
     },
     "linear-graphs": {
-      "status": "N",
+      "title": "Linear graphs y = mx + c; parallel lines; real-life graphs",
+      "tier": "F",
+      "confidence": "HIGH",
+      "source": "Set-0",
+      "worksheets": [
+        "Equation of a Line [Set-0]",
+        "Drawing Graphs [Set-0]"
+      ],
       "links": [
         {
           "label": "Equation of a Line",
@@ -261,10 +358,17 @@
           "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-5/MA/Equation%20of%20a%20Line%20MA.pdf"
         }
       ],
-      "sessions": []
+      "reason": "keyword match"
     },
     "sequences": {
-      "status": "N",
+      "title": "Sequences: linear nth term; special sequences",
+      "tier": "F",
+      "confidence": "HIGH",
+      "source": "Set-0",
+      "worksheets": [
+        "The Nth Term of a Quadratic Sequence [Set-0]",
+        "Sequences (Nth Term) [Set-0]"
+      ],
       "links": [
         {
           "label": "The Nth Term of a Quadratic Sequence",
@@ -279,10 +383,18 @@
           "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-8-9/MA/The%20Nth%20Term%20of%20a%20Quadratic%20Sequence%20MA.pdf"
         }
       ],
-      "sessions": []
+      "reason": "keyword match"
     },
     "quadratic-graphs-factorising": {
-      "status": "N",
+      "title": "Quadratic graphs; solving by factorising",
+      "tier": "F",
+      "confidence": "HIGH",
+      "source": "Set-0",
+      "worksheets": [
+        "Expanding and Factorising Quadratics [Set-0]",
+        "Drawing Quadratic Graphs [Set-0]",
+        "Solving Quadratics [Set-0]"
+      ],
       "links": [
         {
           "label": "Expanding and Factorising Quadratics",
@@ -301,10 +413,17 @@
           "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-5/MA/Expanding%20and%20Factorising%20Quadratics%20MA.pdf"
         }
       ],
-      "sessions": []
+      "reason": "keyword match"
     },
     "simultaneous-linear": {
-      "status": "N",
+      "title": "Simultaneous equations (two linear)",
+      "tier": "F",
+      "confidence": "HIGH",
+      "source": "Set-0",
+      "worksheets": [
+        "Simultaneous Equations [Set-0]",
+        "Solving Simultaneous Equations Graphically [Set-0]"
+      ],
       "links": [
         {
           "label": "Simultaneous Equations",
@@ -319,10 +438,18 @@
           "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-5/MA/Simultaneous%20Equations%20MA.pdf"
         }
       ],
-      "sessions": []
+      "reason": "keyword match"
     },
     "quadratics-higher": {
-      "status": "N",
+      "title": "Quadratic formula; completing the square; quadratic inequalities",
+      "tier": "H",
+      "confidence": "HIGH",
+      "source": "Set-0",
+      "worksheets": [
+        "Completing the Square [Set-0]",
+        "Quadratic Formula [Set-0]",
+        "Quadratic Inequalities [Set-0]"
+      ],
       "links": [
         {
           "label": "Completing the Square",
@@ -341,10 +468,18 @@
           "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-8-9/MA/Completing%20the%20Square%20MA.pdf"
         }
       ],
-      "sessions": []
+      "reason": "keyword match"
     },
     "algebra-higher-2": {
-      "status": "N",
+      "title": "Linear + quadratic simultaneous; algebraic fractions; functions",
+      "tier": "H",
+      "confidence": "HIGH",
+      "source": "Higher+Set-0",
+      "worksheets": [
+        "Functions (Composite or Inverse) [Higher]",
+        "Algebraic Fractions [Higher]",
+        "Simultaneous Equations with a Quadratic [Set-0]"
+      ],
       "links": [
         {
           "label": "Functions (Composite or Inverse)",
@@ -363,10 +498,18 @@
           "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Algebra/Higher/Notation-Vocabulary-and-Manipulation/MS/Functions%20(Composite%20or%20Inverse)%20(H)%20MS.pdf"
         }
       ],
-      "sessions": []
+      "reason": "keyword match"
     },
     "algebra-higher-3": {
-      "status": "N",
+      "title": "Iteration; proof; circle & tangent; graph transformations",
+      "tier": "H",
+      "confidence": "HIGH",
+      "source": "Higher+Set-0",
+      "worksheets": [
+        "Algebraic Proof [Higher]",
+        "Solving Equations using Iteration [Set-0]",
+        "Perpendicular Lines and the Equation of a Tangent [Set-0]"
+      ],
       "links": [
         {
           "label": "Algebraic Proof",
@@ -385,10 +528,16 @@
           "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Algebra/Higher/Notation-Vocabulary-and-Manipulation/MS/Algebraic%20Proof%20(H)%20MS.pdf"
         }
       ],
-      "sessions": []
+      "reason": "keyword match"
     },
     "ratio-basics": {
-      "status": "N",
+      "title": "Simplify, share & combine ratios; difference problems",
+      "tier": "F",
+      "confidence": "HIGH",
+      "source": "Set-0",
+      "worksheets": [
+        "Ratio [Set-0]"
+      ],
       "links": [
         {
           "label": "Ratio",
@@ -399,10 +548,17 @@
           "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-3/MA/Ratio%20MA.pdf"
         }
       ],
-      "sessions": []
+      "reason": "keyword match"
     },
     "direct-proportion": {
-      "status": "N",
+      "title": "Direct proportion (including y = kx²)",
+      "tier": "F",
+      "confidence": "HIGH",
+      "source": "Set-0",
+      "worksheets": [
+        "Direct and Inverse Proportion [Set-0]",
+        "Proportion [Set-0]"
+      ],
       "links": [
         {
           "label": "Direct and Inverse Proportion",
@@ -417,10 +573,16 @@
           "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-7/MA/Direct%20and%20Inverse%20Proportion%20MA.pdf"
         }
       ],
-      "sessions": []
+      "reason": "keyword match"
     },
     "inverse-proportion": {
-      "status": "N",
+      "title": "Inverse proportion",
+      "tier": "F",
+      "confidence": "HIGH",
+      "source": "Set-0",
+      "worksheets": [
+        "Direct and Inverse Proportion [Set-0]"
+      ],
       "links": [
         {
           "label": "Direct and Inverse Proportion",
@@ -431,10 +593,18 @@
           "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-7/MA/Direct%20and%20Inverse%20Proportion%20MA.pdf"
         }
       ],
-      "sessions": []
+      "reason": "keyword match"
     },
     "percentage-change-context": {
-      "status": "N",
+      "title": "Percentage change in context; successive percentages",
+      "tier": "F",
+      "confidence": "HIGH",
+      "source": "Set-0",
+      "worksheets": [
+        "Compound Interest and Depreciation [Set-0]",
+        "Best Buy Questions [Set-0]",
+        "Exchange Rates [Set-0]"
+      ],
       "links": [
         {
           "label": "Compound Interest and Depreciation",
@@ -453,10 +623,16 @@
           "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-4/MA/Compound%20Interest%20and%20Depreciation%20MA.pdf"
         }
       ],
-      "sessions": []
+      "reason": "keyword match"
     },
     "compound-measures": {
-      "status": "N",
+      "title": "Compound measures: speed, density, pressure",
+      "tier": "F",
+      "confidence": "HIGH",
+      "source": "Set-0",
+      "worksheets": [
+        "Speed and Density [Set-0]"
+      ],
       "links": [
         {
           "label": "Speed and Density",
@@ -467,10 +643,16 @@
           "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-5/MA/Speed%20and%20Density%20MA.pdf"
         }
       ],
-      "sessions": []
+      "reason": "keyword match"
     },
     "rate-graphs": {
-      "status": "N",
+      "title": "Distance–time and velocity–time graphs",
+      "tier": "F",
+      "confidence": "HIGH",
+      "source": "Set-0",
+      "worksheets": [
+        "Velocity Time Graphs [Set-0]"
+      ],
       "links": [
         {
           "label": "Velocity Time Graphs",
@@ -481,10 +663,17 @@
           "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-8-9/MA/Velocity%20Time%20Graphs%20MA.pdf"
         }
       ],
-      "sessions": []
+      "reason": "keyword match"
     },
     "similar-shapes": {
-      "status": "N",
+      "title": "Similar shapes: length, area & volume scale factors",
+      "tier": "F",
+      "confidence": "HIGH",
+      "source": "Set-0",
+      "worksheets": [
+        "Similar Shapes (Lengths) [Set-0]",
+        "Similar Shapes (Area and Volume) [Set-0]"
+      ],
       "links": [
         {
           "label": "Similar Shapes (Lengths)",
@@ -499,10 +688,18 @@
           "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-5/MA/Similar%20Shapes%20(Lengths)%20MA.pdf"
         }
       ],
-      "sessions": []
+      "reason": "keyword match"
     },
     "angle-facts": {
-      "status": "C",
+      "title": "Angle facts: lines, points, triangles, parallels, polygons",
+      "tier": "F",
+      "confidence": "HIGH",
+      "source": "Set-0",
+      "worksheets": [
+        "Angles in Parallel Lines [Set-0]",
+        "Angles in Polygons [Set-0]",
+        "Angle Problems [Set-0]"
+      ],
       "links": [
         {
           "label": "Angles in Parallel Lines",
@@ -521,10 +718,17 @@
           "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-4/MA/Angles%20in%20Parallel%20Lines%20MA.pdf"
         }
       ],
-      "sessions": []
+      "reason": "keyword match"
     },
     "area-perimeter": {
-      "status": "C",
+      "title": "Area & perimeter (compound shapes, trapezium)",
+      "tier": "F",
+      "confidence": "HIGH",
+      "source": "Set-0",
+      "worksheets": [
+        "Area of Compound Shapes [Set-0]",
+        "Area [Set-0]"
+      ],
       "links": [
         {
           "label": "Area of Compound Shapes",
@@ -539,10 +743,17 @@
           "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-3/MA/Area%20of%20Compound%20Shapes%20MA.pdf"
         }
       ],
-      "sessions": []
+      "reason": "keyword match"
     },
     "circles": {
-      "status": "W",
+      "title": "Circles: circumference, area, arcs, sectors",
+      "tier": "F",
+      "confidence": "HIGH",
+      "source": "Set-0",
+      "worksheets": [
+        "Area and Circumference of Circles [Set-0]",
+        "Sector Areas and Arc Lengths [Set-0]"
+      ],
       "links": [
         {
           "label": "Area and Circumference of Circles",
@@ -557,10 +768,18 @@
           "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-3/MA/Area%20and%20Circumference%20of%20Circles%20MA.pdf"
         }
       ],
-      "sessions": []
+      "reason": "keyword match"
     },
     "volume-surface-area": {
-      "status": "C",
+      "title": "Volume & surface area: prisms, cylinders, cones, spheres, pyramids",
+      "tier": "F",
+      "confidence": "HIGH",
+      "source": "Set-0",
+      "worksheets": [
+        "Volume of Prisms [Set-0]",
+        "Spheres and Cones [Set-0]",
+        "Surface Area [Set-0]"
+      ],
       "links": [
         {
           "label": "Volume of Prisms",
@@ -579,10 +798,17 @@
           "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-4/MA/Volume%20of%20Prisms%20MA.pdf"
         }
       ],
-      "sessions": []
+      "reason": "keyword match"
     },
     "pythagoras": {
-      "status": "W",
+      "title": "Pythagoras in 2D (and 3D if Higher)",
+      "tier": "F",
+      "confidence": "HIGH",
+      "source": "Set-0",
+      "worksheets": [
+        "Pythagoras [Set-0]",
+        "3D Pythagoras [Set-0]"
+      ],
       "links": [
         {
           "label": "Pythagoras",
@@ -597,10 +823,16 @@
           "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-4/MA/Pythagoras%20MA.pdf"
         }
       ],
-      "sessions": []
+      "reason": "keyword match"
     },
     "trigonometry-rightangle": {
-      "status": "W",
+      "title": "Right-angled trigonometry (SOH CAH TOA) & exact values",
+      "tier": "F",
+      "confidence": "HIGH",
+      "source": "Set-0",
+      "worksheets": [
+        "SOHCAHTOA [Set-0]"
+      ],
       "links": [
         {
           "label": "SOHCAHTOA",
@@ -611,10 +843,18 @@
           "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-5/MA/SOHCAHTOA%20MA.pdf"
         }
       ],
-      "sessions": []
+      "reason": "keyword match"
     },
     "transformations": {
-      "status": "C",
+      "title": "Transformations: translate, rotate, reflect, enlarge",
+      "tier": "F",
+      "confidence": "HIGH",
+      "source": "Set-0",
+      "worksheets": [
+        "Enlarging with Negative Scale Factors [Set-0]",
+        "Transformations - Enlargements [Set-0]",
+        "Transformations - Mixed Transformations [Set-0]"
+      ],
       "links": [
         {
           "label": "Enlarging with Negative Scale Factors",
@@ -633,10 +873,18 @@
           "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-6/MA/Enlarging%20with%20Negative%20Scale%20Factors%20MA.pdf"
         }
       ],
-      "sessions": []
+      "reason": "keyword match"
     },
     "congruence-similarity": {
-      "status": "C",
+      "title": "Congruence & similarity",
+      "tier": "F",
+      "confidence": "HIGH",
+      "source": "Set-0",
+      "worksheets": [
+        "Congruent Triangles [Set-0]",
+        "Similar Shapes (Lengths) [Set-0]",
+        "Similar Shapes (Area and Volume) [Set-0]"
+      ],
       "links": [
         {
           "label": "Congruent Triangles",
@@ -655,23 +903,18 @@
           "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-5/MA/Congruent%20Triangles%20MA.pdf"
         }
       ],
-      "sessions": []
+      "reason": "keyword match"
     },
     "bearings-constructions-loci-units": {
-      "status": "W",
+      "title": "Bearings, constructions, loci, unit conversions",
+      "tier": "F",
+      "confidence": "HIGH",
+      "source": "Set-0",
+      "worksheets": [
+        "Loci and Construction [Set-0]",
+        "Bearings [Set-0]"
+      ],
       "links": [
-        {
-          "label": "Loci",
-          "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-4/MA/Loci%20and%20Construction%20MA.pdf"
-        },
-        {
-          "label": "Bearings",
-          "url": "https://www.physicsandmathstutor.com/pdf-pages/?pdf=https%3A%2F%2Fpmt.physicsandmathstutor.com%2Fdownload%2FMaths%2FGCSE%2FTopic-Qs%2FEdexcel%2FSet-4%2FGeometry-and-Measures%2FHigher%2FMensuration-and-Calculation%2FQP%2FBearings%20(H)%20QP.pdf"
-        },
-        {
-          "label": "Constructions",
-          "url": "https://www.physicsandmathstutor.com/pdf-pages/?pdf=https%3A%2F%2Fpmt.physicsandmathstutor.com%2Fdownload%2FMaths%2FGCSE%2FTopic-Qs%2FEdexcel%2FSet-4%2FGeometry-and-Measures%2FFoundation%2FProperties-and-Constructions%2FQP%2FConstructions%20(F)%20QP.pdf"
-        },
         {
           "label": "Loci and Construction",
           "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-4/QP/Loci%20and%20Construction%20QP.pdf"
@@ -679,31 +922,22 @@
         {
           "label": "Bearings",
           "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-4/QP/Bearings%20QP.pdf"
+        },
+        {
+          "label": "Loci and Construction — solutions",
+          "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-4/MA/Loci%20and%20Construction%20MA.pdf"
         }
       ],
-      "sessions": [
-        {
-          "date": "2026-09-02",
-          "time": "19:30",
-          "type": "Review",
-          "done": false
-        },
-        {
-          "date": "2026-09-05",
-          "time": "09:00",
-          "type": "Practice",
-          "done": false
-        },
-        {
-          "date": "2026-09-04",
-          "time": "18:30",
-          "type": "Practice",
-          "done": false
-        }
-      ]
+      "reason": "keyword match"
     },
     "vectors": {
-      "status": "N",
+      "title": "Vectors: column vectors, resultant, magnitude",
+      "tier": "F",
+      "confidence": "HIGH",
+      "source": "Set-0",
+      "worksheets": [
+        "Vectors [Set-0]"
+      ],
       "links": [
         {
           "label": "Vectors",
@@ -714,10 +948,17 @@
           "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-7/MA/Vectors%20MA.pdf"
         }
       ],
-      "sessions": []
+      "reason": "keyword match"
     },
     "geometry-higher": {
-      "status": "C",
+      "title": "Sine & cosine rules; ½ab sin C; circle theorems; vector proof",
+      "tier": "H",
+      "confidence": "HIGH",
+      "source": "Set-0",
+      "worksheets": [
+        "Circle Theorems [Set-0]",
+        "Sine Rule, Cosine Rule, Area of Any Triangle [Set-0]"
+      ],
       "links": [
         {
           "label": "Circle Theorems",
@@ -732,10 +973,17 @@
           "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-6/MA/Circle%20Theorems%20MA.pdf"
         }
       ],
-      "sessions": []
+      "reason": "keyword match"
     },
     "single-event-probability": {
-      "status": "N",
+      "title": "Single-event probability; expected & relative frequency",
+      "tier": "F",
+      "confidence": "HIGH",
+      "source": "Higher+Set-0",
+      "worksheets": [
+        "Probability of Events [Higher]",
+        "Probability [Set-0]"
+      ],
       "links": [
         {
           "label": "Probability of Events",
@@ -750,10 +998,17 @@
           "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Probability/Higher/MS/Probability%20of%20Events%20(H)%20MS.pdf"
         }
       ],
-      "sessions": []
+      "reason": "keyword match"
     },
     "mutually-exclusive-independent": {
-      "status": "N",
+      "title": "Mutually exclusive & independent events",
+      "tier": "F",
+      "confidence": "HIGH",
+      "source": "Higher",
+      "worksheets": [
+        "Probability Equations [Higher]",
+        "Relative Frequency [Higher]"
+      ],
       "links": [
         {
           "label": "Probability Equations",
@@ -768,10 +1023,17 @@
           "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Probability/Higher/MS/Probability%20Equations%20(H)%20MS.pdf"
         }
       ],
-      "sessions": []
+      "reason": "keyword match"
     },
     "tree-diagrams": {
-      "status": "N",
+      "title": "Tree diagrams (including without replacement)",
+      "tier": "F",
+      "confidence": "HIGH",
+      "source": "Higher+Set-0",
+      "worksheets": [
+        "Tree Diagrams [Higher]",
+        "Probability Trees [Set-0]"
+      ],
       "links": [
         {
           "label": "Tree Diagrams",
@@ -786,10 +1048,17 @@
           "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Probability/Higher/MS/Tree%20Diagrams%20(H)%20MS.pdf"
         }
       ],
-      "sessions": []
+      "reason": "keyword match"
     },
     "venn-set-notation": {
-      "status": "N",
+      "title": "Venn diagrams & set notation",
+      "tier": "F",
+      "confidence": "HIGH",
+      "source": "Higher+Set-0",
+      "worksheets": [
+        "Venn Diagrams [Higher]",
+        "Venn Diagrams (given that questions) [Set-0]"
+      ],
       "links": [
         {
           "label": "Venn Diagrams",
@@ -804,10 +1073,18 @@
           "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Probability/Higher/MS/Venn%20Diagrams%20(H)%20MS.pdf"
         }
       ],
-      "sessions": []
+      "reason": "keyword match"
     },
     "averages-range": {
-      "status": "N",
+      "title": "Mean, median, mode & range (lists and tables)",
+      "tier": "F",
+      "confidence": "HIGH",
+      "source": "Higher+Set-0",
+      "worksheets": [
+        "Mean, Median, Mode, Range [Higher]",
+        "Frequency Averages [Higher]",
+        "Averages [Set-0]"
+      ],
       "links": [
         {
           "label": "Mean, Median, Mode, Range",
@@ -826,10 +1103,18 @@
           "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Statistics/Higher/MS/Mean,%20Median,%20Mode,%20Range%20(H)%20MS.pdf"
         }
       ],
-      "sessions": []
+      "reason": "keyword match"
     },
     "charts-graphs": {
-      "status": "N",
+      "title": "Bar charts, pie charts, pictograms, time series, scatter graphs",
+      "tier": "F",
+      "confidence": "HIGH",
+      "source": "Higher",
+      "worksheets": [
+        "Stem and Leaf Diagrams [Higher]",
+        "Frequency Polygons [Higher]",
+        "Scatter Graphs [Higher]"
+      ],
       "links": [
         {
           "label": "Stem and Leaf Diagrams",
@@ -848,10 +1133,17 @@
           "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Statistics/Higher/MS/Stem%20and%20Leaf%20Diagrams%20(H)%20MS.pdf"
         }
       ],
-      "sessions": []
+      "reason": "keyword match"
     },
     "stats-higher-1": {
-      "status": "N",
+      "title": "Conditional probability; histograms",
+      "tier": "H",
+      "confidence": "HIGH",
+      "source": "Higher",
+      "worksheets": [
+        "Conditional Probability [Higher]",
+        "Histograms [Higher]"
+      ],
       "links": [
         {
           "label": "Conditional Probability",
@@ -866,10 +1158,18 @@
           "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Probability/Higher/MS/Conditional%20Probability%20(H)%20MS.pdf"
         }
       ],
-      "sessions": []
+      "reason": "keyword match"
     },
     "stats-higher-2": {
-      "status": "N",
+      "title": "Cumulative frequency; box plots; comparing distributions",
+      "tier": "H",
+      "confidence": "HIGH",
+      "source": "Higher+Set-0",
+      "worksheets": [
+        "Box Plots [Higher]",
+        "Cumulative Frequency Graphs [Higher]",
+        "Cumulative Frequency and Box Plots [Set-0]"
+      ],
       "links": [
         {
           "label": "Box Plots",
@@ -888,7 +1188,9 @@
           "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Statistics/Higher/MS/Box%20Plots%20(H)%20MS.pdf"
         }
       ],
-      "sessions": []
+      "reason": "keyword match"
     }
-  }
+  },
+  "unmatched": [],
+  "low_confidence": []
 }

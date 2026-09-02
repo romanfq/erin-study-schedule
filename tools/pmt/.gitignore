@@ -1,0 +1,6 @@
+# Transient crawler artifacts — regenerable, not for the repo
+cache/
+downloads/
+.ratelimit
+*.log
+candidates.json
