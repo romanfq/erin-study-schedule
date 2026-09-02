@@ -336,10 +336,10 @@ export async function renderCalendar(root, { profile }) {
       <section class="card day-panel" id="day-panel"></section>
     </div>`);
 
-  // --- Outlook-style day panel (9am–8pm) ---
-  const START = 9, END = 20, PXH = 46;
-  const hm = (min) => `${String(Math.floor(min / 60)).padStart(2, '0')}:${String(min % 60).padStart(2, '0')}`;
-  const hourLabel = (h) => h < 12 ? `${h} am` : h === 12 ? '12 pm' : `${h - 12} pm`;
+  // --- Outlook-style day panel (full 24h, scrolls the current hour to the top) ---
+  const START = 0, END = 24, PXH = 44;
+  const hm = (min) => `${String(Math.floor(min / 60) % 24).padStart(2, '0')}:${String(min % 60).padStart(2, '0')}`;
+  const hourLabel = (h) => (h % 24 === 0) ? '12 am' : h < 12 ? `${h} am` : h === 12 ? '12 pm' : `${h - 12} pm`;
   const panel = root.querySelector('#day-panel');
 
   const drawDay = (iso) => {
@@ -356,22 +356,31 @@ export async function renderCalendar(root, { profile }) {
       const start = hh * 60 + (mm || 0);
       const dur = s.duration || (s.end ? (Number(s.end.split(':')[0]) * 60 + Number(s.end.split(':')[1]) - start) : 60);
       const end = start + Math.max(dur, 30);
-      const top = Math.max(0, (start - START * 60) / 60 * PXH);
-      const bottom = Math.min((END - START) * PXH, (end - START * 60) / 60 * PXH);
-      const height = Math.max(bottom - top, 22);
+      const top = start / 60 * PXH;
+      const height = Math.max((Math.min(END * 60, end) - start) / 60 * PXH, 22);
       return `<a class="day-event ${s.done ? 'done' : ''}" href="${esc(s.subjectId)}/${esc(s.topicId)}" data-link
+        title="${esc(s.topicTitle)}${s.type ? ' · ' + esc(s.type) : ''}"
         style="top:${top}px;height:${height}px;--evt:${esc(s.colour || '#2563eb')}">
         <span class="de-time">${hm(start)}–${hm(end)}</span>
-        <span class="de-title"><span class="cal-subject">${esc(s.subjectName)}</span>${esc(s.topicTitle)}</span>
+        <span class="de-title"><span class="cal-subject">${esc(s.subjectName)}</span></span>
       </a>`;
     }).join('');
+
+    const nowLine = iso === today
+      ? `<div class="now-line" style="top:${(new Date().getHours() * 60 + new Date().getMinutes()) / 60 * PXH}px"></div>`
+      : '';
 
     panel.innerHTML = `
       <div class="day-head"><h2>${esc(head)}</h2>
         <span class="muted small">${items.length} session${items.length === 1 ? '' : 's'}</span></div>
-      <div class="day-grid" style="height:${(END - START) * PXH}px">
-        ${lines}<div class="day-track">${events}</div>
+      <div class="day-scroll">
+        <div class="day-grid" style="height:${(END - START) * PXH}px">
+          ${lines}${nowLine}<div class="day-track">${events}</div>
+        </div>
+        <div class="day-tail"></div>
       </div>`;
+    const scroll = panel.querySelector('.day-scroll');
+    if (scroll) scroll.scrollTop = new Date().getHours() * PXH;   // current hour at the top
   };
 
   root.querySelectorAll('.mcell[data-date]').forEach((c) => c.onclick = () => {
