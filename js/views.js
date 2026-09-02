@@ -219,7 +219,7 @@ export async function renderTopic(root, subjectId, topicId, profile) {
         </button>
       </div>
 
-      <section class="card"><h2>Method</h2><p>${esc(t.method || '')}</p></section>
+      ${t.method ? `<section class="card"><h2>Method</h2><p>${esc(t.method)}</p></section>` : ''}
       ${formulae}
       ${tips}
       ${sections}

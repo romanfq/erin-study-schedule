@@ -1,362 +1,316 @@
 {
   "subject": "Biology",
-  "board": "AQA GCSE Biology · 7 core topics",
+  "board": "Biology - AQA",
   "strands": [
     {
-      "id": "paper1",
-      "name": "Paper 1 topics",
+      "id": "cell-biology",
+      "name": "Cell Biology",
       "subtopics": [
         {
-          "id": "cell-biology",
-          "title": "1. Cell Biology",
+          "id": "cell-structure",
+          "title": "Cell structure",
           "tier": "F",
           "formulae": [],
-          "tips": [],
-          "method": "Cells are the foundation of Biology. This topic links structure to function and explains how substances move, cells divide and microorganisms are studied.",
-          "sections": [
-            { "heading": "Key definitions", "list": [
-              "Eukaryotic cell — a cell containing genetic material enclosed in a nucleus.",
-              "Prokaryotic cell — a smaller cell with no nucleus; DNA is free in the cytoplasm.",
-              "Differentiation — the process by which a cell changes to become specialised.",
-              "Diffusion — net movement of particles from high to low concentration.",
-              "Osmosis — net movement of water through a partially permeable membrane from a dilute to a more concentrated solution.",
-              "Active transport — movement of substances against a concentration gradient using energy from respiration."
-            ] },
-            { "heading": "What you must know", "list": [
-              "Know organelles in animal, plant and bacterial cells and link each to function.",
-              "Compare light and electron microscopes; calculate magnification using image size ÷ real size.",
-              "Explain specialised cells such as sperm, nerve, muscle, root hair and xylem cells.",
-              "Describe the cell cycle, mitosis and why mitosis is important for growth and repair.",
-              "Understand stem cells, their potential uses and ethical considerations.",
-              "Explain factors affecting diffusion and compare diffusion, osmosis and active transport."
-            ] },
-            { "heading": "Process to explain — Mitosis", "text": "DNA replicates → chromosomes are separated → nucleus divides → cytoplasm and cell membrane divide → two genetically identical daughter cells are produced." },
-            { "heading": "Required practical", "text": "Microscopy: prepare a slide, use stains where appropriate, focus from low to high power, calculate magnification. Osmosis: change solution concentration, measure mass/length before and after, calculate percentage change, control time/temperature/specimen size." },
-            { "heading": "Common mistakes", "list": [
-              "Confusing cell membrane with cell wall.",
-              "Saying osmosis is movement of 'particles' instead of water.",
-              "Forgetting that active transport requires energy.",
-              "Using magnification units inconsistently."
-            ] },
-            { "heading": "Exam-style question", "text": "Explain how a root hair cell is adapted for the uptake of water and mineral ions." },
-            { "heading": "Answer route", "text": "Long extension gives large surface area; thin surface shortens diffusion distance; water enters by osmosis; mineral ions can be absorbed by active transport against their concentration gradient; many mitochondria provide energy for active transport." }
-          ]
+          "method": "",
+          "tips": []
         },
         {
-          "id": "organisation",
-          "title": "2. Organisation",
+          "id": "cell-division",
+          "title": "Cell Division",
           "tier": "F",
           "formulae": [],
-          "tips": [],
-          "method": "Multicellular organisms contain specialised cells organised into tissues, organs and organ systems. This topic focuses heavily on digestion, circulation and plant transport.",
-          "sections": [
-            { "heading": "Key definitions", "list": [
-              "Tissue — a group of similar cells working together to perform a function.",
-              "Organ — a group of different tissues working together.",
-              "Enzyme — a biological catalyst that speeds up reactions without being used up.",
-              "Denaturation — a permanent change in an enzyme's active site shape.",
-              "Transpiration — loss of water vapour from leaves, mainly through stomata.",
-              "Translocation — movement of dissolved sugars through phloem."
-            ] },
-            { "heading": "What you must know", "list": [
-              "Explain enzyme action using active site and specificity.",
-              "Know roles of amylase, protease and lipase and where they act.",
-              "Know the heart chambers, major blood vessels and double circulatory system.",
-              "Compare arteries, veins and capillaries.",
-              "Know blood components and their functions.",
-              "Understand coronary heart disease and treatments.",
-              "Know plant tissues: epidermal, palisade, spongy mesophyll, xylem, phloem and meristem.",
-              "Explain factors affecting transpiration."
-            ] },
-            { "heading": "Process to explain — Enzyme action", "text": "Substrate with complementary shape binds to active site → enzyme-substrate complex forms → reaction occurs → products leave → enzyme can be reused. High temperature/extreme pH can alter the active site." },
-            { "heading": "Required practical", "text": "Food tests: iodine for starch, Benedict's + heat for reducing sugars, Biuret for protein, emulsion test for lipids. Enzymes: investigate the effect of pH on amylase using iodine and controlled temperature." },
-            { "heading": "Common mistakes", "list": [
-              "Saying enzymes are 'killed' rather than denatured.",
-              "Mixing up arteries and veins by oxygen content rather than direction of blood flow.",
-              "Forgetting capillaries have thin walls for exchange.",
-              "Confusing xylem with phloem."
-            ] },
-            { "heading": "Exam-style question", "text": "Explain how the structure of a capillary is adapted for exchange with body tissues." },
-            { "heading": "Answer route", "text": "Wall is one cell thick → short diffusion distance; narrow lumen keeps blood cells close to the wall; extensive capillary networks give large surface area; slow blood flow allows time for exchange; concentration gradients allow diffusion." }
-          ]
+          "method": "",
+          "tips": []
         },
         {
-          "id": "infection-response",
-          "title": "3. Infection and Response",
+          "id": "transport-in-cells",
+          "title": "Transport in Cells",
           "tier": "F",
           "formulae": [],
-          "tips": [],
-          "method": "This topic explains how pathogens cause disease, how the body defends itself and how medicines and vaccination reduce disease.",
-          "sections": [
-            { "heading": "Key definitions", "list": [
-              "Pathogen — a microorganism that causes infectious disease.",
-              "Communicable disease — a disease that can spread between organisms.",
-              "Antigen — a molecule on a pathogen that triggers an immune response.",
-              "Antibody — a protein produced by lymphocytes that binds specifically to an antigen.",
-              "Vaccination — introducing harmless pathogen material/antigens to stimulate immunity.",
-              "Antibiotic — a medicine that kills bacteria or stops their growth."
-            ] },
-            { "heading": "What you must know", "list": [
-              "Compare viral, bacterial, fungal and protist diseases.",
-              "Know examples such as measles, HIV, TMV, salmonella, gonorrhoea, malaria and rose black spot.",
-              "Explain non-specific defences: skin, mucus/cilia, stomach acid.",
-              "Explain phagocytosis, antibody production and antitoxins.",
-              "Explain vaccination and herd effects at GCSE level.",
-              "Understand antibiotics, resistance and why antibiotics do not treat viruses.",
-              "Know stages of drug development: discovery, preclinical testing, clinical trials, dose and efficacy."
-            ] },
-            { "heading": "Process to explain — Vaccination", "text": "Pathogen antigens enter the body safely → lymphocytes produce specific antibodies → memory cells remain → on later infection, antibodies are produced rapidly → pathogen is destroyed before serious illness develops." },
-            { "heading": "Required practical", "text": "Culturing microorganisms: use sterile technique, sterilised agar and equipment, secure the lid appropriately, incubate school cultures at a safe temperature, measure zones of inhibition and compare antimicrobial effectiveness." },
-            { "heading": "Common mistakes", "list": [
-              "Saying antibiotics kill viruses.",
-              "Claiming vaccines guarantee nobody becomes infected.",
-              "Confusing antibodies with antigens.",
-              "Forgetting placebo/double-blind ideas in clinical trials."
-            ] },
-            { "heading": "Exam-style question", "text": "Explain why overuse of antibiotics can increase the number of antibiotic-resistant bacteria." },
-            { "heading": "Answer route", "text": "Random mutations create resistant variants; antibiotic kills susceptible bacteria; resistant bacteria survive; they reproduce and pass resistance genes on; resistant strain becomes more common — natural selection." }
-          ]
-        },
-        {
-          "id": "bioenergetics",
-          "title": "4. Bioenergetics",
-          "tier": "F",
-          "formulae": [],
-          "tips": [],
-          "method": "Bioenergetics covers how organisms transfer energy through photosynthesis and respiration.",
-          "sections": [
-            { "heading": "Key definitions", "list": [
-              "Photosynthesis — an endothermic reaction in which light energy is used to convert carbon dioxide and water into glucose and oxygen.",
-              "Limiting factor — a factor in shortest supply that restricts the rate of a process.",
-              "Aerobic respiration — respiration using oxygen to release energy from glucose.",
-              "Anaerobic respiration — respiration without oxygen; releases less energy.",
-              "Oxygen debt — extra oxygen required after exercise to react with accumulated lactic acid."
-            ] },
-            { "heading": "What you must know", "list": [
-              "Know word and symbol equations for photosynthesis and aerobic respiration.",
-              "Explain effects of light intensity, CO₂ concentration and temperature on photosynthesis.",
-              "Know uses of glucose: respiration, cellulose, amino acids, starch and lipids.",
-              "Compare aerobic and anaerobic respiration in animals, plants and yeast.",
-              "Explain body responses to exercise: heart rate, breathing rate and breath volume increase.",
-              "Explain metabolism as the sum of chemical reactions in cells."
-            ] },
-            { "heading": "Process to explain — Photosynthesis rate", "text": "Increasing a limiting factor increases the rate until another factor becomes limiting. Temperature rises increase enzyme-controlled reactions up to an optimum; above this, enzymes denature and the rate falls." },
-            { "heading": "Required practical", "text": "Photosynthesis: use pondweed or another suitable plant, vary light intensity/distance, measure oxygen production over a fixed time, control temperature/CO₂/specimen, repeat and calculate a mean." },
-            { "heading": "Common mistakes", "list": [
-              "Writing that plants only respire at night.",
-              "Forgetting photosynthesis is endothermic.",
-              "Saying anaerobic respiration releases more energy.",
-              "Assuming a graph plateaus because the tested factor has 'stopped working' rather than another factor becoming limiting."
-            ] },
-            { "heading": "Exam-style question", "text": "Explain why the rate of photosynthesis may stop increasing when light intensity continues to increase." },
-            { "heading": "Answer route", "text": "Light is no longer the limiting factor; another factor such as carbon dioxide concentration or temperature limits the rate; photosynthetic enzymes/substrates cannot support a faster rate." }
-          ]
+          "method": "",
+          "tips": []
         }
       ]
     },
     {
-      "id": "paper2",
-      "name": "Paper 2 topics",
+      "id": "organisation",
+      "name": "Organisation",
       "subtopics": [
         {
-          "id": "homeostasis-response",
-          "title": "5. Homeostasis and Response",
+          "id": "principles-of-organisation",
+          "title": "Principles of Organisation",
           "tier": "F",
           "formulae": [],
-          "tips": [],
-          "method": "Organisms detect changes and coordinate responses. This topic links the nervous system, hormones and control of internal conditions.",
-          "sections": [
-            { "heading": "Key definitions", "list": [
-              "Homeostasis — regulation of internal conditions to maintain optimum conditions for cell function.",
-              "Receptor — a cell or organ that detects a stimulus.",
-              "Effector — a muscle or gland that produces a response.",
-              "Reflex — a rapid automatic response to a stimulus.",
-              "Hormone — a chemical messenger carried in the blood to a target organ.",
-              "Negative feedback — a control mechanism that reverses a change and returns a condition towards its normal level."
-            ] },
-            { "heading": "What you must know", "list": [
-              "Know the pathway: stimulus → receptor → coordinator → effector → response.",
-              "Explain reflex arcs and synapses.",
-              "Know brain regions at GCSE level and challenges of investigating brain function.",
-              "Explain eye accommodation and common vision defects where required.",
-              "Compare nervous and hormonal communication.",
-              "Explain blood glucose control by insulin and glucagon.",
-              "Know diabetes types and treatments.",
-              "Explain menstrual cycle hormones and fertility treatments/contraception.",
-              "Explain thermoregulation and water balance where required."
-            ] },
-            { "heading": "Process to explain — Blood glucose", "text": "High glucose → pancreas releases insulin → cells take up glucose and liver/muscle convert glucose to glycogen → level falls. Low glucose → glucagon → glycogen converted to glucose → level rises." },
-            { "heading": "Required practical", "text": "Reaction time: measure response to a stimulus, repeat and calculate a mean, change one factor such as distraction/caffeine only if safe/appropriate, control participant/method/environment." },
-            { "heading": "Common mistakes", "list": [
-              "Mixing up receptor and effector.",
-              "Saying hormones travel through nerves.",
-              "Confusing insulin with glucagon.",
-              "Describing negative feedback as simply 'a negative response'."
-            ] },
-            { "heading": "Exam-style question", "text": "Compare nervous communication with hormonal communication." },
-            { "heading": "Answer route", "text": "Nervous: electrical impulses along neurones, very fast, short-lived, precise target. Hormonal: chemicals carried in blood, slower, longer-lasting, can affect multiple target tissues with receptors." }
-          ]
+          "method": "",
+          "tips": []
         },
         {
-          "id": "inheritance-variation-evolution",
-          "title": "6. Inheritance, Variation and Evolution",
+          "id": "animal-tissues-organs-and-systems",
+          "title": "Animal Tissues, Organs and Systems",
           "tier": "F",
           "formulae": [],
-          "tips": [],
-          "method": "This topic explains how genetic information is inherited, why organisms vary and how populations change over time.",
-          "sections": [
-            { "heading": "Key definitions", "list": [
-              "Gene — a section of DNA that codes for a protein/characteristic.",
-              "Allele — a different version of a gene.",
-              "Genome — the entire genetic material of an organism.",
-              "Genotype — the alleles an organism possesses.",
-              "Phenotype — observable characteristics produced by genotype and environment.",
-              "Natural selection — process in which better-adapted organisms survive and reproduce more successfully."
-            ] },
-            { "heading": "What you must know", "list": [
-              "Know DNA, chromosomes, genes and genome relationships.",
-              "Use genetic crosses and probability for inherited characteristics.",
-              "Explain dominant/recessive alleles and homozygous/heterozygous genotypes.",
-              "Distinguish inherited and environmental variation.",
-              "Explain evolution by natural selection.",
-              "Understand selective breeding and genetic engineering.",
-              "Know evidence for evolution including fossils and resistant bacteria.",
-              "Understand classification and evolutionary relationships."
-            ] },
-            { "heading": "Process to explain — Natural selection", "text": "Mutation creates variation → environmental selection pressure → individuals with advantageous phenotype survive more → reproduce → pass advantageous alleles to offspring → allele frequency increases over generations." },
-            { "heading": "Common mistakes", "list": [
-              "Saying organisms 'choose' to adapt.",
-              "Confusing genotype and phenotype.",
-              "Using dominant to mean 'more common' or 'stronger'.",
-              "Forgetting mutations are random."
-            ] },
-            { "heading": "Exam-style question", "text": "Explain how a population of bacteria can become resistant to an antibiotic." },
-            { "heading": "Answer route", "text": "Random mutation gives resistance; antibiotic is the selection pressure; non-resistant bacteria die; resistant bacteria survive and reproduce; resistance allele is passed on; proportion resistant increases over generations." }
-          ]
+          "method": "",
+          "tips": []
         },
         {
-          "id": "ecology",
-          "title": "7. Ecology",
+          "id": "plant-tissues-organs-and-systems",
+          "title": "Plant Tissues, Organs and Systems",
           "tier": "F",
           "formulae": [],
-          "tips": [],
-          "method": "Ecology examines interactions between organisms and their environment, material cycles and the impact of humans on biodiversity.",
-          "sections": [
-            { "heading": "Key definitions", "list": [
-              "Community — all populations of different species living and interacting in an ecosystem.",
-              "Ecosystem — interaction of a community of organisms with the non-living parts of their environment.",
-              "Biodiversity — variety of living organisms in an ecosystem or on Earth.",
-              "Producer — an organism that makes biomass, usually by photosynthesis.",
-              "Decomposer — a microorganism that breaks down dead material and waste.",
-              "Trophic level — a feeding level in a food chain or food web."
-            ] },
-            { "heading": "What you must know", "list": [
-              "Know biotic and abiotic factors affecting communities.",
-              "Explain adaptations and competition.",
-              "Use quadrats and transects to estimate distribution/abundance.",
-              "Interpret food chains, food webs and trophic levels.",
-              "Explain carbon and water cycles.",
-              "Explain decomposition and factors affecting it.",
-              "Understand biodiversity, land use, deforestation, global warming and conservation.",
-              "Understand biomass transfer and food security where required."
-            ] },
-            { "heading": "Process to explain — Carbon cycle", "text": "CO₂ removed by photosynthesis → carbon passes through food chains → respiration returns CO₂ → death/waste are decomposed → decomposers respire → combustion of fuels/biomass releases CO₂." },
-            { "heading": "Required practical", "text": "Ecology fieldwork: random quadrat sampling for abundance; transects for changes across a gradient; identify variables, use enough samples, calculate means and describe limitations." },
-            { "heading": "Common mistakes", "list": [
-              "Calling a habitat an ecosystem without including interactions.",
-              "Assuming correlation proves causation in field data.",
-              "Forgetting random sampling reduces bias.",
-              "Confusing biomass with number of organisms."
-            ] },
-            { "heading": "Exam-style question", "text": "Describe how you could estimate the population size of daisies in a large field." },
-            { "heading": "Answer route", "text": "Use a quadrat of known area; place quadrats randomly using coordinates; count daisies in many quadrats; calculate the mean number per quadrat; scale up using field area ÷ quadrat area; use many repeats for reliability and avoid biased placement." }
-          ]
+          "method": "",
+          "tips": []
         }
       ]
     },
     {
-      "id": "skills",
-      "name": "Skills, practicals & revision",
+      "id": "infection-and-response",
+      "name": "Infection and Response",
       "subtopics": [
         {
-          "id": "revise-biology",
-          "title": "How to revise Biology for marks",
+          "id": "communicable-diseases",
+          "title": "Communicable Diseases",
           "tier": "F",
           "formulae": [],
-          "tips": [],
-          "method": "Learn the science, understand the process, then practise applying it. Read a section, cover it and recall aloud, then attempt an exam question before checking the answer route.",
-          "sections": [
-            { "heading": "Five habits that earn marks", "list": [
-              "Learn precise definitions — mark schemes reward exact scientific vocabulary; do not replace key terms with vague everyday language.",
-              "Explain in chains — for 'explain' questions, build cause → mechanism → effect. One isolated fact rarely earns all the marks.",
-              "Know the practical logic — not just the method: the variables, why each control matters, how results are processed and how validity can be improved.",
-              "Use data — quote values, compare numbers and describe trends accurately. 'It goes up' is weaker than a quantified comparison.",
-              "Apply familiar science to unfamiliar contexts — the organism or scenario may look new, but diffusion, enzymes, inheritance, homeostasis and ecosystems are the same."
-            ] },
-            { "heading": "Last-minute rule", "text": "Do not spend your final revision hours rereading. Recall from memory, answer questions, mark them, then target the gaps you actually find." }
-          ]
+          "method": "",
+          "tips": []
         },
         {
-          "id": "biology-calculations",
-          "title": "Biology calculations you should know",
-          "tier": "F",
-          "formulae": [
-            "Magnification = image size ÷ real size",
-            "Percentage change = ((final − initial) ÷ initial) × 100",
-            "Rate = change ÷ time",
-            "Mean = sum of values ÷ number of values",
-            "Surface area : volume — calculate surface area and volume separately, then simplify the ratio",
-            "Population estimate = mean organisms per quadrat × (total area ÷ quadrat area)"
-          ],
-          "tips": [],
-          "method": "These are the calculations that recur across GCSE Biology. Learn each and practise on data from questions.",
-          "sections": [
-            { "heading": "Unit warning", "text": "Convert units before calculating. Common microscopy conversions: 1 mm = 1000 micrometres; 1 micrometre = 1000 nanometres." }
-          ]
-        },
-        {
-          "id": "required-practicals",
-          "title": "Required practicals — master summary",
+          "id": "monoclonal-antibodies",
+          "title": "Monoclonal Antibodies",
           "tier": "F",
           "formulae": [],
-          "tips": [],
-          "method": "The exact list depends on specification, but these are the high-value practical skills you should be able to describe, analyse and evaluate.",
-          "sections": [
-            { "heading": "What to remember", "list": [
-              "Microscopy — prepare specimen/slide; focus low to high power; biological drawing; magnification = image size ÷ real size.",
-              "Osmosis — measure initial and final mass/length across concentrations; calculate percentage change; identify the isotonic point from a graph.",
-              "Food tests — know reagents, positive results, controls and safe heating for Benedict's test.",
-              "Enzymes — vary pH or temperature; control other variables; measure reaction time/rate; use repeats.",
-              "Photosynthesis — vary light intensity; measure oxygen production; control temperature, CO₂ and plant material.",
-              "Microbiology — aseptic technique; agar plates; antimicrobial discs; zones of inhibition; safe incubation.",
-              "Reaction time — standardised stimulus/response method; repeats and mean; control confounding variables.",
-              "Ecology — random quadrats, transects, abundance/distribution, representative sampling."
-            ] }
-          ]
+          "method": "",
+          "tips": []
         },
         {
-          "id": "final-checklist",
-          "title": "Final GCSE Biology checklist",
+          "id": "plant-disease",
+          "title": "Plant Disease",
           "tier": "F",
           "formulae": [],
-          "tips": [],
-          "method": "Use this to confirm you can do each of these unaided before the exam.",
-          "sections": [
-            { "heading": "I can…", "list": [
-              "Label and compare animal, plant and bacterial cells.",
-              "Explain diffusion, osmosis and active transport precisely.",
-              "Explain enzyme action and factors affecting enzymes.",
-              "Explain circulation and exchange surfaces.",
-              "Explain immune responses, vaccination and antibiotic resistance.",
-              "Write and interpret photosynthesis and respiration equations.",
-              "Explain homeostasis using negative feedback.",
-              "Complete genetic crosses and explain natural selection.",
-              "Explain food webs, cycles, biodiversity and sampling.",
-              "Describe required practicals with variables, controls, repeats and processing.",
-              "Interpret graphs and quote data accurately.",
-              "Answer 'explain' questions in linked cause → effect chains."
-            ] }
-          ]
+          "method": "",
+          "tips": []
+        }
+      ]
+    },
+    {
+      "id": "bioenergetics",
+      "name": "Bioenergetics",
+      "subtopics": [
+        {
+          "id": "photosynthesis",
+          "title": "Photosynthesis",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "respiration",
+          "title": "Respiration",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        }
+      ]
+    },
+    {
+      "id": "homeostasis",
+      "name": "Homeostasis",
+      "subtopics": [
+        {
+          "id": "homeostasis",
+          "title": "Homeostasis",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "nervous-system",
+          "title": "Nervous System",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "hormonal-control-in-humans",
+          "title": "Hormonal Control in Humans",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "plant-hormones",
+          "title": "Plant Hormones",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        }
+      ]
+    },
+    {
+      "id": "inheritance-variation-and-evolution",
+      "name": "Inheritance, Variation and Evolution",
+      "subtopics": [
+        {
+          "id": "reproduction",
+          "title": "Reproduction",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "variation-and-evolution",
+          "title": "Variation and Evolution",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "classification",
+          "title": "Classification",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        }
+      ]
+    },
+    {
+      "id": "ecology",
+      "name": "Ecology",
+      "subtopics": [
+        {
+          "id": "adaptations-interdependence-and-competition",
+          "title": "Adaptations, Interdependence and Competition",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "organisation-of-an-ecosystem",
+          "title": "Organisation of an Ecosystem",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "biodiversity-and-the-effect-of-human-interaction-on-ecosystems",
+          "title": "Biodiversity and the Effect of Human Interaction on Ecosystems",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "trophic-levels-in-an-ecosystem",
+          "title": "Trophic Levels in an Ecosystem",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "food-production",
+          "title": "Food Production",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        }
+      ]
+    },
+    {
+      "id": "practical-skills",
+      "name": "Practical Skills",
+      "subtopics": [
+        {
+          "id": "practical-microscopy",
+          "title": "Microscopy (Cell Biology)",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "practical-microbiology",
+          "title": "Microbiology (Cell Biology)",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "practical-osmosis",
+          "title": "Osmosis (Organisation)",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "practical-food-tests",
+          "title": "Food Tests (Organisation)",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "practical-enzymes",
+          "title": "Enzymes (Bioenergetics)",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "practical-photosynthesis",
+          "title": "Photosynthesis (Homeostasis and Response)",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "practical-reaction-time",
+          "title": "Reaction Time (Homeostasis and Response)",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "practical-plant-responses",
+          "title": "Plant Responses (Ecology)",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "practical-field-investigation",
+          "title": "Field Investigation (Ecology)",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "practical-decay",
+          "title": "Decay (Ecology)",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
         }
       ]
     }
