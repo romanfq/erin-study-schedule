@@ -97,7 +97,8 @@ export function renderLanding(root, { subjects, profile }) {
   }).join('');
   root.innerHTML = `${header('Study Schedule', profile?.student ? `${profile.student}'s revision` : '')}
     <p class="lead">Pick a subject.</p>
-    <div class="subject-grid">${cards}</div>`;
+    <div class="subject-grid">${cards}</div>
+    <p class="merge-link"><a href="merge.html">Merge two people's downloaded status files →</a></p>`;
 }
 
 export async function renderSubject(root, subjectId, profile) {
@@ -295,7 +296,7 @@ export async function renderCalendar(root, { profile }) {
     const list = items.length ? items.map((s) => `
       <a class="cal-item" href="${esc(s.subjectId)}/${esc(s.topicId)}" data-link style="--accent:${esc(s.colour || '#2563eb')}">
         <span class="cal-time">${esc(s.time || '')}</span>
-        <span class="cal-topic">${esc(s.topicTitle)} <em>${esc(s.type || '')}</em></span>
+        <span class="cal-topic"><span class="cal-subject">${esc(s.subjectName)}</span>${esc(s.topicTitle)} <em>${esc(s.type || '')}</em></span>
       </a>`).join('') : '<p class="muted small">Nothing scheduled.</p>';
     const lbl = off === 0 ? 'Today' : off === 1 ? 'Tomorrow' : new Date(iso + 'T00:00').toLocaleDateString('en-GB', { weekday: 'long' });
     return `<div class="day3 ${off === 0 ? 'is-today' : ''}"><h3>${lbl}<span>${esc(fmtDay(iso))}</span></h3>${list}</div>`;
