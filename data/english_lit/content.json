@@ -1,0 +1,190 @@
+{
+  "subject": "English Literature",
+  "board": "AQA",
+  "strands": [
+    {
+      "id": "how-to-answer-the-shakespeare-essay",
+      "name": "How to Answer the Shakespeare Essay",
+      "subtopics": [
+        {
+          "id": "romeo-and-juliet-themes",
+          "title": "Romeo and Juliet - Themes",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "romeo-and-juliet-character-analysis",
+          "title": "Romeo and Juliet - Character analysis",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "romeo-and-juliet-quotes",
+          "title": "Romeo and Juliet - Quotes",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "romeo-and-juliet-context",
+          "title": "Romeo and Juliet - Context",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "romeo-and-juliet-stagecraft-writer-s-methods",
+          "title": "Romeo and Juliet - Stagecraft/writer's methods",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        }
+      ]
+    },
+    {
+      "id": "how-to-answer-the-modern-text-essay-an-inspector-calls",
+      "name": "How to Answer the Modern Text Essay - An Inspector Calls",
+      "subtopics": [
+        {
+          "id": "aic-themes",
+          "title": "AIC - Themes",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "aic-character-analysis",
+          "title": "AIC - Character analysis",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "aic-quotes",
+          "title": "AIC - Quotes",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "aic-context",
+          "title": "AIC - Context",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "aic-stagecraft-writer-s-methods",
+          "title": "AIC - Stagecraft/writer's methods",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        }
+      ]
+    },
+    {
+      "id": "how-to-answer-the-poetry-essay-power-and-conflict",
+      "name": "How to Answer the Poetry Essay: Power and Conflict",
+      "subtopics": [
+        {
+          "id": "power-and-conflict-poem-analysis",
+          "title": "Power and Conflict - Poem Analysis",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "power-and-conflict-themes",
+          "title": "Power and Conflict -Themes",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "power-and-conflict-quotes",
+          "title": "Power and Conflict - Quotes",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "power-and-conflict-context",
+          "title": "Power and Conflict - Context",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "power-and-conflict-stagecraft-writer-s-methods",
+          "title": "Power and Conflict - Stagecraft/writer's methods",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        }
+      ]
+    },
+    {
+      "id": "how-to-answer-the-19th-century-text-essay",
+      "name": "How to Answer the 19th Century Text Essay",
+      "subtopics": [
+        {
+          "id": "dr-jekyll-and-mr-hyde-character-analysis",
+          "title": "Dr Jekyll and Mr Hyde - Character Analysis",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "dr-jekyll-and-mr-hyde-themes",
+          "title": "Dr Jekyll and Mr Hyde - Themes",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "dr-jekyll-and-mr-hyde-quotes",
+          "title": "Dr Jekyll and Mr Hyde - Quotes",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "dr-jekyll-and-mr-hyde-context",
+          "title": "Dr Jekyll and Mr Hyde - Context",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "dr-jekyll-and-mr-hyde-stagecraft-writer-s-methods",
+          "title": "Dr Jekyll and Mr Hyde - Stagecraft/writer's methods",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        }
+      ]
+    }
+  ]
+}

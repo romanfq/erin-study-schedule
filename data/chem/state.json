@@ -1,0 +1,205 @@
+{
+  "updatedAt": "2026-09-03T18:35:21Z",
+  "topics": {
+    "a-simple-atomic-model": {
+      "status": "C",
+      "links": [],
+      "sessions": []
+    },
+    "the-periodic-table": {
+      "status": "C",
+      "links": [],
+      "sessions": []
+    },
+    "properties-of-transition-metals": {
+      "status": "C",
+      "links": [],
+      "sessions": []
+    },
+    "ionic-covalent-and-metallic-bonding": {
+      "status": "C",
+      "links": [],
+      "sessions": []
+    },
+    "bonding-and-substance-properties": {
+      "status": "C",
+      "links": [],
+      "sessions": []
+    },
+    "structure-and-bonding-of-carbon": {
+      "status": "C",
+      "links": [],
+      "sessions": []
+    },
+    "bulk-and-surface-properties-of-matter": {
+      "status": "N",
+      "links": [],
+      "sessions": []
+    },
+    "measurement-mass-and-equations": {
+      "status": "W",
+      "links": [],
+      "sessions": []
+    },
+    "calculating-mass-of-substances": {
+      "status": "C",
+      "links": [],
+      "sessions": []
+    },
+    "yield-atom-and-atom-economy": {
+      "status": "C",
+      "links": [],
+      "sessions": []
+    },
+    "concentrations-of-solutions": {
+      "status": "C",
+      "links": [],
+      "sessions": []
+    },
+    "amount-of-substance-and-gas-volume": {
+      "status": "W",
+      "links": [],
+      "sessions": []
+    },
+    "reactivity-of-metals": {
+      "status": "W",
+      "links": [],
+      "sessions": []
+    },
+    "reactions-of-acids": {
+      "status": "W",
+      "links": [],
+      "sessions": []
+    },
+    "electrolysis": {
+      "status": "C",
+      "links": [],
+      "sessions": []
+    },
+    "exothermic-and-endothermic-reactions": {
+      "status": "C",
+      "links": [],
+      "sessions": []
+    },
+    "chemical-cells-and-fuel-cells": {
+      "status": "C",
+      "links": [],
+      "sessions": []
+    },
+    "rate-of-reaction": {
+      "status": "W",
+      "links": [],
+      "sessions": []
+    },
+    "reversibility-and-equilibrium": {
+      "status": "W",
+      "links": [],
+      "sessions": []
+    },
+    "carbon-compounds-as-fuel-stock": {
+      "status": "W",
+      "links": [],
+      "sessions": []
+    },
+    "reactions-of-alkenes-and-alcohols": {
+      "status": "W",
+      "links": [],
+      "sessions": []
+    },
+    "synthetic-and-natural-polymers": {
+      "status": "N",
+      "links": [],
+      "sessions": []
+    },
+    "purity-formulations-and-chromatography": {
+      "status": "N",
+      "links": [],
+      "sessions": []
+    },
+    "identification-of-common-gases": {
+      "status": "N",
+      "links": [],
+      "sessions": []
+    },
+    "methods-of-identifying-ions": {
+      "status": "N",
+      "links": [],
+      "sessions": []
+    },
+    "formation-of-earth-s-atmosphere": {
+      "status": "N",
+      "links": [],
+      "sessions": []
+    },
+    "carbon-dioxide-and-methane-as-greenhouse-gases": {
+      "status": "N",
+      "links": [],
+      "sessions": []
+    },
+    "causes-of-atmospheric-pollution": {
+      "status": "N",
+      "links": [],
+      "sessions": []
+    },
+    "global-reserves-and-potable-water": {
+      "status": "N",
+      "links": [],
+      "sessions": []
+    },
+    "life-cycle-analysis-and-recycling": {
+      "status": "N",
+      "links": [],
+      "sessions": []
+    },
+    "using-materials": {
+      "status": "N",
+      "links": [],
+      "sessions": []
+    },
+    "the-haber-process-and-npk-fertilisers": {
+      "status": "N",
+      "links": [],
+      "sessions": []
+    },
+    "practical-making-salts": {
+      "status": "C",
+      "links": [],
+      "sessions": []
+    },
+    "practical-neutralisation": {
+      "status": "C",
+      "links": [],
+      "sessions": []
+    },
+    "practical-electrolysis": {
+      "status": "C",
+      "links": [],
+      "sessions": []
+    },
+    "practical-temperature-changes": {
+      "status": "C",
+      "links": [],
+      "sessions": []
+    },
+    "practical-rate-of-reaction": {
+      "status": "C",
+      "links": [],
+      "sessions": []
+    },
+    "practical-chomatography": {
+      "status": "N",
+      "links": [],
+      "sessions": []
+    },
+    "practical-identifying-ions": {
+      "status": "N",
+      "links": [],
+      "sessions": []
+    },
+    "practical-water-purification": {
+      "status": "N",
+      "links": [],
+      "sessions": []
+    }
+  }
+}

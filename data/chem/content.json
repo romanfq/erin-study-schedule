@@ -1,0 +1,392 @@
+{
+  "subject": "Chemistry",
+  "board": "AQA",
+  "strands": [
+    {
+      "id": "atomic-structure-and-the-periodic-table",
+      "name": "Atomic Structure and the Periodic Table",
+      "subtopics": [
+        {
+          "id": "a-simple-atomic-model",
+          "title": "A Simple Atomic Model",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "the-periodic-table",
+          "title": "The Periodic Table",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "properties-of-transition-metals",
+          "title": "Properties of Transition Metals",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        }
+      ]
+    },
+    {
+      "id": "bonding-structure-and-the-properties-of-matter",
+      "name": "Bonding, Structure and the Properties of Matter",
+      "subtopics": [
+        {
+          "id": "ionic-covalent-and-metallic-bonding",
+          "title": "Ionic, Covalent and Metallic Bonding",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "bonding-and-substance-properties",
+          "title": "Bonding and Substance Properties",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "structure-and-bonding-of-carbon",
+          "title": "Structure and Bonding of Carbon",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "bulk-and-surface-properties-of-matter",
+          "title": "Bulk and Surface Properties of Matter",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        }
+      ]
+    },
+    {
+      "id": "quantitative-chemistry",
+      "name": "Quantitative Chemistry",
+      "subtopics": [
+        {
+          "id": "measurement-mass-and-equations",
+          "title": "Measurement, Mass and Equations",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "calculating-mass-of-substances",
+          "title": "Calculating Mass of Substances",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "yield-atom-and-atom-economy",
+          "title": "Yield Atom and Atom Economy",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "concentrations-of-solutions",
+          "title": "Concentrations of Solutions",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "amount-of-substance-and-gas-volume",
+          "title": "Amount of Substance and Gas Volume",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        }
+      ]
+    },
+    {
+      "id": "chemical-changes",
+      "name": "Chemical Changes",
+      "subtopics": [
+        {
+          "id": "reactivity-of-metals",
+          "title": "Reactivity of Metals",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "reactions-of-acids",
+          "title": "Reactions of Acids",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "electrolysis",
+          "title": "Electrolysis",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        }
+      ]
+    },
+    {
+      "id": "energy-changes",
+      "name": "Energy Changes",
+      "subtopics": [
+        {
+          "id": "exothermic-and-endothermic-reactions",
+          "title": "Exothermic and Endothermic Reactions",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "chemical-cells-and-fuel-cells",
+          "title": "Chemical Cells and Fuel Cells",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        }
+      ]
+    },
+    {
+      "id": "the-rate-and-extent-of-chemical-changes",
+      "name": "The Rate and Extent of Chemical Changes",
+      "subtopics": [
+        {
+          "id": "rate-of-reaction",
+          "title": "Rate of Reaction",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "reversibility-and-equilibrium",
+          "title": "Reversibility and Equilibrium",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        }
+      ]
+    },
+    {
+      "id": "organic-chemistry",
+      "name": "Organic Chemistry",
+      "subtopics": [
+        {
+          "id": "carbon-compounds-as-fuel-stock",
+          "title": "Carbon Compounds as Fuel Stock",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "reactions-of-alkenes-and-alcohols",
+          "title": "Reactions of Alkenes and Alcohols",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "synthetic-and-natural-polymers",
+          "title": "Synthetic and Natural Polymers",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        }
+      ]
+    },
+    {
+      "id": "chemical-analysis",
+      "name": "Chemical Analysis",
+      "subtopics": [
+        {
+          "id": "purity-formulations-and-chromatography",
+          "title": "Purity, Formulations and Chromatography",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "identification-of-common-gases",
+          "title": "Identification of Common Gases",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "methods-of-identifying-ions",
+          "title": "Methods of Identifying Ions",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        }
+      ]
+    },
+    {
+      "id": "chemistry-of-the-atmosphere",
+      "name": "Chemistry of the Atmosphere",
+      "subtopics": [
+        {
+          "id": "formation-of-earth-s-atmosphere",
+          "title": "Formation of Earth's Atmosphere",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "carbon-dioxide-and-methane-as-greenhouse-gases",
+          "title": "Carbon Dioxide and Methane as Greenhouse Gases",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "causes-of-atmospheric-pollution",
+          "title": "Causes of Atmospheric Pollution",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        }
+      ]
+    },
+    {
+      "id": "using-resources",
+      "name": "Using Resources",
+      "subtopics": [
+        {
+          "id": "global-reserves-and-potable-water",
+          "title": "Global Reserves and Potable Water",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "life-cycle-analysis-and-recycling",
+          "title": "Life Cycle Analysis and Recycling",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "using-materials",
+          "title": "Using Materials",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "the-haber-process-and-npk-fertilisers",
+          "title": "The Haber Process and NPK Fertilisers",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        }
+      ]
+    },
+    {
+      "id": "practical-skills",
+      "name": "Practical Skills",
+      "subtopics": [
+        {
+          "id": "practical-making-salts",
+          "title": "Making Salts (Chemical Changes)",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "practical-neutralisation",
+          "title": "Neutralisation (Chemical Changes)",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "practical-electrolysis",
+          "title": "Electrolysis (Chemical Changes)",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "practical-temperature-changes",
+          "title": "Temperature Changes (Energy Changes)",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "practical-rate-of-reaction",
+          "title": "Rate of Reaction (Rate and Extent of Chemical Changes)",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "practical-chomatography",
+          "title": "Chomatography (Chemical Analysis)",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "practical-identifying-ions",
+          "title": "Identifying Ions (Chemical Analysis)",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "practical-water-purification",
+          "title": "Water Purification (Using Resources)",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,310 @@
+{
+  "subject": "History",
+  "board": "Edexcel",
+  "strands": [
+    {
+      "id": "the-thematic-and-historic-environment-medicine-in-britain-c1250-present",
+      "name": "The Thematic and Historic Environment: Medicine in Britain c1250 - Present",
+      "subtopics": [
+        {
+          "id": "exam-skills-medicine-in-britain-c1250-present",
+          "title": "Exam Skills: Medicine in Britain c1250 - Present",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "themes-in-medicine-in-britain-c1250-present",
+          "title": "Themes in Medicine in Britain c1250 - Present",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "c1250-c1500-the-middle-ages",
+          "title": "c1250 - c1500 The Middle Ages",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "the-medicinal-renaissance-c1500-c1700",
+          "title": "The Medicinal Renaissance c1500 - c1700",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "medicine-in-britain-in-the-18th-and-19th-century",
+          "title": "Medicine in Britain in the 18th and 19th Century",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "medicine-in-modern-britain",
+          "title": "Medicine in Modern Britain",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "the-british-sector-of-the-western-front-context",
+          "title": "The British Sector of the Western Front: Context",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "the-british-sector-of-the-western-front-injuries",
+          "title": "The British Sector of the Western Front - Injuries",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "the-british-sector-of-the-western-front-treatment",
+          "title": "The British Sector of the Western Front - Treatment",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "improvements-in-medicine-and-surgery-on-the-western-front",
+          "title": "Improvements in Medicine and Surgery on the Western Front.",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        }
+      ]
+    },
+    {
+      "id": "british-depth-study-early-elizabethan-england-1558-88",
+      "name": "British Depth Study: Early Elizabethan England 1558-88",
+      "subtopics": [
+        {
+          "id": "exam-skills-early-elizabethan-england-1558-88",
+          "title": "Exam Skills: Early Elizabethan England 1558-88",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "elizabeth-i-s-succession-1558-1569",
+          "title": "Elizabeth I's Succession 1558-1569",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "how-did-elizabeth-solve-the-issue-of-religion",
+          "title": "How did Elizabeth Solve the Issue of Religion?",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "the-problem-of-mary-queen-of-scots-1568-1569",
+          "title": "The Problem of Mary, Queen of Scots 1568-1569",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "challenges-to-elizabeth-at-home-1569-1588",
+          "title": "Challenges to Elizabeth at Home 1569-1588",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "elizabethan-england-s-relationship-with-spain",
+          "title": "Elizabethan England's Relationship with Spain",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "war-with-spain-1585-1588",
+          "title": "War with Spain 1585-1588",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "elizabethan-society-1558-1588",
+          "title": "Elizabethan Society 1558-1588",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        }
+      ]
+    },
+    {
+      "id": "period-study-superpower-relations-and-the-cold-war-1941-91",
+      "name": "Period Study: Superpower Relations and the Cold War 1941 - 91",
+      "subtopics": [
+        {
+          "id": "exam-skills-superpower-relations-and-the-cold-war-1941-91",
+          "title": "Exam Skills: Superpower Relations and the Cold War 1941-91",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "the-origins-of-the-cold-war-1941-1949",
+          "title": "The Origins of the Cold War 1941-1949",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "the-development-of-the-cold-war-1947-1955",
+          "title": "The Development of the Cold War 1947-1955",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "the-cold-war-intensifies-1952-1958",
+          "title": "The Cold War Intensifies 1952-1958",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "berlin-1958-1963",
+          "title": "Berlin 1958-1963",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "cuba-1959-1963",
+          "title": "Cuba 1959-1963",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "czechoslovakia-1968-1969",
+          "title": "Czechoslovakia 1968-1969",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "detente-1969-1979",
+          "title": "Detente 1969-1979",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "the-end-of-detente-and-the-second-cold-war",
+          "title": "The End of Detente and the Second Cold War",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "the-end-of-cold-war-1985-1991",
+          "title": "The End of Cold War 1985-1991",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        }
+      ]
+    },
+    {
+      "id": "modern-depth-topic-weimer-and-nazi-germany-1918-39",
+      "name": "Modern Depth Topic: Weimer and Nazi Germany 1918 - 39",
+      "subtopics": [
+        {
+          "id": "exam-questions-weimar-and-nazi-germany-1918-39",
+          "title": "Exam Questions: Weimar and Nazi Germany 1918-39",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "the-weimar-republic-1918-29",
+          "title": "The Weimar Republic 1918-29",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "the-golden-years-of-weimar-germany",
+          "title": "The Golden Years of Weimar Germany",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "changes-to-weimar-society",
+          "title": "Changes to Weimar Society",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "hitler-s-rise-to-power-1919-33",
+          "title": "Hitler's Rise to Power 1919-33",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "nazi-dictatorship-1933-39",
+          "title": "Nazi Dictatorship 1933-39",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "life-in-nazi-germany-1933-39",
+          "title": "Life in Nazi Germany 1933-39",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        }
+      ]
+    }
+  ]
+}

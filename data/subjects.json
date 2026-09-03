@@ -19,6 +19,66 @@
       "board": "AQA GCSE Biology · 7 core topics",
       "content": "data/biology/content.json",
       "state": "data/biology/state.json"
+    },
+    {
+      "id": "chem",
+      "name": "Chemistry",
+      "short": "Chem",
+      "status": "active",
+      "colour": "#7c3aed",
+      "board": "AQA",
+      "content": "data/chem/content.json",
+      "state": "data/chem/state.json"
+    },
+    {
+      "id": "phys",
+      "name": "Physics",
+      "short": "Phys",
+      "status": "active",
+      "colour": "#0891b2",
+      "board": "AQA",
+      "content": "data/phys/content.json",
+      "state": "data/phys/state.json"
+    },
+    {
+      "id": "geo",
+      "name": "Geography",
+      "short": "Geo",
+      "status": "active",
+      "colour": "#ca8a04",
+      "board": "Edexcel B",
+      "content": "data/geo/content.json",
+      "state": "data/geo/state.json"
+    },
+    {
+      "id": "history",
+      "name": "History",
+      "short": "Hist",
+      "status": "active",
+      "colour": "#b91c1c",
+      "board": "Edexcel",
+      "content": "data/history/content.json",
+      "state": "data/history/state.json"
+    },
+    {
+      "id": "english_lit",
+      "name": "English Literature",
+      "short": "Eng Lit",
+      "status": "active",
+      "colour": "#ea580c",
+      "board": "AQA",
+      "content": "data/english_lit/content.json",
+      "state": "data/english_lit/state.json"
+    },
+    {
+      "id": "english_lang",
+      "name": "English Language",
+      "short": "Eng Lang",
+      "status": "active",
+      "colour": "#db2777",
+      "board": "AQA",
+      "content": "data/english_lang/content.json",
+      "state": "data/english_lang/state.json"
     }
   ]
 }

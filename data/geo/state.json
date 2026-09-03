@@ -1,0 +1,135 @@
+{
+  "updatedAt": "2026-09-03T18:35:21Z",
+  "topics": {
+    "global-climate": {
+      "status": "C",
+      "links": [],
+      "sessions": []
+    },
+    "extreme-weather": {
+      "status": "C",
+      "links": [],
+      "sessions": []
+    },
+    "tectonic-hazards": {
+      "status": "C",
+      "links": [],
+      "sessions": []
+    },
+    "global-inequality": {
+      "status": "C",
+      "links": [],
+      "sessions": []
+    },
+    "development-of-an-emerging-country": {
+      "status": "C",
+      "links": [],
+      "sessions": []
+    },
+    "rapid-urban-change": {
+      "status": "N",
+      "links": [],
+      "sessions": []
+    },
+    "megacity": {
+      "status": "N",
+      "links": [],
+      "sessions": []
+    },
+    "variations-in-physical-landscape": {
+      "status": "N",
+      "links": [],
+      "sessions": []
+    },
+    "coastal-change-and-conflict": {
+      "status": "C",
+      "links": [],
+      "sessions": []
+    },
+    "river-processes-and-pressure": {
+      "status": "W",
+      "links": [],
+      "sessions": []
+    },
+    "changing-people-and-places": {
+      "status": "N",
+      "links": [],
+      "sessions": []
+    },
+    "dynamic-uk-cities": {
+      "status": "N",
+      "links": [],
+      "sessions": []
+    },
+    "fieldwork": {
+      "status": "C",
+      "links": [],
+      "sessions": []
+    },
+    "investigating-coastal-change-and-conflict": {
+      "status": "C",
+      "links": [],
+      "sessions": []
+    },
+    "investigating-river-processes-and-pressures": {
+      "status": "N",
+      "links": [],
+      "sessions": []
+    },
+    "investigating-dynamic-urban-areas": {
+      "status": "N",
+      "links": [],
+      "sessions": []
+    },
+    "investigating-changing-rural-areas": {
+      "status": "N",
+      "links": [],
+      "sessions": []
+    },
+    "biome-distribution": {
+      "status": "N",
+      "links": [],
+      "sessions": []
+    },
+    "biosphere": {
+      "status": "N",
+      "links": [],
+      "sessions": []
+    },
+    "forests-under-threat": {
+      "status": "N",
+      "links": [],
+      "sessions": []
+    },
+    "consuming-energy-resources": {
+      "status": "N",
+      "links": [],
+      "sessions": []
+    },
+    "maps": {
+      "status": "C",
+      "links": [],
+      "sessions": []
+    },
+    "graphs-and-diagrams": {
+      "status": "C",
+      "links": [],
+      "sessions": []
+    },
+    "numerical-and-statistical-skills": {
+      "status": "C",
+      "links": [],
+      "sessions": []
+    },
+    "pictorial-and-written-skills": {
+      "status": "C",
+      "links": [],
+      "sessions": []
+    },
+    "issues-evaluation": {
+      "status": "N",
+      "links": [],
+      "sessions": []
+    }
+  }
+}

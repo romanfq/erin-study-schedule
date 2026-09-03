@@ -1,0 +1,262 @@
+{
+  "subject": "Geography",
+  "board": "Edexcel B",
+  "strands": [
+    {
+      "id": "hazardous-health",
+      "name": "Hazardous Health",
+      "subtopics": [
+        {
+          "id": "global-climate",
+          "title": "Global Climate",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "extreme-weather",
+          "title": "Extreme Weather",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "tectonic-hazards",
+          "title": "Tectonic Hazards",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        }
+      ]
+    },
+    {
+      "id": "development-dynamics",
+      "name": "Development Dynamics",
+      "subtopics": [
+        {
+          "id": "global-inequality",
+          "title": "Global Inequality",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "development-of-an-emerging-country",
+          "title": "Development of an Emerging Country",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        }
+      ]
+    },
+    {
+      "id": "challenges-of-an-urbanising-world",
+      "name": "Challenges of an Urbanising World",
+      "subtopics": [
+        {
+          "id": "rapid-urban-change",
+          "title": "Rapid Urban Change",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "megacity",
+          "title": "Megacity",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        }
+      ]
+    },
+    {
+      "id": "the-uk-s-evolving-landscape",
+      "name": "The UK's Evolving Landscape",
+      "subtopics": [
+        {
+          "id": "variations-in-physical-landscape",
+          "title": "Variations in Physical Landscape",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "coastal-change-and-conflict",
+          "title": "Coastal Change and Conflict",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "river-processes-and-pressure",
+          "title": "River Processes and Pressure",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        }
+      ]
+    },
+    {
+      "id": "the-uk-s-evolving-human-landscape",
+      "name": "The UK's Evolving Human Landscape",
+      "subtopics": [
+        {
+          "id": "changing-people-and-places",
+          "title": "Changing People and Places",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "dynamic-uk-cities",
+          "title": "Dynamic UK Cities",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        }
+      ]
+    },
+    {
+      "id": "fieldwork",
+      "name": "Fieldwork",
+      "subtopics": [
+        {
+          "id": "fieldwork",
+          "title": "Fieldwork",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "investigating-coastal-change-and-conflict",
+          "title": "Investigating Coastal Change and Conflict",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "investigating-river-processes-and-pressures",
+          "title": "Investigating River Processes and Pressures",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "investigating-dynamic-urban-areas",
+          "title": "Investigating Dynamic Urban Areas",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "investigating-changing-rural-areas",
+          "title": "Investigating Changing Rural Areas",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        }
+      ]
+    },
+    {
+      "id": "people-and-the-biosphere",
+      "name": "People and the Biosphere",
+      "subtopics": [
+        {
+          "id": "biome-distribution",
+          "title": "Biome Distribution",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "biosphere",
+          "title": "Biosphere",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "forests-under-threat",
+          "title": "Forests Under Threat",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "consuming-energy-resources",
+          "title": "Consuming Energy Resources",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        }
+      ]
+    },
+    {
+      "id": "geographical-skills",
+      "name": "Geographical Skills",
+      "subtopics": [
+        {
+          "id": "maps",
+          "title": "Maps",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "graphs-and-diagrams",
+          "title": "Graphs and Diagrams",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "numerical-and-statistical-skills",
+          "title": "Numerical and Statistical Skills",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "pictorial-and-written-skills",
+          "title": "Pictorial and Written Skills",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "issues-evaluation",
+          "title": "Issues Evaluation",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        }
+      ]
+    }
+  ]
+}

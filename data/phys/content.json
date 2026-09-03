@@ -1,0 +1,404 @@
+{
+  "subject": "Physics",
+  "board": "AQA",
+  "strands": [
+    {
+      "id": "energy",
+      "name": "Energy",
+      "subtopics": [
+        {
+          "id": "conservation-and-dissipation-of-energy",
+          "title": "Conservation and Dissipation of Energy",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "energy-change-in-a-system",
+          "title": "Energy Change in a System",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "national-and-global-energy-resources",
+          "title": "National and Global Energy Resources",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        }
+      ]
+    },
+    {
+      "id": "electricity",
+      "name": "Electricity",
+      "subtopics": [
+        {
+          "id": "current-potential-difference-and-resistance",
+          "title": "Current, Potential Difference and Resistance",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "series-and-parallel-circuits",
+          "title": "Series and Parallel Circuits",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "domestic-uses-and-safety",
+          "title": "Domestic Uses and Safety",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "energy-transfers",
+          "title": "Energy Transfers",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "static-electricity",
+          "title": "Static Electricity",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        }
+      ]
+    },
+    {
+      "id": "particle-model-of-matter",
+      "name": "Particle Model of Matter",
+      "subtopics": [
+        {
+          "id": "changes-of-state-and-the-particle-model",
+          "title": "Changes of State and the Particle Model",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "internal-energy-and-energy-transfers",
+          "title": "Internal Energy and Energy Transfers",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "particle-model-and-pressure",
+          "title": "Particle Model and Pressure",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        }
+      ]
+    },
+    {
+      "id": "atomic-structure",
+      "name": "Atomic Structure",
+      "subtopics": [
+        {
+          "id": "atoms-and-isotopes",
+          "title": "Atoms and Isotopes",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "atoms-and-nuclear-radiation",
+          "title": "Atoms and Nuclear Radiation",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "hazards-and-uses-of-radioactive-emissions-and-background-radiation",
+          "title": "Hazards and Uses of Radioactive Emissions and Background Radiation",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "nuclear-fission-and-fusion",
+          "title": "Nuclear Fission and Fusion",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        }
+      ]
+    },
+    {
+      "id": "forces",
+      "name": "Forces",
+      "subtopics": [
+        {
+          "id": "forces-and-their-interactions",
+          "title": "Forces and their Interactions",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "work-done-and-energy-transfers",
+          "title": "Work Done and Energy Transfers",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "forces-and-elasticity",
+          "title": "Forces and Elasticity",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "moments-levers-and-gears",
+          "title": "Moments, Levers and Gears",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "pressure-and-pressure-differences-in-fluids",
+          "title": "Pressure and Pressure Differences in Fluids",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "describing-motion",
+          "title": "Describing Motion",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "newton-s-law-of-motion",
+          "title": "Newton's Law of Motion",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "stopping-distances",
+          "title": "Stopping Distances",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "momentum",
+          "title": "Momentum",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        }
+      ]
+    },
+    {
+      "id": "waves",
+      "name": "Waves",
+      "subtopics": [
+        {
+          "id": "waves-in-air-fluids-and-solids",
+          "title": "Waves in Air, Fluids and Solids",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "electromagnetic-waves",
+          "title": "Electromagnetic Waves",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "optics",
+          "title": "Optics",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "black-body-radiation",
+          "title": "Black Body Radiation",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        }
+      ]
+    },
+    {
+      "id": "magnetism-and-electromagnetism",
+      "name": "Magnetism and Electromagnetism",
+      "subtopics": [
+        {
+          "id": "permanent-and-induced-magnetism-magnetic-forces-and-fields",
+          "title": "Permanent and Induced Magnetism, Magnetic Forces and Fields",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "the-motor-effect",
+          "title": "The Motor Effect",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "induced-potential-transformers-and-the-national-grid",
+          "title": "Induced Potential Transformers and the National Grid",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        }
+      ]
+    },
+    {
+      "id": "space-physics",
+      "name": "Space Physics",
+      "subtopics": [
+        {
+          "id": "solar-system-stability-of-orbital-motions-and-satellites",
+          "title": "Solar System, Stability of Orbital Motions and Satellites",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "red-shift",
+          "title": "Red Shift",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        }
+      ]
+    },
+    {
+      "id": "practical-skills",
+      "name": "Practical Skills",
+      "subtopics": [
+        {
+          "id": "practical-specific-heat-capacity",
+          "title": "Specific Heat Capacity (Energy)",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "practical-thermal-insulation",
+          "title": "Thermal Insulation (Energy)",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "practical-resistance",
+          "title": "Resistance (Electricity)",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "practical-i-v-characteristics",
+          "title": "I-V Characteristics (Electricity)",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "practical-density",
+          "title": "Density (Particle Model of Matter)",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "practical-force-and-extension",
+          "title": "Force and Extension (Forces)",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "practical-acceleration",
+          "title": "Acceleration (Forces)",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "practical-waves",
+          "title": "Waves (Waves)",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "practical-reflection-and-refraction",
+          "title": "Reflection and Refraction (Waves)",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "practical-radiation",
+          "title": "Radiation ( Waves)",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        }
+      ]
+    }
+  ]
+}

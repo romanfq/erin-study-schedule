@@ -1,0 +1,36 @@
+{
+  "subject": "English Language",
+  "board": "AQA",
+  "strands": [
+    {
+      "id": "general-topic",
+      "name": "General Topic",
+      "subtopics": [
+        {
+          "id": "paper-1-and-2-overview",
+          "title": "Paper 1 and 2 Overview",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "exam-skills",
+          "title": "Exam Skills",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "practice-questions",
+          "title": "Practice Questions",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        }
+      ]
+    }
+  ]
+}

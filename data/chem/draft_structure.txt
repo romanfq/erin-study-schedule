@@ -1,0 +1,63 @@
+Chemistry - AQA
+
+Topic 1 - Atomic Structure and the Periodic Table 
+- A Simple Atomic Model - C
+- The Periodic Table - C
+- Properties of Transition Metals - C
+
+Topic 2 - Bonding, Structure and the Properties of Matter
+- Ionic, Covalent and Metallic Bonding - C
+- Bonding and Substance Properties - C
+- Structure and Bonding of Carbon - C
+- Bulk and Surface Properties of Matter -N
+
+Topic 3 - Quantitative Chemistry
+- Measurement, Mass and Equations - W
+- Calculating Mass of Substances - C
+- Yield Atom and Atom Economy - C
+- Concentrations of Solutions - C
+- Amount of Substance and Gas Volume - W
+
+Topic 4 - Chemical Changes
+- Reactivity of Metals - W
+- Reactions of Acids -W
+- Electrolysis -C
+
+Topic 5 - Energy Changes 
+- Exothermic and Endothermic Reactions - C
+- Chemical Cells and Fuel Cells - C
+
+Topic 6 - The Rate and Extent of Chemical Changes
+- Rate of Reaction -W
+- Reversibility and Equilibrium - W
+
+Topic 7 - Organic Chemistry
+- Carbon Compounds as Fuel Stock - W
+- Reactions of Alkenes and Alcohols - W
+- Synthetic and Natural Polymers - N
+
+Topic 8 - Chemical Analysis
+- Purity, Formulations and Chromatography - N
+- Identification of Common Gases - N
+- Methods of Identifying Ions - N
+
+Topic 9 - Chemistry of the Atmosphere
+- Formation of Earth's Atmosphere - N
+- Carbon Dioxide and Methane as Greenhouse Gases - N
+- Causes of Atmospheric Pollution - N
+
+Topic 10 - Using Resources
+- Global Reserves and Potable Water - N
+- Life Cycle Analysis and Recycling-  N
+- Using Materials -N
+- The Haber Process and NPK Fertilisers- N
+
+Practical Skills
+1. Making Salts (Chemical Changes) - C
+2. Neutralisation (Chemical Changes)- C
+3. Electrolysis (Chemical Changes)- C
+4. Temperature Changes (Energy Changes) - C
+5. Rate of Reaction (Rate and Extent of Chemical Changes)- C
+6. Chomatography (Chemical Analysis)- N
+7. Identifying Ions (Chemical Analysis)- N
+8. Water Purification (Using Resources)- N

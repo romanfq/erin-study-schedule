@@ -1,0 +1,62 @@
+Physics - AQA
+
+Topic 1 - Energy
+- Conservation and Dissipation of Energy -C
+- Energy Change in a System-C
+- National and Global Energy Resources-C
+
+Topic 2 - Electricity
+- Current, Potential Difference and Resistance -C
+- Series and Parallel Circuits-C
+- Domestic Uses and Safety-C
+- Energy Transfers-C
+- Static Electricity-C
+
+Topic 3 - Particle Model of Matter
+- Changes of State and the Particle Model_C
+- Internal Energy and Energy Transfers-C
+- Particle Model and Pressure-C
+
+Topic 4 - Atomic Structure
+- Atoms and Isotopes-C
+- Atoms and Nuclear Radiation-C
+- Hazards and Uses of Radioactive Emissions and Background Radiation-C
+- Nuclear Fission and Fusion- C
+
+Topic 5 - Forces
+- Forces and their Interactions-N
+- Work Done and Energy Transfers-N
+- Forces and Elasticity-N
+- Moments, Levers and Gears-N
+- Pressure and Pressure Differences in Fluids-N
+- Describing Motion-N
+- Newton's Law of Motion-N
+- Stopping Distances-N
+- Momentum-N
+
+Topic 6 - Waves
+- Waves in Air, Fluids and Solids- C
+- Electromagnetic Waves- W
+- Optics- C
+- Black Body Radiation-W
+
+Topic 7 - Magnetism and Electromagnetism
+ - Permanent and Induced Magnetism, Magnetic Forces and Fields- N
+- The Motor Effect- N
+- Induced Potential Transformers and the National Grid- N
+
+Topic 8 - Space Physics
+- Solar System, Stability of Orbital Motions and Satellites- N
+- Red Shift- N
+
+Practical Skills 
+1. Specific Heat Capacity (Energy)-C
+2. Thermal Insulation (Energy)-C
+3. Resistance (Electricity)-C
+4. I-V Characteristics (Electricity)- C
+5. Density (Particle Model of Matter)- W
+6. Force and Extension (Forces)- N
+7. Acceleration (Forces)- N
+8. Waves (Waves)- C
+9. Reflection and Refraction (Waves)-C
+10. Radiation ( Waves)- N
