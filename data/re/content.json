@@ -1,0 +1,336 @@
+{
+  "subject": "Religious Education",
+  "board": "AQA",
+  "strands": [
+    {
+      "id": "christianity",
+      "name": "Christianity",
+      "subtopics": [
+        {
+          "id": "the-nature-of-god",
+          "title": "The Nature of God",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "creation",
+          "title": "Creation",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "salvation",
+          "title": "Salvation",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "worship-and-festivals",
+          "title": "Worship and Festivals",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "the-role-of-the-church",
+          "title": "The Role of the Church",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        }
+      ]
+    },
+    {
+      "id": "islam",
+      "name": "Islam",
+      "subtopics": [
+        {
+          "id": "faith",
+          "title": "Faith",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "the-nature-of-allah",
+          "title": "The Nature of Allah",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "authority",
+          "title": "Authority",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "worship",
+          "title": "Worship",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "duties-and-festivals",
+          "title": "Duties and Festivals",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        }
+      ]
+    },
+    {
+      "id": "catholic-christianity",
+      "name": "Catholic Christianity",
+      "subtopics": [
+        {
+          "id": "the-nature-of-god-2",
+          "title": "The Nature of God",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "life-after-death",
+          "title": "Life After Death",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "sacraments",
+          "title": "Sacraments",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "worship-and-prayer",
+          "title": "Worship and Prayer",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "the-work-of-the-church",
+          "title": "The Work of the Church",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        }
+      ]
+    },
+    {
+      "id": "relationships-and-families",
+      "name": "Relationships and Families",
+      "subtopics": [
+        {
+          "id": "religion-and-human-sexuality",
+          "title": "Religion and Human Sexuality",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "religion-and-marriage",
+          "title": "Religion and Marriage",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "religion-and-divorce",
+          "title": "Religion and Divorce",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "religion-and-the-nature-of-families",
+          "title": "Religion and the Nature of Families",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "religion-and-the-roles-of-men-and-women",
+          "title": "Religion and the Roles of Men and Women",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        }
+      ]
+    },
+    {
+      "id": "religion-and-life",
+      "name": "Religion and Life",
+      "subtopics": [
+        {
+          "id": "origins-of-the-universe",
+          "title": "Origins of the Universe",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "value-of-the-world",
+          "title": "Value of the World",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "the-use-and-abuse-of-animals",
+          "title": "The Use and Abuse of Animals",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "sanctity-and-quality-of-life",
+          "title": "Sanctity and Quality of Life",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "death-and-the-afterlife",
+          "title": "Death and the Afterlife",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        }
+      ]
+    },
+    {
+      "id": "peace-and-conflict",
+      "name": "Peace and Conflict",
+      "subtopics": [
+        {
+          "id": "peace-and-justice",
+          "title": "Peace and Justice",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "forgiveness-and-reconciliation",
+          "title": "Forgiveness and Reconciliation",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "religion-and-violence",
+          "title": "Religion and Violence",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "religion-and-attitudes-to-terrorism",
+          "title": "Religion and Attitudes to Terrorism",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "religion-and-war",
+          "title": "Religion and War",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "religion-and-peace",
+          "title": "Religion and Peace",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        }
+      ]
+    },
+    {
+      "id": "crime-and-punishment",
+      "name": "Crime and Punishment",
+      "subtopics": [
+        {
+          "id": "religion-and-crime",
+          "title": "Religion and Crime",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "religion-and-punishment",
+          "title": "Religion and Punishment",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "religion-and-suffering",
+          "title": "Religion and Suffering",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "religion-and-the-treatment-of-criminals",
+          "title": "Religion and the Treatment of Criminals",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        },
+        {
+          "id": "religion-and-the-death-penalty",
+          "title": "Religion and the Death Penalty",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        }
+      ]
+    }
+  ]
+}

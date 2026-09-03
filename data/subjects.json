@@ -79,6 +79,16 @@
       "board": "AQA",
       "content": "data/english_lang/content.json",
       "state": "data/english_lang/state.json"
+    },
+    {
+      "id": "re",
+      "name": "Religious Education",
+      "short": "RE",
+      "status": "active",
+      "colour": "#0d9488",
+      "board": "AQA",
+      "content": "data/re/content.json",
+      "state": "data/re/state.json"
     }
   ]
 }
