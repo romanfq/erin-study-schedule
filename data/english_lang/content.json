@@ -3,8 +3,8 @@
   "board": "AQA",
   "strands": [
     {
-      "id": "general-topic",
-      "name": "General Topic",
+      "id": "general",
+      "name": "General",
       "subtopics": [
         {
           "id": "paper-1-and-2-overview",
