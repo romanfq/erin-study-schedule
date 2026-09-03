@@ -12,7 +12,7 @@ Topic 2 - Organisation
 
 Topic 3 - Infection and Response
 - Communicable Diseases - C
-- Monocional Antibodies - W
+- Monoclonal Antibodies - W
 - Plant Disease - C
 
 Topic 4 - Bioenergetics
@@ -20,7 +20,7 @@ Topic 4 - Bioenergetics
 - Respiration - C
 
 Topic 5 - Homeostasis
-- Homeostatis - W
+- Homeostasis - W
 - Nervous System - W
 - Hormonal Control in Humans - W
 - Plant Hormones - W
