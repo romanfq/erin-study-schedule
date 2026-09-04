@@ -1,6 +1,6 @@
-import { STATUS, STATUS_CYCLE } from './config.js?v=1788389869';
-import { navigate } from './router.js?v=1788389869';
-import * as store from './store.js?v=1788389869';
+import { STATUS, STATUS_CYCLE } from './config.js?v=1788562101';
+import { navigate } from './router.js?v=1788562101';
+import * as store from './store.js?v=1788562101';
 
 // --- helpers ---
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) =>
@@ -106,28 +106,42 @@ export async function renderSubject(root, subjectId, profile) {
   const { content } = await store.loadSubject(subjectId);
   const topics = store.allTopics(subjectId);
   let tier = tierPref(profile);
+  let hideConfident = false;   // "Hide Confident" toggle (default: show all)
+  let sortMode = false;        // "Sort" flat W·N·C view vs strand-grouped
 
   const draw = () => {
     const showH = tier === 'H';
-    const strands = content.strands.map((strand) => {
-      const rows = strand.subtopics
-        .filter((st) => showH || st.tier !== 'H')
-        .map((st) => {
-          const t = topics.find((x) => x.id === st.id);
-          const status = t.state.status;
-          return `<a class="row" href="${esc(subjectId)}/${esc(st.id)}" data-link>
-            <button class="row-chip ${STATUS[status].cls}" data-cycle="${esc(st.id)}" title="Tap to change">${status}</button>
-            <span class="row-title">${esc(st.title)}${st.tier === 'H' ? '<span class="htag">H</span>' : ''}</span>
-            <span class="row-go">›</span>
-          </a>`;
-        }).join('');
-      if (!rows) return '';
-      const weight = strand.weightF ? `<span class="weight">F ${esc(strand.weightF)} · H ${esc(strand.weightH)}</span>` : '';
-      return `<section class="strand">
-        <div class="strand-head"><h2>${esc(strand.name)}</h2>${weight}</div>
-        <div class="rows">${rows}</div>
-      </section>`;
-    }).join('');
+    const statusOf = (st) => topics.find((x) => x.id === st.id).state.status;
+    const visible = (st) => (showH || st.tier !== 'H') && !(hideConfident && statusOf(st) === 'C');
+
+    const rowHtml = (st, parent) => {
+      const status = statusOf(st);
+      return `<a class="row" href="${esc(subjectId)}/${esc(st.id)}" data-link>
+        <button class="row-chip ${STATUS[status].cls}" data-cycle="${esc(st.id)}" title="Tap to change">${status}</button>
+        <span class="row-title">${esc(st.title)}${st.tier === 'H' ? '<span class="htag">H</span>' : ''}${parent ? ` <span class="row-parent">(${esc(parent)})</span>` : ''}</span>
+        <span class="row-go">›</span>
+      </a>`;
+    };
+
+    let body;
+    if (sortMode) {
+      const order = { W: 0, N: 1, C: 2 };
+      const flat = [];
+      content.strands.forEach((s) => s.subtopics.forEach((st) => { if (visible(st)) flat.push({ st, parent: s.name }); }));
+      flat.sort((a, b) => (order[statusOf(a.st)] ?? 9) - (order[statusOf(b.st)] ?? 9));
+      const rows = flat.map(({ st, parent }) => rowHtml(st, parent)).join('');
+      body = rows ? `<section class="strand"><div class="rows">${rows}</div></section>` : '<p class="muted">Nothing to show.</p>';
+    } else {
+      body = content.strands.map((strand) => {
+        const rows = strand.subtopics.filter(visible).map((st) => rowHtml(st)).join('');
+        if (!rows) return '';
+        const weight = strand.weightF ? `<span class="weight">F ${esc(strand.weightF)} · H ${esc(strand.weightH)}</span>` : '';
+        return `<section class="strand">
+          <div class="strand-head"><h2>${esc(strand.name)}</h2>${weight}</div>
+          <div class="rows">${rows}</div>
+        </section>`;
+      }).join('') || '<p class="muted">Nothing to show.</p>';
+    }
 
     const hasHigher = content.strands.some((s) => s.subtopics.some((st) => st.tier === 'H'));
     const tierToggle = hasHigher ? `<div class="seg">
@@ -138,19 +152,31 @@ export async function renderSubject(root, subjectId, profile) {
 
     root.innerHTML = `${header(content.subject, content.board)}
       <div class="toolbar">${tierToggle}${etBtn}</div>
-      <p class="legend">${chip('N')} not started ${chip('W')} working on it ${chip('C')} confident</p>
-      ${strands}`;
+      <div class="legend-row">
+        <p class="legend">${chip('N')} not started ${chip('W')} working on it ${chip('C')} confident</p>
+        <div class="legend-controls">
+          <button class="btn ghost sm" data-toggle-confident>${hideConfident ? 'Show' : 'Hide'} Confident</button>
+          <button class="btn ghost sm ${sortMode ? 'on' : ''}" data-sort>${sortMode ? 'Grouped' : 'Sort W·N·C'}</button>
+        </div>
+      </div>
+      ${body}`;
 
     root.querySelectorAll('[data-tier]').forEach((b) => b.onclick = () => { tier = b.dataset.tier; setTierPref(tier); draw(); });
+    root.querySelector('[data-toggle-confident]').onclick = () => { hideConfident = !hideConfident; draw(); };
+    root.querySelector('[data-sort]').onclick = () => { sortMode = !sortMode; draw(); };
     root.querySelectorAll('[data-cycle]').forEach((b) => b.onclick = (e) => {
       e.preventDefault(); e.stopPropagation();
       const id = b.dataset.cycle;
       const t = topics.find((x) => x.id === id);
       t.state.status = nextStatus(t.state.status);
       store.setStatus(subjectId, id, t.state.status);
-      b.textContent = t.state.status;
-      b.className = 'row-chip ' + STATUS[t.state.status].cls;
-      mountSaveBar(root, subjectId);
+      if (sortMode || hideConfident) {
+        draw();   // status change can affect order/visibility
+      } else {
+        b.textContent = t.state.status;
+        b.className = 'row-chip ' + STATUS[t.state.status].cls;
+        mountSaveBar(root, subjectId);
+      }
     });
     mountSaveBar(root, subjectId);
   };
