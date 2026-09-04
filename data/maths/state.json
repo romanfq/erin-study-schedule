@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-04T15:53:16Z",
+  "updatedAt": "2026-09-04T22:37:03Z",
   "topics": {
     "ordering-operations-negatives": {
       "status": "C",
@@ -557,7 +557,15 @@
           "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-3/MA/Area%20and%20Circumference%20of%20Circles%20MA.pdf"
         }
       ],
-      "sessions": []
+      "sessions": [
+        {
+          "date": "2026-09-05",
+          "time": "10:30",
+          "type": "Review",
+          "duration": 120,
+          "done": false
+        }
+      ]
     },
     "volume-surface-area": {
       "status": "C",
@@ -658,7 +666,7 @@
       "sessions": []
     },
     "bearings-constructions-loci-units": {
-      "status": "W",
+      "status": "C",
       "links": [
         {
           "label": "Loci",
@@ -686,12 +694,6 @@
           "date": "2026-09-02",
           "time": "19:30",
           "type": "Review",
-          "done": false
-        },
-        {
-          "date": "2026-09-05",
-          "time": "09:00",
-          "type": "Practice",
           "done": false
         },
         {
