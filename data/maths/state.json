@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-09-03T19:06:29Z",
+  "updatedAt": "2026-09-04T15:53:16Z",
   "topics": {
     "ordering-operations-negatives": {
-      "status": "N",
+      "status": "C",
       "links": [
         {
           "label": "Four Operations",
@@ -24,7 +24,7 @@
       "sessions": []
     },
     "factors-multiples-primes": {
-      "status": "N",
+      "status": "C",
       "links": [
         {
           "label": "Primes, Factors and Multiples",
@@ -46,7 +46,7 @@
       "sessions": []
     },
     "fractions": {
-      "status": "N",
+      "status": "C",
       "links": [
         {
           "label": "Fractions",
@@ -64,7 +64,7 @@
       "sessions": []
     },
     "fdp-percentages": {
-      "status": "N",
+      "status": "W",
       "links": [
         {
           "label": "Fractions, Decimals and Percentages",
@@ -82,7 +82,7 @@
       "sessions": []
     },
     "reverse-pct-interest-growth": {
-      "status": "N",
+      "status": "W",
       "links": [
         {
           "label": "Compound Interest and Depreciation",
@@ -100,7 +100,7 @@
       "sessions": []
     },
     "index-laws": {
-      "status": "N",
+      "status": "C",
       "links": [
         {
           "label": "Roots and Powers",
@@ -122,7 +122,7 @@
       "sessions": []
     },
     "standard-form": {
-      "status": "N",
+      "status": "C",
       "links": [
         {
           "label": "Standard Form",
@@ -136,7 +136,7 @@
       "sessions": []
     },
     "rounding-bounds": {
-      "status": "N",
+      "status": "W",
       "links": [
         {
           "label": "Approximation and Estimation",
@@ -158,7 +158,7 @@
       "sessions": []
     },
     "surds-frac-indices-recurring": {
-      "status": "N",
+      "status": "C",
       "links": [
         {
           "label": "Recurring Decimals into Fractions",
@@ -180,7 +180,7 @@
       "sessions": []
     },
     "expand-factorise": {
-      "status": "N",
+      "status": "W",
       "links": [
         {
           "label": "Expanding Triple Brackets",
@@ -202,7 +202,7 @@
       "sessions": []
     },
     "linear-equations-inequalities": {
-      "status": "N",
+      "status": "C",
       "links": [
         {
           "label": "Forming Equations",
@@ -224,7 +224,7 @@
       "sessions": []
     },
     "rearranging-formulae": {
-      "status": "N",
+      "status": "C",
       "links": [
         {
           "label": "Manipulation of Formulae",
@@ -246,7 +246,7 @@
       "sessions": []
     },
     "linear-graphs": {
-      "status": "N",
+      "status": "C",
       "links": [
         {
           "label": "Equation of a Line",
@@ -264,7 +264,7 @@
       "sessions": []
     },
     "sequences": {
-      "status": "N",
+      "status": "C",
       "links": [
         {
           "label": "The Nth Term of a Quadratic Sequence",
@@ -282,7 +282,7 @@
       "sessions": []
     },
     "quadratic-graphs-factorising": {
-      "status": "N",
+      "status": "W",
       "links": [
         {
           "label": "Expanding and Factorising Quadratics",
@@ -304,7 +304,7 @@
       "sessions": []
     },
     "simultaneous-linear": {
-      "status": "N",
+      "status": "W",
       "links": [
         {
           "label": "Simultaneous Equations",
@@ -322,7 +322,7 @@
       "sessions": []
     },
     "quadratics-higher": {
-      "status": "N",
+      "status": "W",
       "links": [
         {
           "label": "Completing the Square",
@@ -344,7 +344,7 @@
       "sessions": []
     },
     "algebra-higher-2": {
-      "status": "N",
+      "status": "C",
       "links": [
         {
           "label": "Functions (Composite or Inverse)",
@@ -388,7 +388,7 @@
       "sessions": []
     },
     "ratio-basics": {
-      "status": "N",
+      "status": "C",
       "links": [
         {
           "label": "Ratio",
@@ -402,7 +402,7 @@
       "sessions": []
     },
     "direct-proportion": {
-      "status": "N",
+      "status": "W",
       "links": [
         {
           "label": "Direct and Inverse Proportion",
@@ -420,7 +420,7 @@
       "sessions": []
     },
     "inverse-proportion": {
-      "status": "N",
+      "status": "W",
       "links": [
         {
           "label": "Direct and Inverse Proportion",
@@ -434,7 +434,7 @@
       "sessions": []
     },
     "percentage-change-context": {
-      "status": "N",
+      "status": "C",
       "links": [
         {
           "label": "Compound Interest and Depreciation",
@@ -456,7 +456,7 @@
       "sessions": []
     },
     "compound-measures": {
-      "status": "N",
+      "status": "C",
       "links": [
         {
           "label": "Speed and Density",
@@ -470,7 +470,7 @@
       "sessions": []
     },
     "rate-graphs": {
-      "status": "N",
+      "status": "C",
       "links": [
         {
           "label": "Velocity Time Graphs",
@@ -484,7 +484,7 @@
       "sessions": []
     },
     "similar-shapes": {
-      "status": "N",
+      "status": "C",
       "links": [
         {
           "label": "Similar Shapes (Lengths)",
@@ -735,7 +735,7 @@
       "sessions": []
     },
     "single-event-probability": {
-      "status": "N",
+      "status": "C",
       "links": [
         {
           "label": "Probability of Events",
@@ -753,7 +753,7 @@
       "sessions": []
     },
     "mutually-exclusive-independent": {
-      "status": "N",
+      "status": "C",
       "links": [
         {
           "label": "Probability Equations",
@@ -771,7 +771,7 @@
       "sessions": []
     },
     "tree-diagrams": {
-      "status": "N",
+      "status": "C",
       "links": [
         {
           "label": "Tree Diagrams",
@@ -789,7 +789,7 @@
       "sessions": []
     },
     "venn-set-notation": {
-      "status": "N",
+      "status": "C",
       "links": [
         {
           "label": "Venn Diagrams",
@@ -807,7 +807,7 @@
       "sessions": []
     },
     "averages-range": {
-      "status": "N",
+      "status": "C",
       "links": [
         {
           "label": "Mean, Median, Mode, Range",
@@ -829,7 +829,7 @@
       "sessions": []
     },
     "charts-graphs": {
-      "status": "N",
+      "status": "C",
       "links": [
         {
           "label": "Stem and Leaf Diagrams",
@@ -869,7 +869,7 @@
       "sessions": []
     },
     "stats-higher-2": {
-      "status": "N",
+      "status": "W",
       "links": [
         {
           "label": "Box Plots",
