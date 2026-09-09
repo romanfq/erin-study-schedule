@@ -1,4 +1,5 @@
-"""Build a subject's content.json + state.json from its draft_structure.txt.
+"""Build a subject's content.json from its draft_structure.txt and merge its
+statuses into the consolidated data/state.json (preserving links/sessions).
 
 The draft (data/<id>/draft_structure.txt) is the single source of truth:
   - first non-empty line            → the board/title line (shown as sub-header)
@@ -88,8 +89,7 @@ def build(name_override, draft_path: str):
             if sub.get("nostatus"):
                 nostatus.append(sub["title"])
         content["strands"].append({"id": slug(st["name"]), "name": st["name"], "subtopics": subs})
-    stamp = datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
-    return content, {"updatedAt": stamp, "topics": topics}, nostatus, name
+    return content, topics, nostatus, name
 
 
 def register(subject_id, name, short, colour, board):
@@ -98,7 +98,7 @@ def register(subject_id, name, short, colour, board):
     entry = {
         "id": subject_id, "name": name, "short": short or name, "status": "active",
         "colour": colour, "board": board,
-        "content": f"data/{subject_id}/content.json", "state": f"data/{subject_id}/state.json",
+        "content": f"data/{subject_id}/content.json",
     }
     subs = doc["subjects"]
     for i, s in enumerate(subs):
@@ -111,31 +111,54 @@ def register(subject_id, name, short, colour, board):
     open(path, "a").write("\n")
 
 
+def now_stamp():
+    return datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
+
+
+def merge_state(subject_id, topics):
+    """Write this subject's topics into the consolidated data/state.json,
+    preserving any existing links/sessions for surviving topic ids. Only this
+    subject's section is touched."""
+    path = os.path.join(REPO, "data/state.json")
+    try:
+        doc = json.load(open(path))
+    except (FileNotFoundError, ValueError):
+        doc = {"updatedAt": "", "subjects": {}}
+    doc.setdefault("subjects", {})
+    existing = doc["subjects"].get(subject_id, {}).get("topics", {})
+    merged = {}
+    for tid, t in topics.items():
+        prev = existing.get(tid, {})
+        merged[tid] = {"status": t["status"], "links": prev.get("links", []), "sessions": prev.get("sessions", [])}
+    doc["subjects"][subject_id] = {"topics": merged}
+    doc["updatedAt"] = now_stamp()
+    json.dump(doc, open(path, "w"), indent=2, ensure_ascii=False)
+    open(path, "a").write("\n")
+
+
 def process(subject_id, name, short, colour, outdir, do_register, force):
     draft = os.path.join(REPO, f"data/{subject_id}/draft_structure.txt")
     if not os.path.exists(draft):
         raise SystemExit(f"no draft at {draft}")
-    content, state, nostatus, name = build(name, draft)
+    content, topics, nostatus, name = build(name, draft)
 
-    out = outdir or os.path.join(REPO, f"data/{subject_id}")
-    os.makedirs(out, exist_ok=True)
-    sp = os.path.join(out, "state.json")
-    if os.path.exists(sp) and not force:
-        prev = json.load(open(sp)).get("topics", {})
-        if any(t.get("links") or t.get("sessions") for t in prev.values()):
-            raise SystemExit(f"{sp} has links/sessions — refusing to overwrite (use --force)")
-
-    json.dump(content, open(os.path.join(out, "content.json"), "w"), indent=2, ensure_ascii=False)
-    json.dump(state, open(sp, "w"), indent=2, ensure_ascii=False)
-
-    if do_register and not outdir:
-        register(subject_id, name, short, colour, content["board"])
+    if outdir:   # dry run — write content + a standalone state for inspection only
+        os.makedirs(outdir, exist_ok=True)
+        json.dump(content, open(os.path.join(outdir, "content.json"), "w"), indent=2, ensure_ascii=False)
+        json.dump({"updatedAt": now_stamp(), "topics": topics},
+                  open(os.path.join(outdir, "state.json"), "w"), indent=2, ensure_ascii=False)
+    else:
+        json.dump(content, open(os.path.join(REPO, f"data/{subject_id}/content.json"), "w"), indent=2, ensure_ascii=False)
+        merge_state(subject_id, topics)
+        if do_register:
+            register(subject_id, name, short, colour, content["board"])
 
     counts = {"C": 0, "W": 0, "N": 0}
-    for t in state["topics"].values():
+    for t in topics.values():
         counts[t["status"]] += 1
-    print(f"{subject_id}: {len(content['strands'])} strands, {len(state['topics'])} subtopics "
-          f"(C:{counts['C']} W:{counts['W']} N:{counts['N']}) → {out}")
+    where = outdir or "data/state.json + content.json"
+    print(f"{subject_id}: {len(content['strands'])} strands, {len(topics)} subtopics "
+          f"(C:{counts['C']} W:{counts['W']} N:{counts['N']}) → {where}")
     if nostatus:
         print(f"  ⚠ {len(nostatus)} item(s) had no C/W/N status, defaulted to N: "
               + ", ".join(nostatus[:8]) + (" …" if len(nostatus) > 8 else ""))

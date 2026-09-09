@@ -1,0 +1,2112 @@
+{
+  "updatedAt": "2026-09-09T20:08:40Z",
+  "subjects": {
+    "maths": {
+      "topics": {
+        "ordering-operations-negatives": {
+          "status": "C",
+          "links": [
+            {
+              "label": "Four Operations",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Number/Higher/Structure-and-Calculation/QP/Four%20Operations%20(H)%20QP.pdf"
+            },
+            {
+              "label": "Addition and Subtraction",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-1-2/QP/Addition%20and%20Subtraction%20QP.pdf"
+            },
+            {
+              "label": "Multiplication and Division",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-1-2/QP/Multiplication%20and%20Division%20QP.pdf"
+            },
+            {
+              "label": "Four Operations — mark scheme",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Number/Higher/Structure-and-Calculation/MS/Four%20Operations%20(H)%20MS.pdf"
+            }
+          ],
+          "sessions": []
+        },
+        "factors-multiples-primes": {
+          "status": "C",
+          "links": [
+            {
+              "label": "Primes, Factors and Multiples",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Number/Higher/Structure-and-Calculation/QP/Primes,%20Factors%20and%20Multiples%20(H)%20QP.pdf"
+            },
+            {
+              "label": "Factors and Multiples",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-1-2/QP/Factors%20and%20Multiples%20QP.pdf"
+            },
+            {
+              "label": "HCF and LCM",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-4/QP/HCF%20and%20LCM%20QP.pdf"
+            },
+            {
+              "label": "Primes, Factors and Multiples — mark scheme",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Number/Higher/Structure-and-Calculation/MS/Primes,%20Factors%20and%20Multiples%20(H)%20MS.pdf"
+            }
+          ],
+          "sessions": []
+        },
+        "fractions": {
+          "status": "C",
+          "links": [
+            {
+              "label": "Fractions",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Number/Higher/Fractions-Decimals-and-Percentages/QP/Fractions%20(H)%20QP.pdf"
+            },
+            {
+              "label": "Fractions of an Amount",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-1-2/QP/Fractions%20of%20an%20Amount%20%20QP.pdf"
+            },
+            {
+              "label": "Fractions — mark scheme",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Number/Higher/Fractions-Decimals-and-Percentages/MS/Fractions%20(H)%20MS.pdf"
+            }
+          ],
+          "sessions": []
+        },
+        "fdp-percentages": {
+          "status": "W",
+          "links": [
+            {
+              "label": "Fractions, Decimals and Percentages",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-1-2/QP/Fractions,%20Decimals%20and%20Percentages%20QP.pdf"
+            },
+            {
+              "label": "Percentages",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-3/QP/Percentages%20QP.pdf"
+            },
+            {
+              "label": "Fractions, Decimals and Percentages — solutions",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-1-2/MA/Fractions,%20Decimals%20and%20Percentages%20MA.pdf"
+            }
+          ],
+          "sessions": []
+        },
+        "reverse-pct-interest-growth": {
+          "status": "W",
+          "links": [
+            {
+              "label": "Compound Interest and Depreciation",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-4/QP/Compound%20Interest%20and%20Depreciation%20QP.pdf"
+            },
+            {
+              "label": "Reverse Percentages",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-5/QP/Reverse%20Percentages%20QP.pdf"
+            },
+            {
+              "label": "Compound Interest and Depreciation — solutions",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-4/MA/Compound%20Interest%20and%20Depreciation%20MA.pdf"
+            }
+          ],
+          "sessions": []
+        },
+        "index-laws": {
+          "status": "C",
+          "links": [
+            {
+              "label": "Roots and Powers",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Number/Higher/Structure-and-Calculation/QP/Roots%20and%20Powers%20(H)%20QP.pdf"
+            },
+            {
+              "label": "Indices",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Number/Higher/Structure-and-Calculation/QP/Indices%20(H)%20QP.pdf"
+            },
+            {
+              "label": "Powers and Roots",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-1-2/QP/Powers%20and%20Roots%20QP.pdf"
+            },
+            {
+              "label": "Roots and Powers — mark scheme",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Number/Higher/Structure-and-Calculation/MS/Roots%20and%20Powers%20(H)%20MS.pdf"
+            }
+          ],
+          "sessions": []
+        },
+        "standard-form": {
+          "status": "C",
+          "links": [
+            {
+              "label": "Standard Form",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Number/Higher/Structure-and-Calculation/QP/Standard%20Form%20(H)%20QP.pdf"
+            },
+            {
+              "label": "Standard Form — mark scheme",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Number/Higher/Structure-and-Calculation/MS/Standard%20Form%20(H)%20MS.pdf"
+            }
+          ],
+          "sessions": []
+        },
+        "rounding-bounds": {
+          "status": "W",
+          "links": [
+            {
+              "label": "Approximation and Estimation",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Number/Higher/Measures-and-Accuracy/QP/Approximation%20and%20Estimation%20(H)%20QP.pdf"
+            },
+            {
+              "label": "Bounds",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Number/Higher/Measures-and-Accuracy/QP/Bounds%20(H)%20QP.pdf"
+            },
+            {
+              "label": "Rounding",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Number/Higher/Measures-and-Accuracy/QP/Rounding%20(H)%20QP.pdf"
+            },
+            {
+              "label": "Approximation and Estimation — mark scheme",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Number/Higher/Measures-and-Accuracy/MS/Approximation%20and%20Estimation%20(H)%20MS.pdf"
+            }
+          ],
+          "sessions": []
+        },
+        "surds-frac-indices-recurring": {
+          "status": "C",
+          "links": [
+            {
+              "label": "Recurring Decimals into Fractions",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Number/Higher/Fractions-Decimals-and-Percentages/QP/Recurring%20Decimals%20into%20Fractions%20(H)%20QP.pdf"
+            },
+            {
+              "label": "Surds",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Number/Higher/Structure-and-Calculation/QP/Surds%20(H)%20QP.pdf"
+            },
+            {
+              "label": "Fractional and Negative Indices",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-6/QP/Fractional%20and%20Negative%20Indices%20QP.pdf"
+            },
+            {
+              "label": "Recurring Decimals into Fractions — mark scheme",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Number/Higher/Fractions-Decimals-and-Percentages/MS/Recurring%20Decimals%20into%20Fractions%20(H)%20MS.pdf"
+            }
+          ],
+          "sessions": []
+        },
+        "expand-factorise": {
+          "status": "W",
+          "links": [
+            {
+              "label": "Expanding Triple Brackets",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Algebra/Higher/Notation-Vocabulary-and-Manipulation/QP/Expanding%20Triple%20Brackets%20(H)%20QP.pdf"
+            },
+            {
+              "label": "Simplifying Expressions",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Algebra/Higher/Notation-Vocabulary-and-Manipulation/QP/Simplifying%20Expressions%20(H)%20QP.pdf"
+            },
+            {
+              "label": "Expanding and Factorising",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-4/QP/Expanding%20and%20Factorising%20QP.pdf"
+            },
+            {
+              "label": "Expanding Triple Brackets — mark scheme",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Algebra/Higher/Notation-Vocabulary-and-Manipulation/MS/Expanding%20Triple%20Brackets%20(H)%20MS.pdf"
+            }
+          ],
+          "sessions": []
+        },
+        "linear-equations-inequalities": {
+          "status": "C",
+          "links": [
+            {
+              "label": "Forming Equations",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Algebra/Higher/Notation-Vocabulary-and-Manipulation/QP/Forming%20Equations%20(H)%20QP.pdf"
+            },
+            {
+              "label": "Solving Equations with an Unknown on Both Sides",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-3/QP/Solving%20Equations%20with%20an%20Unknown%20on%20Both%20Sides%20QP.pdf"
+            },
+            {
+              "label": "Forming and Solving Equations",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-4/QP/Forming%20and%20Solving%20Equations%20QP.pdf"
+            },
+            {
+              "label": "Forming Equations — mark scheme",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Algebra/Higher/Notation-Vocabulary-and-Manipulation/MS/Forming%20Equations%20(H)%20MS.pdf"
+            }
+          ],
+          "sessions": []
+        },
+        "rearranging-formulae": {
+          "status": "C",
+          "links": [
+            {
+              "label": "Manipulation of Formulae",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Algebra/Higher/Notation-Vocabulary-and-Manipulation/QP/Manipulation%20of%20Formulae%20(H)%20QP.pdf"
+            },
+            {
+              "label": "Changing the Subject of a Formula",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-5/QP/Changing%20the%20Subject%20of%20a%20Formula%20QP.pdf"
+            },
+            {
+              "label": "Rearranging Harder Formulae",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-7/QP/Rearranging%20Harder%20Formulae%20QP.pdf"
+            },
+            {
+              "label": "Manipulation of Formulae — mark scheme",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Algebra/Higher/Notation-Vocabulary-and-Manipulation/MS/Manipulation%20of%20Formulae%20(H)%20MS.pdf"
+            }
+          ],
+          "sessions": []
+        },
+        "linear-graphs": {
+          "status": "C",
+          "links": [
+            {
+              "label": "Equation of a Line",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-5/QP/Equation%20of%20a%20Line%20QP.pdf"
+            },
+            {
+              "label": "Drawing Graphs",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-3/QP/Drawing%20Graphs%20QP.pdf"
+            },
+            {
+              "label": "Equation of a Line — solutions",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-5/MA/Equation%20of%20a%20Line%20MA.pdf"
+            }
+          ],
+          "sessions": []
+        },
+        "sequences": {
+          "status": "C",
+          "links": [
+            {
+              "label": "The Nth Term of a Quadratic Sequence",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-8-9/QP/The%20Nth%20Term%20of%20a%20Quadratic%20Sequence%20QP.pdf"
+            },
+            {
+              "label": "Sequences (Nth Term)",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-4/QP/Sequences%20(Nth%20Term)%20QP.pdf"
+            },
+            {
+              "label": "The Nth Term of a Quadratic Sequence — solutions",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-8-9/MA/The%20Nth%20Term%20of%20a%20Quadratic%20Sequence%20MA.pdf"
+            }
+          ],
+          "sessions": []
+        },
+        "quadratic-graphs-factorising": {
+          "status": "W",
+          "links": [
+            {
+              "label": "Expanding and Factorising Quadratics",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-5/QP/Expanding%20and%20Factorising%20Quadratics%20QP.pdf"
+            },
+            {
+              "label": "Drawing Quadratic Graphs",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-5/QP/Drawing%20Quadratic%20Graphs%20QP.pdf"
+            },
+            {
+              "label": "Solving Quadratics",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-5/QP/Solving%20Quadratics%20QP.pdf"
+            },
+            {
+              "label": "Expanding and Factorising Quadratics — solutions",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-5/MA/Expanding%20and%20Factorising%20Quadratics%20MA.pdf"
+            }
+          ],
+          "sessions": []
+        },
+        "simultaneous-linear": {
+          "status": "W",
+          "links": [
+            {
+              "label": "Simultaneous Equations",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-5/QP/Simultaneous%20Equations%20QP.pdf"
+            },
+            {
+              "label": "Solving Simultaneous Equations Graphically",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-5/QP/Solving%20Simultaneous%20Equations%20Graphically%20QP.pdf"
+            },
+            {
+              "label": "Simultaneous Equations — solutions",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-5/MA/Simultaneous%20Equations%20MA.pdf"
+            }
+          ],
+          "sessions": []
+        },
+        "quadratics-higher": {
+          "status": "W",
+          "links": [
+            {
+              "label": "Completing the Square",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-8-9/QP/Completing%20the%20Square%20QP.pdf"
+            },
+            {
+              "label": "Quadratic Formula",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-7/QP/Quadratic%20Formula%20QP.pdf"
+            },
+            {
+              "label": "Quadratic Inequalities",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-8-9/QP/Quadratic%20Inequalities%20QP.pdf"
+            },
+            {
+              "label": "Completing the Square — solutions",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-8-9/MA/Completing%20the%20Square%20MA.pdf"
+            }
+          ],
+          "sessions": []
+        },
+        "algebra-higher-2": {
+          "status": "C",
+          "links": [
+            {
+              "label": "Functions (Composite or Inverse)",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Algebra/Higher/Notation-Vocabulary-and-Manipulation/QP/Functions%20(Composite%20or%20Inverse)%20(H)%20QP.pdf"
+            },
+            {
+              "label": "Algebraic Fractions",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Algebra/Higher/Notation-Vocabulary-and-Manipulation/QP/Algebraic%20Fractions%20(H)%20QP.pdf"
+            },
+            {
+              "label": "Simultaneous Equations with a Quadratic",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-8-9/QP/Simultaneous%20Equations%20with%20a%20Quadratic%20QP.pdf"
+            },
+            {
+              "label": "Functions (Composite or Inverse) — mark scheme",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Algebra/Higher/Notation-Vocabulary-and-Manipulation/MS/Functions%20(Composite%20or%20Inverse)%20(H)%20MS.pdf"
+            }
+          ],
+          "sessions": []
+        },
+        "algebra-higher-3": {
+          "status": "N",
+          "links": [
+            {
+              "label": "Algebraic Proof",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Algebra/Higher/Notation-Vocabulary-and-Manipulation/QP/Algebraic%20Proof%20(H)%20QP.pdf"
+            },
+            {
+              "label": "Solving Equations using Iteration",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-7/QP/Solving%20Equations%20using%20Iteration%20QP.pdf"
+            },
+            {
+              "label": "Perpendicular Lines and the Equation of a Tangent",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-8-9/QP/Perpendicular%20Lines%20and%20the%20Equation%20of%20a%20Tangent%20QP.pdf"
+            },
+            {
+              "label": "Algebraic Proof — mark scheme",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Algebra/Higher/Notation-Vocabulary-and-Manipulation/MS/Algebraic%20Proof%20(H)%20MS.pdf"
+            }
+          ],
+          "sessions": []
+        },
+        "ratio-basics": {
+          "status": "C",
+          "links": [
+            {
+              "label": "Ratio",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-3/QP/Ratio%20QP.pdf"
+            },
+            {
+              "label": "Ratio — solutions",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-3/MA/Ratio%20MA.pdf"
+            }
+          ],
+          "sessions": []
+        },
+        "direct-proportion": {
+          "status": "W",
+          "links": [
+            {
+              "label": "Direct and Inverse Proportion",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-7/QP/Direct%20and%20Inverse%20Proportion%20QP.pdf"
+            },
+            {
+              "label": "Proportion",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-3/QP/Proportion%20QP.pdf"
+            },
+            {
+              "label": "Direct and Inverse Proportion — solutions",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-7/MA/Direct%20and%20Inverse%20Proportion%20MA.pdf"
+            }
+          ],
+          "sessions": []
+        },
+        "inverse-proportion": {
+          "status": "W",
+          "links": [
+            {
+              "label": "Direct and Inverse Proportion",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-7/QP/Direct%20and%20Inverse%20Proportion%20QP.pdf"
+            },
+            {
+              "label": "Direct and Inverse Proportion — solutions",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-7/MA/Direct%20and%20Inverse%20Proportion%20MA.pdf"
+            }
+          ],
+          "sessions": []
+        },
+        "percentage-change-context": {
+          "status": "C",
+          "links": [
+            {
+              "label": "Compound Interest and Depreciation",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-4/QP/Compound%20Interest%20and%20Depreciation%20QP.pdf"
+            },
+            {
+              "label": "Best Buy Questions",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-3/QP/Best%20Buy%20Questions%20QP.pdf"
+            },
+            {
+              "label": "Exchange Rates",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-3/QP/Exchange%20Rates%20QP.pdf"
+            },
+            {
+              "label": "Compound Interest and Depreciation — solutions",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-4/MA/Compound%20Interest%20and%20Depreciation%20MA.pdf"
+            }
+          ],
+          "sessions": []
+        },
+        "compound-measures": {
+          "status": "C",
+          "links": [
+            {
+              "label": "Speed and Density",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-5/QP/Speed%20and%20Density%20QP.pdf"
+            },
+            {
+              "label": "Speed and Density — solutions",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-5/MA/Speed%20and%20Density%20MA.pdf"
+            }
+          ],
+          "sessions": []
+        },
+        "rate-graphs": {
+          "status": "C",
+          "links": [
+            {
+              "label": "Velocity Time Graphs",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-8-9/QP/Velocity%20Time%20Graphs%20QP.pdf"
+            },
+            {
+              "label": "Velocity Time Graphs — solutions",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-8-9/MA/Velocity%20Time%20Graphs%20MA.pdf"
+            }
+          ],
+          "sessions": []
+        },
+        "similar-shapes": {
+          "status": "C",
+          "links": [
+            {
+              "label": "Similar Shapes (Lengths)",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-5/QP/Similar%20Shapes%20(Lengths)%20QP.pdf"
+            },
+            {
+              "label": "Similar Shapes (Area and Volume)",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-6/QP/Similar%20Shapes%20(Area%20and%20Volume)%20QP.pdf"
+            },
+            {
+              "label": "Similar Shapes (Lengths) — solutions",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-5/MA/Similar%20Shapes%20(Lengths)%20MA.pdf"
+            }
+          ],
+          "sessions": []
+        },
+        "angle-facts": {
+          "status": "C",
+          "links": [
+            {
+              "label": "Angles in Parallel Lines",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-4/QP/Angles%20in%20Parallel%20Lines%20QP.pdf"
+            },
+            {
+              "label": "Angles in Polygons",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-4/QP/Angles%20in%20Polygons%20QP.pdf"
+            },
+            {
+              "label": "Angle Problems",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-4/QP/Angle%20Problems%20QP.pdf"
+            },
+            {
+              "label": "Angles in Parallel Lines — solutions",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-4/MA/Angles%20in%20Parallel%20Lines%20MA.pdf"
+            }
+          ],
+          "sessions": []
+        },
+        "area-perimeter": {
+          "status": "C",
+          "links": [
+            {
+              "label": "Area of Compound Shapes",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-3/QP/Area%20of%20Compound%20Shapes%20QP.pdf"
+            },
+            {
+              "label": "Area",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-1-2/QP/Area%20QP.pdf"
+            },
+            {
+              "label": "Area of Compound Shapes — solutions",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-3/MA/Area%20of%20Compound%20Shapes%20MA.pdf"
+            }
+          ],
+          "sessions": []
+        },
+        "circles": {
+          "status": "W",
+          "links": [
+            {
+              "label": "Area and Circumference of Circles",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-3/QP/Area%20and%20Circumference%20of%20Circles%20QP.pdf"
+            },
+            {
+              "label": "Sector Areas and Arc Lengths",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-5/QP/Sector%20Areas%20and%20Arc%20Lengths%20QP.pdf"
+            },
+            {
+              "label": "Area and Circumference of Circles — solutions",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-3/MA/Area%20and%20Circumference%20of%20Circles%20MA.pdf"
+            }
+          ],
+          "sessions": [
+            {
+              "date": "2026-09-05",
+              "time": "10:30",
+              "type": "Review",
+              "duration": 120,
+              "done": false
+            }
+          ]
+        },
+        "volume-surface-area": {
+          "status": "C",
+          "links": [
+            {
+              "label": "Volume of Prisms",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-4/QP/Volume%20of%20Prisms%20QP.pdf"
+            },
+            {
+              "label": "Spheres and Cones",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-5/QP/Spheres%20and%20Cones%20QP.pdf"
+            },
+            {
+              "label": "Surface Area",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-4/QP/Surface%20Area%20QP.pdf"
+            },
+            {
+              "label": "Volume of Prisms — solutions",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-4/MA/Volume%20of%20Prisms%20MA.pdf"
+            }
+          ],
+          "sessions": []
+        },
+        "pythagoras": {
+          "status": "W",
+          "links": [
+            {
+              "label": "Pythagoras",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-4/QP/Pythagoras%20QP.pdf"
+            },
+            {
+              "label": "3D Pythagoras",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-7/QP/3D%20Pythagoras%20QP.pdf"
+            },
+            {
+              "label": "Pythagoras — solutions",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-4/MA/Pythagoras%20MA.pdf"
+            }
+          ],
+          "sessions": []
+        },
+        "trigonometry-rightangle": {
+          "status": "W",
+          "links": [
+            {
+              "label": "SOHCAHTOA",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-5/QP/SOHCAHTOA%20QP.pdf"
+            },
+            {
+              "label": "SOHCAHTOA — solutions",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-5/MA/SOHCAHTOA%20MA.pdf"
+            }
+          ],
+          "sessions": []
+        },
+        "transformations": {
+          "status": "C",
+          "links": [
+            {
+              "label": "Enlarging with Negative Scale Factors",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-6/QP/Enlarging%20with%20Negative%20Scale%20Factors%20QP.pdf"
+            },
+            {
+              "label": "Transformations - Enlargements",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-3/QP/Transformations%20-%20Enlargements%20QP.pdf"
+            },
+            {
+              "label": "Transformations - Mixed Transformations",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-3/QP/Transformations%20-%20Mixed%20Transformations%20QP.pdf"
+            },
+            {
+              "label": "Enlarging with Negative Scale Factors — solutions",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-6/MA/Enlarging%20with%20Negative%20Scale%20Factors%20MA.pdf"
+            }
+          ],
+          "sessions": []
+        },
+        "congruence-similarity": {
+          "status": "C",
+          "links": [
+            {
+              "label": "Congruent Triangles",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-5/QP/Congruent%20Triangles%20QP.pdf"
+            },
+            {
+              "label": "Similar Shapes (Lengths)",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-5/QP/Similar%20Shapes%20(Lengths)%20QP.pdf"
+            },
+            {
+              "label": "Similar Shapes (Area and Volume)",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-6/QP/Similar%20Shapes%20(Area%20and%20Volume)%20QP.pdf"
+            },
+            {
+              "label": "Congruent Triangles — solutions",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-5/MA/Congruent%20Triangles%20MA.pdf"
+            }
+          ],
+          "sessions": []
+        },
+        "bearings-constructions-loci-units": {
+          "status": "C",
+          "links": [
+            {
+              "label": "Loci",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-4/MA/Loci%20and%20Construction%20MA.pdf"
+            },
+            {
+              "label": "Bearings",
+              "url": "https://www.physicsandmathstutor.com/pdf-pages/?pdf=https%3A%2F%2Fpmt.physicsandmathstutor.com%2Fdownload%2FMaths%2FGCSE%2FTopic-Qs%2FEdexcel%2FSet-4%2FGeometry-and-Measures%2FHigher%2FMensuration-and-Calculation%2FQP%2FBearings%20(H)%20QP.pdf"
+            },
+            {
+              "label": "Constructions",
+              "url": "https://www.physicsandmathstutor.com/pdf-pages/?pdf=https%3A%2F%2Fpmt.physicsandmathstutor.com%2Fdownload%2FMaths%2FGCSE%2FTopic-Qs%2FEdexcel%2FSet-4%2FGeometry-and-Measures%2FFoundation%2FProperties-and-Constructions%2FQP%2FConstructions%20(F)%20QP.pdf"
+            },
+            {
+              "label": "Loci and Construction",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-4/QP/Loci%20and%20Construction%20QP.pdf"
+            },
+            {
+              "label": "Bearings",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-4/QP/Bearings%20QP.pdf"
+            }
+          ],
+          "sessions": [
+            {
+              "date": "2026-09-02",
+              "time": "19:30",
+              "type": "Review",
+              "done": false
+            },
+            {
+              "date": "2026-09-04",
+              "time": "18:30",
+              "type": "Practice",
+              "done": false
+            }
+          ]
+        },
+        "vectors": {
+          "status": "N",
+          "links": [
+            {
+              "label": "Vectors",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-7/QP/Vectors%20QP.pdf"
+            },
+            {
+              "label": "Vectors — solutions",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-7/MA/Vectors%20MA.pdf"
+            }
+          ],
+          "sessions": []
+        },
+        "geometry-higher": {
+          "status": "W",
+          "links": [
+            {
+              "label": "Circle Theorems",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-6/QP/Circle%20Theorems%20QP.pdf"
+            },
+            {
+              "label": "Sine Rule, Cosine Rule, Area of Any Triangle",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-7/QP/Sine%20Rule,%20Cosine%20Rule,%20Area%20of%20Any%20Triangle%20QP.pdf"
+            },
+            {
+              "label": "Circle Theorems — solutions",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-6/MA/Circle%20Theorems%20MA.pdf"
+            }
+          ],
+          "sessions": []
+        },
+        "single-event-probability": {
+          "status": "C",
+          "links": [
+            {
+              "label": "Probability of Events",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Probability/Higher/QP/Probability%20of%20Events%20(H)%20QP.pdf"
+            },
+            {
+              "label": "Probability",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-3/QP/Probability%20QP.pdf"
+            },
+            {
+              "label": "Probability of Events — mark scheme",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Probability/Higher/MS/Probability%20of%20Events%20(H)%20MS.pdf"
+            }
+          ],
+          "sessions": []
+        },
+        "mutually-exclusive-independent": {
+          "status": "C",
+          "links": [
+            {
+              "label": "Probability Equations",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Probability/Higher/QP/Probability%20Equations%20(H)%20QP.pdf"
+            },
+            {
+              "label": "Relative Frequency",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Probability/Higher/QP/Relative%20Frequency%20(H)%20QP.pdf"
+            },
+            {
+              "label": "Probability Equations — mark scheme",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Probability/Higher/MS/Probability%20Equations%20(H)%20MS.pdf"
+            }
+          ],
+          "sessions": []
+        },
+        "tree-diagrams": {
+          "status": "C",
+          "links": [
+            {
+              "label": "Tree Diagrams",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Probability/Higher/QP/Tree%20Diagrams%20(H)%20QP.pdf"
+            },
+            {
+              "label": "Probability Trees",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-5/QP/Probability%20Trees%20QP.pdf"
+            },
+            {
+              "label": "Tree Diagrams — mark scheme",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Probability/Higher/MS/Tree%20Diagrams%20(H)%20MS.pdf"
+            }
+          ],
+          "sessions": []
+        },
+        "venn-set-notation": {
+          "status": "C",
+          "links": [
+            {
+              "label": "Venn Diagrams",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Probability/Higher/QP/Venn%20Diagrams%20(H)%20QP.pdf"
+            },
+            {
+              "label": "Venn Diagrams (given that questions)",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-7/QP/Venn%20Diagrams%20(given%20that%20questions)%20QP.pdf"
+            },
+            {
+              "label": "Venn Diagrams — mark scheme",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Probability/Higher/MS/Venn%20Diagrams%20(H)%20MS.pdf"
+            }
+          ],
+          "sessions": []
+        },
+        "averages-range": {
+          "status": "C",
+          "links": [
+            {
+              "label": "Mean, Median, Mode, Range",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Statistics/Higher/QP/Mean,%20Median,%20Mode,%20Range%20(H)%20QP.pdf"
+            },
+            {
+              "label": "Frequency Averages",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Statistics/Higher/QP/Frequency%20Averages%20(H)%20QP.pdf"
+            },
+            {
+              "label": "Averages",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-1-2/QP/Averages%20QP.pdf"
+            },
+            {
+              "label": "Mean, Median, Mode, Range — mark scheme",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Statistics/Higher/MS/Mean,%20Median,%20Mode,%20Range%20(H)%20MS.pdf"
+            }
+          ],
+          "sessions": []
+        },
+        "charts-graphs": {
+          "status": "C",
+          "links": [
+            {
+              "label": "Stem and Leaf Diagrams",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Statistics/Higher/QP/Stem%20and%20Leaf%20Diagrams%20(H)%20QP.pdf"
+            },
+            {
+              "label": "Frequency Polygons",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Statistics/Higher/QP/Frequency%20Polygons%20(H)%20QP.pdf"
+            },
+            {
+              "label": "Scatter Graphs",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Statistics/Higher/QP/Scatter%20Graphs%20(H)%20QP.pdf"
+            },
+            {
+              "label": "Stem and Leaf Diagrams — mark scheme",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Statistics/Higher/MS/Stem%20and%20Leaf%20Diagrams%20(H)%20MS.pdf"
+            }
+          ],
+          "sessions": []
+        },
+        "stats-higher-1": {
+          "status": "N",
+          "links": [
+            {
+              "label": "Conditional Probability",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Probability/Higher/QP/Conditional%20Probability%20(H)%20QP.pdf"
+            },
+            {
+              "label": "Histograms",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Statistics/Higher/QP/Histograms%20(H)%20QP.pdf"
+            },
+            {
+              "label": "Conditional Probability — mark scheme",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Probability/Higher/MS/Conditional%20Probability%20(H)%20MS.pdf"
+            }
+          ],
+          "sessions": []
+        },
+        "stats-higher-2": {
+          "status": "W",
+          "links": [
+            {
+              "label": "Box Plots",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Statistics/Higher/QP/Box%20Plots%20(H)%20QP.pdf"
+            },
+            {
+              "label": "Cumulative Frequency Graphs",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Statistics/Higher/QP/Cumulative%20Frequency%20Graphs%20(H)%20QP.pdf"
+            },
+            {
+              "label": "Cumulative Frequency and Box Plots",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-6/QP/Cumulative%20Frequency%20and%20Box%20Plots%20QP.pdf"
+            },
+            {
+              "label": "Box Plots — mark scheme",
+              "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Statistics/Higher/MS/Box%20Plots%20(H)%20MS.pdf"
+            }
+          ],
+          "sessions": []
+        }
+      }
+    },
+    "biology": {
+      "topics": {
+        "cell-structure": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "cell-division": {
+          "status": "W",
+          "links": [],
+          "sessions": []
+        },
+        "transport-in-cells": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "principles-of-organisation": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "animal-tissues-organs-and-systems": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "plant-tissues-organs-and-systems": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "communicable-diseases": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "monoclonal-antibodies": {
+          "status": "W",
+          "links": [],
+          "sessions": []
+        },
+        "plant-disease": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "photosynthesis": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "respiration": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "homeostasis": {
+          "status": "W",
+          "links": [],
+          "sessions": []
+        },
+        "nervous-system": {
+          "status": "W",
+          "links": [],
+          "sessions": []
+        },
+        "hormonal-control-in-humans": {
+          "status": "W",
+          "links": [],
+          "sessions": []
+        },
+        "plant-hormones": {
+          "status": "W",
+          "links": [],
+          "sessions": []
+        },
+        "reproduction": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "variation-and-evolution": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "classification": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "adaptations-interdependence-and-competition": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "organisation-of-an-ecosystem": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "biodiversity-and-the-effect-of-human-interaction-on-ecosystems": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "trophic-levels-in-an-ecosystem": {
+          "status": "W",
+          "links": [],
+          "sessions": []
+        },
+        "food-production": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "practical-microscopy": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "practical-microbiology": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "practical-osmosis": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "practical-food-tests": {
+          "status": "W",
+          "links": [],
+          "sessions": []
+        },
+        "practical-enzymes": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "practical-photosynthesis": {
+          "status": "W",
+          "links": [],
+          "sessions": []
+        },
+        "practical-reaction-time": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "practical-plant-responses": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "practical-field-investigation": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "practical-decay": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        }
+      }
+    },
+    "chem": {
+      "topics": {
+        "a-simple-atomic-model": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "the-periodic-table": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "properties-of-transition-metals": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "ionic-covalent-and-metallic-bonding": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "bonding-and-substance-properties": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "structure-and-bonding-of-carbon": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "bulk-and-surface-properties-of-matter": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "measurement-mass-and-equations": {
+          "status": "W",
+          "links": [],
+          "sessions": []
+        },
+        "calculating-mass-of-substances": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "yield-atom-and-atom-economy": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "concentrations-of-solutions": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "amount-of-substance-and-gas-volume": {
+          "status": "W",
+          "links": [],
+          "sessions": []
+        },
+        "reactivity-of-metals": {
+          "status": "W",
+          "links": [],
+          "sessions": []
+        },
+        "reactions-of-acids": {
+          "status": "W",
+          "links": [],
+          "sessions": []
+        },
+        "electrolysis": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "exothermic-and-endothermic-reactions": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "chemical-cells-and-fuel-cells": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "rate-of-reaction": {
+          "status": "W",
+          "links": [],
+          "sessions": []
+        },
+        "reversibility-and-equilibrium": {
+          "status": "W",
+          "links": [],
+          "sessions": []
+        },
+        "carbon-compounds-as-fuel-stock": {
+          "status": "W",
+          "links": [],
+          "sessions": []
+        },
+        "reactions-of-alkenes-and-alcohols": {
+          "status": "W",
+          "links": [],
+          "sessions": []
+        },
+        "synthetic-and-natural-polymers": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "purity-formulations-and-chromatography": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "identification-of-common-gases": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "methods-of-identifying-ions": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "formation-of-earth-s-atmosphere": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "carbon-dioxide-and-methane-as-greenhouse-gases": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "causes-of-atmospheric-pollution": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "global-reserves-and-potable-water": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "life-cycle-analysis-and-recycling": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "using-materials": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "the-haber-process-and-npk-fertilisers": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "practical-making-salts": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "practical-neutralisation": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "practical-electrolysis": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "practical-temperature-changes": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "practical-rate-of-reaction": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "practical-chomatography": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "practical-identifying-ions": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "practical-water-purification": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        }
+      }
+    },
+    "phys": {
+      "topics": {
+        "conservation-and-dissipation-of-energy": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "energy-change-in-a-system": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "national-and-global-energy-resources": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "current-potential-difference-and-resistance": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "series-and-parallel-circuits": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "domestic-uses-and-safety": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "energy-transfers": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "static-electricity": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "changes-of-state-and-the-particle-model": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "internal-energy-and-energy-transfers": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "particle-model-and-pressure": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "atoms-and-isotopes": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "atoms-and-nuclear-radiation": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "hazards-and-uses-of-radioactive-emissions-and-background-radiation": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "nuclear-fission-and-fusion": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "forces-and-their-interactions": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "work-done-and-energy-transfers": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "forces-and-elasticity": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "moments-levers-and-gears": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "pressure-and-pressure-differences-in-fluids": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "describing-motion": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "newton-s-law-of-motion": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "stopping-distances": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "momentum": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "waves-in-air-fluids-and-solids": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "electromagnetic-waves": {
+          "status": "W",
+          "links": [],
+          "sessions": []
+        },
+        "optics": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "black-body-radiation": {
+          "status": "W",
+          "links": [],
+          "sessions": []
+        },
+        "permanent-and-induced-magnetism-magnetic-forces-and-fields": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "the-motor-effect": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "induced-potential-transformers-and-the-national-grid": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "solar-system-stability-of-orbital-motions-and-satellites": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "red-shift": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "practical-specific-heat-capacity": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "practical-thermal-insulation": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "practical-resistance": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "practical-i-v-characteristics": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "practical-density": {
+          "status": "W",
+          "links": [],
+          "sessions": []
+        },
+        "practical-force-and-extension": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "practical-acceleration": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "practical-waves": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "practical-reflection-and-refraction": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "practical-radiation": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        }
+      }
+    },
+    "geo": {
+      "topics": {
+        "global-climate": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "extreme-weather": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "tectonic-hazards": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "global-inequality": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "development-of-an-emerging-country": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "rapid-urban-change": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "megacity": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "variations-in-physical-landscape": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "coastal-change-and-conflict": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "river-processes-and-pressure": {
+          "status": "W",
+          "links": [],
+          "sessions": []
+        },
+        "changing-people-and-places": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "dynamic-uk-cities": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "fieldwork": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "investigating-coastal-change-and-conflict": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "investigating-river-processes-and-pressures": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "investigating-dynamic-urban-areas": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "investigating-changing-rural-areas": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "biome-distribution": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "biosphere": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "forests-under-threat": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "consuming-energy-resources": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "maps": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "graphs-and-diagrams": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "numerical-and-statistical-skills": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "pictorial-and-written-skills": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "issues-evaluation": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        }
+      }
+    },
+    "history": {
+      "topics": {
+        "exam-skills-medicine-in-britain-c1250-present": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "themes-in-medicine-in-britain-c1250-present": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "c1250-c1500-the-middle-ages": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "the-medicinal-renaissance-c1500-c1700": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "medicine-in-britain-in-the-18th-and-19th-century": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "medicine-in-modern-britain": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "the-british-sector-of-the-western-front-context": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "the-british-sector-of-the-western-front-injuries": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "the-british-sector-of-the-western-front-treatment": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "improvements-in-medicine-and-surgery-on-the-western-front": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "exam-skills-early-elizabethan-england-1558-88": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "elizabeth-i-s-succession-1558-1569": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "how-did-elizabeth-solve-the-issue-of-religion": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "the-problem-of-mary-queen-of-scots-1568-1569": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "challenges-to-elizabeth-at-home-1569-1588": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "elizabethan-england-s-relationship-with-spain": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "war-with-spain-1585-1588": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "elizabethan-society-1558-1588": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "exam-skills-superpower-relations-and-the-cold-war-1941-91": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "the-origins-of-the-cold-war-1941-1949": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "the-development-of-the-cold-war-1947-1955": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "the-cold-war-intensifies-1952-1958": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "berlin-1958-1963": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "cuba-1959-1963": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "czechoslovakia-1968-1969": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "detente-1969-1979": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "the-end-of-detente-and-the-second-cold-war": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "the-end-of-cold-war-1985-1991": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "exam-questions-weimar-and-nazi-germany-1918-39": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "the-weimar-republic-1918-29": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "the-golden-years-of-weimar-germany": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "changes-to-weimar-society": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "hitler-s-rise-to-power-1919-33": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "nazi-dictatorship-1933-39": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "life-in-nazi-germany-1933-39": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        }
+      }
+    },
+    "english_lit": {
+      "topics": {
+        "romeo-and-juliet-themes": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "romeo-and-juliet-character-analysis": {
+          "status": "W",
+          "links": [],
+          "sessions": []
+        },
+        "romeo-and-juliet-quotes": {
+          "status": "W",
+          "links": [],
+          "sessions": []
+        },
+        "romeo-and-juliet-context": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "romeo-and-juliet-stagecraft-writer-s-methods": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "aic-themes": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "aic-character-analysis": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "aic-quotes": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "aic-context": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "aic-stagecraft-writer-s-methods": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "power-and-conflict-poem-analysis": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "power-and-conflict-themes": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "power-and-conflict-quotes": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "power-and-conflict-context": {
+          "status": "W",
+          "links": [],
+          "sessions": []
+        },
+        "power-and-conflict-stagecraft-writer-s-methods": {
+          "status": "W",
+          "links": [],
+          "sessions": []
+        },
+        "dr-jekyll-and-mr-hyde-character-analysis": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "dr-jekyll-and-mr-hyde-themes": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "dr-jekyll-and-mr-hyde-quotes": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "dr-jekyll-and-mr-hyde-context": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "dr-jekyll-and-mr-hyde-stagecraft-writer-s-methods": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        }
+      }
+    },
+    "english_lang": {
+      "topics": {
+        "paper-1-and-2-overview": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "exam-skills": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "practice-questions": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        }
+      }
+    },
+    "re": {
+      "topics": {
+        "the-nature-of-god": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "creation": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "salvation": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "worship-and-festivals": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "the-role-of-the-church": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "faith": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "the-nature-of-allah": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "authority": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "worship": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "duties-and-festivals": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "the-nature-of-god-2": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "life-after-death": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "sacraments": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "worship-and-prayer": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "the-work-of-the-church": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "religion-and-human-sexuality": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "religion-and-marriage": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "religion-and-divorce": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "religion-and-the-nature-of-families": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "religion-and-the-roles-of-men-and-women": {
+          "status": "N",
+          "links": [],
+          "sessions": []
+        },
+        "origins-of-the-universe": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "value-of-the-world": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "the-use-and-abuse-of-animals": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "sanctity-and-quality-of-life": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "death-and-the-afterlife": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "peace-and-justice": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "forgiveness-and-reconciliation": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "religion-and-violence": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "religion-and-attitudes-to-terrorism": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "religion-and-war": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "religion-and-peace": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "religion-and-crime": {
+          "status": "W",
+          "links": [],
+          "sessions": []
+        },
+        "religion-and-punishment": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "religion-and-suffering": {
+          "status": "W",
+          "links": [],
+          "sessions": []
+        },
+        "religion-and-the-treatment-of-criminals": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        },
+        "religion-and-the-death-penalty": {
+          "status": "W",
+          "links": [],
+          "sessions": []
+        }
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
-import { STATUS, STATUS_CYCLE } from './config.js?v=1788562101';
-import { navigate } from './router.js?v=1788562101';
-import * as store from './store.js?v=1788562101';
+import { STATUS, STATUS_CYCLE } from './config.js?v=1788984986';
+import { navigate } from './router.js?v=1788984986';
+import * as store from './store.js?v=1788984986';
 
 // --- helpers ---
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) =>
@@ -59,7 +59,7 @@ function openExport(subjectId) {
     <div class="modal">
       <h2>Update the schedule file</h2>
       <p>Save this as <code>${esc(path)}</code>, then commit &amp; push:</p>
-      <pre class="cmd">git add ${esc(path)} &amp;&amp; git commit -m "Update ${esc(subjectId)} status" &amp;&amp; git push</pre>
+      <pre class="cmd">git add ${esc(path)} &amp;&amp; git commit -m "Update revision status" &amp;&amp; git push</pre>
       <textarea readonly class="export-text">${esc(json)}</textarea>
       <div class="modal-actions">
         <button class="btn ghost" data-act="close">Close</button>

@@ -6,41 +6,37 @@
   <title>Merge state · Erin Study Schedule</title>
   <link rel="stylesheet" href="app.css">
   <style>
-    .merge-wrap { max-width: 820px; margin: 0 auto; padding: 16px 16px 60px; }
+    .merge-wrap { max-width: 900px; margin: 0 auto; padding: 16px 16px 60px; }
     .drop { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
     .drop .card { margin: 0; }
     label.field { display: block; font-weight: 600; margin-bottom: 6px; }
-    input[type=file], select { font: inherit; padding: 8px; border: 1px solid var(--line); border-radius: 8px; width: 100%; background: var(--card); }
-    .summary { display: flex; gap: 16px; flex-wrap: wrap; margin: 4px 0; }
+    input[type=file] { font: inherit; padding: 8px; border: 1px solid var(--line); border-radius: 8px; width: 100%; background: var(--card); }
+    .summary { display: flex; gap: 16px; flex-wrap: wrap; margin: 4px 0 10px; }
     .summary b { font-variant-numeric: tabular-nums; }
     .conflict { border-top: 1px solid var(--line); padding: 12px 0; }
     .conflict:first-child { border-top: 0; }
     .conflict h4 { margin: 0 0 8px; }
+    .conflict .sub { color: var(--muted); font-weight: 400; font-size: .85em; }
     .choices { display: flex; gap: 8px; flex-wrap: wrap; }
     .choice { border: 2px solid var(--line); border-radius: 10px; padding: 8px 12px; cursor: pointer; display: flex; align-items: center; gap: 8px; }
     .choice.sel { border-color: var(--accent); background: #eff6ff; }
     .choice input { display: none; }
     .who { font-size: .72rem; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
-    .out { width: 100%; height: 200px; font-family: ui-monospace, Menlo, monospace; font-size: .72rem; border: 1px solid var(--line); border-radius: 8px; padding: 10px; }
+    .out { width: 100%; height: 220px; font-family: ui-monospace, Menlo, monospace; font-size: .72rem; border: 1px solid var(--line); border-radius: 8px; padding: 10px; }
     .note { color: var(--muted); font-size: .85rem; }
-    .bad { color: var(--n); }
-    .ok { color: var(--c); }
+    .bad { color: var(--n); } .ok { color: var(--c); }
     @media (max-width: 560px) { .drop { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
 <div class="merge-wrap">
-  <p><a href="." data-nav>‹ Back to schedule</a></p>
+  <p><a href=".">‹ Back to schedule</a></p>
   <h1>Merge study status</h1>
-  <p class="note">Reconcile two people's downloaded <code>state.json</code> files. The
-    currently-committed version is used as the common ancestor for a three-way merge:
-    non-conflicting changes are combined automatically; you only resolve real clashes.</p>
+  <p class="note">Reconcile two people's downloaded <code>data/state.json</code> files. The
+    currently-committed version is the common ancestor for a three-way merge across every
+    subject: non-conflicting changes combine automatically; you only resolve real clashes.</p>
 
-  <section class="card">
-    <label class="field" for="subject">Subject</label>
-    <select id="subject"></select>
-    <p class="note" id="base-note" style="margin:8px 0 0"></p>
-  </section>
+  <section class="card"><p class="note" id="base-note">Loading committed base…</p></section>
 
   <div class="drop">
     <section class="card">
@@ -69,12 +65,12 @@
   </section>
 
   <section class="card" id="outWrap" hidden>
-    <h2>Merged <code id="outPath"></code></h2>
-    <p class="note">Save this over the file in the repo, then commit &amp; push.</p>
+    <h2>Merged <code>data/state.json</code></h2>
+    <p class="note">Save this over <code>data/state.json</code>, then commit &amp; push.</p>
     <textarea class="out" id="out" readonly></textarea>
     <p style="margin-top:10px">
       <button class="btn" id="copy">Copy</button>
-      <button class="btn primary" id="download" disabled>Download merged state.json</button>
+      <button class="btn primary" id="download" disabled>Download data/state.json</button>
     </p>
   </section>
 </div>
@@ -84,160 +80,141 @@ const $ = (id) => document.getElementById(id);
 const STATUS = { N: 'st-n', W: 'st-w', C: 'st-c' };
 const chip = (s) => `<span class="chip ${STATUS[s] || ''}">${s || '·'}</span>`;
 
-let subjects = [], base = null, A = null, B = null, titles = {}, subjectId = null;
-let computed = null;                     // { auto:[ids], conflicts:[{id,y,t,b}], topicFields:{} }
-const resolution = {};                   // id -> 'A' | 'B'
+let subjects = [], base = null, A = null, B = null, titles = {}, names = {};
+let computed = null;
+const resolution = {};                     // "sid:::tid" -> 'A' | 'B'
 
-// URL canonicalisation — mirrors tools/pmt/bind.py canon().
 function canon(url) {
   let u = url || '';
-  try {
-    if (u.includes('pdf-pages') && u.includes('pdf=')) {
-      const q = new URL(u, location.href).searchParams.get('pdf');
-      if (q) u = q;
-    }
-  } catch { /* ignore */ }
+  try { if (u.includes('pdf-pages') && u.includes('pdf=')) { const q = new URL(u, location.href).searchParams.get('pdf'); if (q) u = q; } } catch { /* */ }
   let prev = null;
   while (prev !== u) { prev = u; try { u = decodeURIComponent(u); } catch { break; } }
-  try { const p = new URL(u, location.href); return (p.host + p.pathname).toLowerCase().trim(); }
-  catch { return u.toLowerCase().trim(); }
+  try { const p = new URL(u, location.href); return (p.host + p.pathname).toLowerCase().trim(); } catch { return u.toLowerCase().trim(); }
 }
+const norm = (s) => ({ updatedAt: s?.updatedAt || '', subjects: s?.subjects || {} });
 
 async function init() {
+  try { subjects = (await (await fetch('data/subjects.json?t=' + Date.now())).json()).subjects.filter((s) => s.status === 'active'); }
+  catch { subjects = []; }
+  subjects.forEach((s) => { names[s.id] = s.name; });
   try {
-    subjects = (await (await fetch('data/subjects.json?t=' + Date.now())).json()).subjects
-      .filter((s) => s.status === 'active');
-  } catch { subjects = []; }
-  $('subject').innerHTML = subjects.map((s) => `<option value="${s.id}">${s.name}</option>`).join('');
-  $('subject').onchange = pickSubject;
-  if (subjects.length) pickSubject();
-}
-
-async function pickSubject() {
-  subjectId = $('subject').value;
-  const meta = subjects.find((s) => s.id === subjectId);
-  base = null; titles = {};
-  try {
-    base = await (await fetch(meta.state + '?t=' + Date.now())).json();
-    $('base-note').innerHTML = `Common ancestor: committed <code>${meta.state}</code> — ` +
-      `${Object.keys(base.topics || {}).length} topics (updated ${base.updatedAt || '—'}).`;
-  } catch { $('base-note').innerHTML = '<span class="bad">Could not load committed base.</span>'; }
-  try {
-    const c = await (await fetch(meta.content + '?t=' + Date.now())).json();
-    for (const strand of c.strands) for (const st of strand.subtopics) titles[st.id] = st.title;
-  } catch { /* titles optional */ }
-  refresh();
+    base = norm(await (await fetch('data/state.json?t=' + Date.now())).json());
+    const n = Object.values(base.subjects).reduce((a, s) => a + Object.keys(s.topics || {}).length, 0);
+    $('base-note').innerHTML = `Common ancestor: committed <code>data/state.json</code> — ${Object.keys(base.subjects).length} subjects, ${n} topics (updated ${base.updatedAt || '—'}).`;
+  } catch { base = norm(null); $('base-note').innerHTML = '<span class="bad">Could not load committed data/state.json.</span>'; }
+  // topic titles per subject (best-effort, for nicer conflict labels)
+  await Promise.all(subjects.map(async (s) => {
+    try {
+      const c = await (await fetch(s.content + '?t=' + Date.now())).json();
+      titles[s.id] = {};
+      for (const strand of c.strands) for (const st of strand.subtopics) titles[s.id][st.id] = st.title;
+    } catch { /* ignore */ }
+  }));
 }
 
 function readFile(input, slot, statusEl) {
-  const f = input.files[0];
-  if (!f) return;
+  const f = input.files[0]; if (!f) return;
   const r = new FileReader();
   r.onload = () => {
     try {
       const j = JSON.parse(r.result);
-      if (!j || typeof j.topics !== 'object') throw new Error('missing "topics"');
-      if (slot === 'A') A = j; else B = j;
-      statusEl.innerHTML = `<span class="ok">✓ ${Object.keys(j.topics).length} topics</span>`;
+      if (!j || typeof j.subjects !== 'object') throw new Error('not a data/state.json (missing "subjects")');
+      const n = Object.values(j.subjects).reduce((a, s) => a + Object.keys(s.topics || {}).length, 0);
+      if (slot === 'A') A = norm(j); else B = norm(j);
+      statusEl.innerHTML = `<span class="ok">✓ ${Object.keys(j.subjects).length} subjects, ${n} topics</span>`;
     } catch (e) {
       if (slot === 'A') A = null; else B = null;
-      statusEl.innerHTML = `<span class="bad">Not a valid state file: ${e.message}</span>`;
+      statusEl.innerHTML = `<span class="bad">${e.message}</span>`;
     }
-    refresh();
+    $('mergeBtn').disabled = !(base && A && B);
   };
   r.readAsText(f);
 }
 
-function refresh() {
-  $('mergeBtn').disabled = !(base && A && B);
-}
-
-// --- three-way merge engine ---
-function topic(obj, id) { return (obj && obj.topics[id]) || null; }
-function status(obj, id, fallback) { const t = topic(obj, id); return t ? (t.status || 'N') : fallback; }
+const topics = (state, sid) => state.subjects[sid]?.topics || {};
+const statusOf = (state, sid, tid) => topics(state, sid)[tid]?.status ?? null;
 
 function mergeLinks(a, b) {
   const out = [], seen = new Set();
-  for (const l of [...(a || []), ...(b || [])]) {
-    const k = canon(l.url);
-    if (!seen.has(k)) { seen.add(k); out.push(l); }
-  }
+  for (const l of [...(a || []), ...(b || [])]) { const k = canon(l.url); if (!seen.has(k)) { seen.add(k); out.push(l); } }
   return out;
 }
-
-function sessKey(s) { return `${s.date}|${s.time || ''}|${s.type || ''}`; }
-function mergeSessions(baseS, aS, bS) {
-  const bm = new Map((baseS || []).map((s) => [sessKey(s), s]));
-  const out = new Map();
-  for (const s of [...(aS || []), ...(bS || [])]) {
-    const k = sessKey(s);
-    if (!out.has(k)) out.set(k, { ...s });
-    else {
-      // same slot in both: resolve `done` three-way, else "completed wins"
-      const cur = out.get(k), bd = bm.get(k)?.done ?? false;
-      cur.done = (cur.done === s.done) ? cur.done
-        : (cur.done === bd) ? s.done : (s.done === bd) ? cur.done : (cur.done || s.done);
-    }
+const sk = (s) => `${s.date}|${s.time || ''}|${s.type || ''}`;
+function mergeSessions(bS, aS, bS2) {
+  const bm = new Map((bS || []).map((s) => [sk(s), s]));
+  const m = new Map();
+  for (const s of [...(aS || []), ...(bS2 || [])]) {
+    const k = sk(s);
+    if (!m.has(k)) m.set(k, { ...s });
+    else { const cur = m.get(k), bd = bm.get(k)?.done ?? false; cur.done = (cur.done === s.done) ? cur.done : (cur.done === bd) ? s.done : (s.done === bd) ? cur.done : (cur.done || s.done); }
   }
-  return [...out.values()];
+  return [...m.values()];
 }
 
 function compute() {
-  const ids = new Set([
-    ...Object.keys(base.topics || {}), ...Object.keys(A.topics || {}), ...Object.keys(B.topics || {}),
-  ]);
   const auto = [], conflicts = [], fields = {};
-  for (const id of ids) {
-    const bs = status(base, id, null), as = status(A, id, null), ts = status(B, id, null);
-    const ay = as ?? bs ?? 'N', by = ts ?? bs ?? 'N';
-    let resolved = null, isConflict = false;
-    if (ay === by) resolved = ay;
-    else if (ay === bs) resolved = by;          // A unchanged → take B
-    else if (by === bs) resolved = ay;          // B unchanged → take A
-    else { isConflict = true; }                 // both changed differently
-    fields[id] = {
-      links: mergeLinks(topic(A, id)?.links, topic(B, id)?.links),
-      sessions: mergeSessions(topic(base, id)?.sessions, topic(A, id)?.sessions, topic(B, id)?.sessions),
-      status: resolved,
-    };
-    if (isConflict) { conflicts.push({ id, a: ay, b: by, base: bs }); delete resolution[id]; }
-    else auto.push(id);
+  const sids = new Set([...Object.keys(base.subjects), ...Object.keys(A.subjects), ...Object.keys(B.subjects)]);
+  for (const sid of sids) {
+    fields[sid] = {};
+    const tids = new Set([...Object.keys(topics(base, sid)), ...Object.keys(topics(A, sid)), ...Object.keys(topics(B, sid))]);
+    for (const tid of tids) {
+      const bs = statusOf(base, sid, tid), as = statusOf(A, sid, tid), ts = statusOf(B, sid, tid);
+      const ay = as ?? bs ?? 'N', by = ts ?? bs ?? 'N';
+      let resolved = null, isConflict = false;
+      if (ay === by) resolved = ay;
+      else if (ay === bs) resolved = by;
+      else if (by === bs) resolved = ay;
+      else isConflict = true;
+      fields[sid][tid] = {
+        status: resolved,
+        links: mergeLinks(topics(A, sid)[tid]?.links, topics(B, sid)[tid]?.links),
+        sessions: mergeSessions(topics(base, sid)[tid]?.sessions, topics(A, sid)[tid]?.sessions, topics(B, sid)[tid]?.sessions),
+      };
+      if (isConflict) { conflicts.push({ sid, tid, a: ay, b: by, base: bs }); delete resolution[sid + ':::' + tid]; }
+      else auto.push(1);
+    }
   }
-  computed = { auto, conflicts, fields };
+  computed = { auto: auto.length, conflicts, fields };
 }
 
 function build() {
-  const out = { updatedAt: new Date().toISOString().replace(/\.\d+Z$/, 'Z'), topics: {} };
-  const order = [...computed.auto, ...computed.conflicts.map((c) => c.id)].sort();
-  for (const id of order) {
-    const f = computed.fields[id];
-    let st = f.status;
-    if (st == null) { const c = computed.conflicts.find((x) => x.id === id); st = resolution[id] === 'B' ? c.b : c.a; }
-    out.topics[id] = { status: st, links: f.links, sessions: f.sessions };
+  const out = { updatedAt: new Date().toISOString().replace(/\.\d+Z$/, 'Z'), subjects: {} };
+  const order = subjects.map((s) => s.id).filter((id) => id in computed.fields);
+  for (const id of Object.keys(computed.fields)) if (!order.includes(id)) order.push(id);
+  for (const sid of order) {
+    const baseTopics = Object.keys(topics(base, sid));
+    const tids = [...baseTopics, ...Object.keys(computed.fields[sid]).filter((t) => !baseTopics.includes(t))];
+    const outTopics = {};
+    for (const tid of tids) {
+      const f = computed.fields[sid][tid];
+      let st = f.status;
+      if (st == null) { const c = computed.conflicts.find((x) => x.sid === sid && x.tid === tid); st = resolution[sid + ':::' + tid] === 'B' ? c.b : c.a; }
+      outTopics[tid] = { status: st, links: f.links, sessions: f.sessions };
+    }
+    out.subjects[sid] = { topics: outTopics };
   }
   return out;
 }
 
 function renderConflicts() {
-  const box = $('conflicts');
-  box.innerHTML = computed.conflicts.map((c) => `
-    <div class="conflict" data-id="${c.id}">
-      <h4>${titles[c.id] || c.id}</h4>
+  $('conflicts').innerHTML = computed.conflicts.map((c) => {
+    const key = c.sid + ':::' + c.tid;
+    const title = (titles[c.sid] && titles[c.sid][c.tid]) || c.tid;
+    return `<div class="conflict" data-key="${key}">
+      <h4>${title} <span class="sub">${names[c.sid] || c.sid}</span></h4>
       <div class="choices">
         ${['A', 'B'].map((side) => {
           const val = side === 'A' ? c.a : c.b;
-          const who = side === 'A' ? 'Version A' : 'Version B';
-          const sel = resolution[c.id] === side ? 'sel' : '';
-          return `<label class="choice ${sel}" data-side="${side}">
-            <input type="radio" name="c-${c.id}" value="${side}" ${sel ? 'checked' : ''}>
-            <span><span class="who">${who}</span><br>${chip(val)}</span></label>`;
+          const sel = resolution[key] === side ? 'sel' : '';
+          return `<label class="choice ${sel}" data-side="${side}"><input type="radio" name="c-${key}" value="${side}" ${sel ? 'checked' : ''}>
+            <span><span class="who">Version ${side}</span><br>${chip(val)}</span></label>`;
         }).join('')}
-        <label class="choice" title="unchanged base was ${c.base}"><span class="who">base</span> ${chip(c.base)}</label>
-      </div>
-    </div>`).join('') || '<p class="note">No conflicts — fully auto-merged. 🎉</p>';
-  box.querySelectorAll('.conflict').forEach((row) => {
+        <label class="choice"><span class="who">base</span> ${chip(c.base)}</label>
+      </div></div>`;
+  }).join('') || '<p class="note">No conflicts — fully auto-merged. 🎉</p>';
+  $('conflicts').querySelectorAll('.conflict').forEach((row) => {
     row.querySelectorAll('input[type=radio]').forEach((r) => r.onchange = () => {
-      resolution[row.dataset.id] = r.value;
+      resolution[row.dataset.key] = r.value;
       row.querySelectorAll('.choice[data-side]').forEach((c) => c.classList.toggle('sel', c.dataset.side === r.value));
       updateOut();
     });
@@ -245,38 +222,28 @@ function renderConflicts() {
 }
 
 function updateOut() {
-  $('nAuto').textContent = computed.auto.length;
+  $('nAuto').textContent = computed.auto;
   $('nConf').textContent = computed.conflicts.length;
-  const open = computed.conflicts.filter((c) => !resolution[c.id]).length;
+  const open = computed.conflicts.filter((c) => !resolution[c.sid + ':::' + c.tid]).length;
   $('nOpen').textContent = open;
-  const merged = build();
-  $('out').value = JSON.stringify(merged, null, 2) + '\n';
+  $('out').value = JSON.stringify(build(), null, 2) + '\n';
   $('download').disabled = open > 0;
 }
 
 function doMerge() {
   compute();
-  $('result').hidden = false;
-  $('outWrap').hidden = false;
+  $('result').hidden = false; $('outWrap').hidden = false;
   $('allA').hidden = $('allB').hidden = computed.conflicts.length === 0;
-  const meta = subjects.find((s) => s.id === subjectId);
-  $('outPath').textContent = meta.state;
-  renderConflicts();
-  updateOut();
+  renderConflicts(); updateOut();
 }
 
 $('fileA').onchange = (e) => readFile(e.target, 'A', $('statusA'));
 $('fileB').onchange = (e) => readFile(e.target, 'B', $('statusB'));
 $('mergeBtn').onclick = doMerge;
-$('allA').onclick = () => { computed.conflicts.forEach((c) => resolution[c.id] = 'A'); renderConflicts(); updateOut(); };
-$('allB').onclick = () => { computed.conflicts.forEach((c) => resolution[c.id] = 'B'); renderConflicts(); updateOut(); };
+$('allA').onclick = () => { computed.conflicts.forEach((c) => resolution[c.sid + ':::' + c.tid] = 'A'); renderConflicts(); updateOut(); };
+$('allB').onclick = () => { computed.conflicts.forEach((c) => resolution[c.sid + ':::' + c.tid] = 'B'); renderConflicts(); updateOut(); };
 $('copy').onclick = async () => { try { await navigator.clipboard.writeText($('out').value); $('copy').textContent = 'Copied ✓'; } catch { $('out').select(); document.execCommand('copy'); } };
-$('download').onclick = () => {
-  const blob = new Blob([$('out').value], { type: 'application/json' });
-  const a = document.createElement('a');
-  a.href = URL.createObjectURL(blob); a.download = 'state.json'; a.click();
-  URL.revokeObjectURL(a.href);
-};
+$('download').onclick = () => { const b = new Blob([$('out').value], { type: 'application/json' }); const a = document.createElement('a'); a.href = URL.createObjectURL(b); a.download = 'state.json'; a.click(); URL.revokeObjectURL(a.href); };
 
 init();
 </script>

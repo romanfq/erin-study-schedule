@@ -1,21 +1,39 @@
 // Data + state store.
 //
-// The committed state file (data/<subject>/state.json) is the source of truth.
-// While you use the UI, edits are held in a per-device "working overlay" in
-// localStorage. Pressing Update exports a fresh state.json for you to commit.
+// State for every subject lives in ONE committed file, data/state.json:
+//   { updatedAt, subjects: { <subjectId>: { topics: { <id>: {status,links,sessions} } } } }
+// While you use the UI, edits are held in a single per-device "working overlay"
+// in localStorage. Pressing Update exports the whole data/state.json to commit.
 // On load, if the committed file has moved on since the overlay was based on it,
 // the overlay is discarded so a freshly committed file always wins.
 
-import { url } from './config.js?v=1788562101';
+import { url } from './config.js?v=1788984986';
 
-const LS_KEY = (subject) => `ess:${subject}:working`;
+const LS_KEY = 'ess:working';
+const STATE_FILE = 'data/state.json';
 
-const cache = { subjects: null, profile: null, content: {}, base: {}, working: {} };
+const cache = { subjects: null, profile: null, content: {}, base: null, working: null };
 
 async function getJSON(path) {
   const res = await fetch(url(path) + '?t=' + Date.now(), { cache: 'no-store' });
   if (!res.ok) throw new Error(`Failed to load ${path} (${res.status})`);
   return res.json();
+}
+
+function emptyTopic() { return { status: 'N', links: [], sessions: [] }; }
+
+function normalise(state) {
+  return { updatedAt: state?.updatedAt || '', subjects: state?.subjects || {} };
+}
+
+function reconcileWorking() {
+  let working = null;
+  try { working = JSON.parse(localStorage.getItem(LS_KEY) || 'null'); } catch { /* ignore */ }
+  if (!working || working.basedOn !== cache.base.updatedAt) {
+    working = { basedOn: cache.base.updatedAt, subjects: structuredClone(cache.base.subjects) };
+    localStorage.removeItem(LS_KEY);
+  }
+  cache.working = working;
 }
 
 export async function loadCore() {
@@ -24,6 +42,11 @@ export async function loadCore() {
     try { cache.profile = await getJSON('data/profile.json'); }
     catch { cache.profile = { student: '', defaultSubject: 'maths', tier: 'F' }; }
   }
+  if (!cache.base) {
+    try { cache.base = normalise(await getJSON(STATE_FILE)); }
+    catch { cache.base = { updatedAt: '', subjects: {} }; }
+    reconcileWorking();
+  }
   return { subjects: cache.subjects, profile: cache.profile };
 }
 
@@ -31,39 +54,27 @@ export function subjectMeta(id) {
   return (cache.subjects || []).find((s) => s.id === id);
 }
 
-function emptyTopic() { return { status: 'N', links: [], sessions: [] }; }
+function ensureSubject(subjectId) {
+  if (!cache.working.subjects[subjectId]) cache.working.subjects[subjectId] = { topics: {} };
+  return cache.working.subjects[subjectId];
+}
 
 export async function loadSubject(subjectId) {
   const meta = subjectMeta(subjectId);
   if (!meta || meta.status !== 'active') throw new Error('Subject not available');
-
   if (!cache.content[subjectId]) cache.content[subjectId] = await getJSON(meta.content);
-  if (!cache.base[subjectId]) cache.base[subjectId] = await getJSON(meta.state);
-
-  const content = cache.content[subjectId];
-  const base = cache.base[subjectId];
-
-  // Reconcile the working overlay with the committed base.
-  let working = null;
-  try { working = JSON.parse(localStorage.getItem(LS_KEY(subjectId)) || 'null'); } catch { /* ignore */ }
-  if (!working || working.basedOn !== base.updatedAt) {
-    // No unsaved edits, or the committed file has changed — start clean from base.
-    working = { basedOn: base.updatedAt, topics: structuredClone(base.topics) };
-    localStorage.removeItem(LS_KEY(subjectId));
-  }
-  cache.working[subjectId] = working;
-
-  return { content, meta, updatedAt: base.updatedAt };
+  ensureSubject(subjectId);
+  return { content: cache.content[subjectId], meta };
 }
 
 // Every subtopic in the content, with its current (working) state merged in.
 export function allTopics(subjectId) {
   const content = cache.content[subjectId];
-  const working = cache.working[subjectId];
+  const wsub = ensureSubject(subjectId);
   const out = [];
   for (const strand of content.strands) {
     for (const st of strand.subtopics) {
-      const state = working.topics[st.id] || emptyTopic();
+      const state = wsub.topics[st.id] || emptyTopic();
       out.push({ ...st, strandId: strand.id, strandName: strand.name, state });
     }
   }
@@ -75,74 +86,83 @@ export function getTopic(subjectId, topicId) {
 }
 
 function ensureTopic(subjectId, topicId) {
-  const working = cache.working[subjectId];
-  if (!working.topics[topicId]) working.topics[topicId] = emptyTopic();
-  return working.topics[topicId];
+  const sub = ensureSubject(subjectId);
+  if (!sub.topics[topicId]) sub.topics[topicId] = emptyTopic();
+  return sub.topics[topicId];
 }
 
-function persistWorking(subjectId) {
-  localStorage.setItem(LS_KEY(subjectId), JSON.stringify(cache.working[subjectId]));
+function persist() {
+  localStorage.setItem(LS_KEY, JSON.stringify(cache.working));
 }
 
 // --- mutations (UI is the only writer) ---
 
 export function setStatus(subjectId, topicId, status) {
   ensureTopic(subjectId, topicId).status = status;
-  persistWorking(subjectId);
+  persist();
 }
 
 export function setLinks(subjectId, topicId, links) {
   ensureTopic(subjectId, topicId).links = links;
-  persistWorking(subjectId);
+  persist();
 }
 
 export function addSession(subjectId, topicId, session) {
   ensureTopic(subjectId, topicId).sessions.push(session);
-  persistWorking(subjectId);
+  persist();
 }
 
 export function updateSession(subjectId, topicId, index, patch) {
   const t = ensureTopic(subjectId, topicId);
   if (t.sessions[index]) Object.assign(t.sessions[index], patch);
-  persistWorking(subjectId);
+  persist();
 }
 
 export function removeSession(subjectId, topicId, index) {
   const t = ensureTopic(subjectId, topicId);
   t.sessions.splice(index, 1);
-  persistWorking(subjectId);
+  persist();
 }
 
-// --- dirty tracking + export ---
+// --- dirty tracking + export (whole file, across all subjects) ---
 
-export function changeCount(subjectId) {
-  const base = cache.base[subjectId];
-  const working = cache.working[subjectId];
+export function changeCount() {
+  const base = cache.base, working = cache.working;
   if (!base || !working) return 0;
   let n = 0;
-  const ids = new Set([...Object.keys(base.topics), ...Object.keys(working.topics)]);
-  for (const id of ids) {
-    const a = JSON.stringify(base.topics[id] || emptyTopic());
-    const b = JSON.stringify(working.topics[id] || emptyTopic());
-    if (a !== b) n++;
+  const subjIds = new Set([...Object.keys(base.subjects), ...Object.keys(working.subjects)]);
+  for (const sid of subjIds) {
+    const bt = base.subjects[sid]?.topics || {};
+    const wt = working.subjects[sid]?.topics || {};
+    const ids = new Set([...Object.keys(bt), ...Object.keys(wt)]);
+    for (const id of ids) {
+      if (JSON.stringify(bt[id] || emptyTopic()) !== JSON.stringify(wt[id] || emptyTopic())) n++;
+    }
   }
   return n;
 }
 
-// Produce the exact file contents to commit as data/<subject>/state.json.
-export function exportState(subjectId) {
-  const working = cache.working[subjectId];
+// Produce the exact contents to commit as data/state.json (stable ordering).
+export function exportState() {
   const stamp = new Date().toISOString().replace(/\.\d+Z$/, 'Z');
-  const out = { updatedAt: stamp, topics: {} };
-  // Preserve content order for a stable, readable diff.
-  for (const t of allTopics(subjectId)) out.topics[t.id] = t.state;
-  return { json: JSON.stringify(out, null, 2) + '\n', path: subjectMeta(subjectId).state };
+  const out = { updatedAt: stamp, subjects: {} };
+  const order = (cache.subjects || []).filter((s) => s.status === 'active').map((s) => s.id);
+  const extras = Object.keys(cache.working.subjects).filter((id) => !order.includes(id));
+  for (const sid of [...order, ...extras]) {
+    const wt = cache.working.subjects[sid]?.topics;
+    if (!wt) continue;
+    let ids = cache.content[sid]
+      ? cache.content[sid].strands.flatMap((st) => st.subtopics.map((s) => s.id)).filter((id) => id in wt)
+      : Object.keys(cache.base.subjects[sid]?.topics || wt);
+    for (const id of Object.keys(wt)) if (!ids.includes(id)) ids.push(id);
+    out.subjects[sid] = { topics: Object.fromEntries(ids.map((id) => [id, wt[id]])) };
+  }
+  return { json: JSON.stringify(out, null, 2) + '\n', path: STATE_FILE };
 }
 
-export function discardChanges(subjectId) {
-  const base = cache.base[subjectId];
-  cache.working[subjectId] = { basedOn: base.updatedAt, topics: structuredClone(base.topics) };
-  localStorage.removeItem(LS_KEY(subjectId));
+export function discardChanges() {
+  cache.working = { basedOn: cache.base.updatedAt, subjects: structuredClone(cache.base.subjects) };
+  localStorage.removeItem(LS_KEY);
 }
 
 // All scheduled sessions across every active subject, flattened for the calendar.
@@ -150,12 +170,12 @@ export async function allSessions() {
   const out = [];
   for (const s of cache.subjects || []) {
     if (s.status !== 'active') continue;
-    if (!cache.content[s.id]) { try { await loadSubject(s.id); } catch { continue; } }
+    try { await loadSubject(s.id); } catch { continue; }
     for (const t of allTopics(s.id)) {
       (t.state.sessions || []).forEach((ses, i) => {
         out.push({
           subjectId: s.id, subjectName: s.short || s.name, colour: s.colour,
-          topicId: t.id, topicTitle: t.title, index: i, ...ses
+          topicId: t.id, topicTitle: t.title, index: i, ...ses,
         });
       });
     }

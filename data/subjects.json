@@ -7,8 +7,7 @@
       "status": "active",
       "colour": "#2563eb",
       "board": "AQA 8300 · Edexcel 1MA1 · OCR J560",
-      "content": "data/maths/content.json",
-      "state": "data/maths/state.json"
+      "content": "data/maths/content.json"
     },
     {
       "id": "biology",
@@ -17,8 +16,7 @@
       "status": "active",
       "colour": "#16a34a",
       "board": "AQA GCSE Biology · 7 core topics",
-      "content": "data/biology/content.json",
-      "state": "data/biology/state.json"
+      "content": "data/biology/content.json"
     },
     {
       "id": "chem",
@@ -27,8 +25,7 @@
       "status": "active",
       "colour": "#7c3aed",
       "board": "AQA",
-      "content": "data/chem/content.json",
-      "state": "data/chem/state.json"
+      "content": "data/chem/content.json"
     },
     {
       "id": "phys",
@@ -37,8 +34,7 @@
       "status": "active",
       "colour": "#0891b2",
       "board": "AQA",
-      "content": "data/phys/content.json",
-      "state": "data/phys/state.json"
+      "content": "data/phys/content.json"
     },
     {
       "id": "geo",
@@ -47,8 +43,7 @@
       "status": "active",
       "colour": "#ca8a04",
       "board": "Edexcel B",
-      "content": "data/geo/content.json",
-      "state": "data/geo/state.json"
+      "content": "data/geo/content.json"
     },
     {
       "id": "history",
@@ -57,8 +52,7 @@
       "status": "active",
       "colour": "#b91c1c",
       "board": "Edexcel",
-      "content": "data/history/content.json",
-      "state": "data/history/state.json"
+      "content": "data/history/content.json"
     },
     {
       "id": "english_lit",
@@ -67,8 +61,7 @@
       "status": "active",
       "colour": "#ea580c",
       "board": "AQA",
-      "content": "data/english_lit/content.json",
-      "state": "data/english_lit/state.json"
+      "content": "data/english_lit/content.json"
     },
     {
       "id": "english_lang",
@@ -77,8 +70,7 @@
       "status": "active",
       "colour": "#db2777",
       "board": "AQA",
-      "content": "data/english_lang/content.json",
-      "state": "data/english_lang/state.json"
+      "content": "data/english_lang/content.json"
     },
     {
       "id": "re",
@@ -87,8 +79,7 @@
       "status": "active",
       "colour": "#0d9488",
       "board": "AQA",
-      "content": "data/re/content.json",
-      "state": "data/re/state.json"
+      "content": "data/re/content.json"
     }
   ]
 }
