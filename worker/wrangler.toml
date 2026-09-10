@@ -2,8 +2,16 @@ name = "gcse-schedule-updater"
 main = "src/index.js"
 compatibility_date = "2025-06-01"
 
-# Secrets/vars are NOT stored here — set them in the Cloudflare dashboard
-# (Worker → Settings → Variables and Secrets):
-#   GITHUB_TOKEN      (Secret)  fine-grained PAT, Contents:read/write on the repo
-#   ALLOWED_EMAILS    (Secret)  comma-separated Google emails allowed to write
-#   GOOGLE_CLIENT_ID  (Text)    the OAuth Web client id (public)
+# GOOGLE_CLIENT_ID is a public OAuth client id (safe to commit). Declaring it
+# here so `wrangler deploy` preserves it instead of dropping the dashboard var.
+[vars]
+GOOGLE_CLIENT_ID = "953687426765-0nnnmd0kdt2l7imaijcn4p38l9s11jeb.apps.googleusercontent.com"
+
+# Real-time logs for debugging saves (Worker → Observability / Logs).
+[observability]
+enabled = true
+
+# Secrets are NOT stored here — set them in the dashboard (Settings → Variables
+# and Secrets) or `wrangler secret put`; they survive deploys:
+#   GITHUB_TOKEN    (Secret)  fine-grained PAT, Contents:read/write on the repo
+#   ALLOWED_EMAILS  (Secret)  comma-separated Google emails allowed to write
