@@ -64,7 +64,7 @@ export default {
     // 1–2. verify Google identity + allow-list
     const info = await fetch('https://oauth2.googleapis.com/tokeninfo?id_token=' + encodeURIComponent(idToken))
       .then((r) => (r.ok ? r.json() : null)).catch(() => null);
-    const allowed = (env.ALLOWED_EMAILS || '').split(',').map((e) => e.trim().toLowerCase()).filter(Boolean);
+    const allowed = (env.ALLOWED_EMAILS || '').split(/[\s;,]+/).map((e) => e.trim().toLowerCase()).filter(Boolean);
     const email = (info?.email || '').toLowerCase();
     const ok = info
       && info.aud === env.GOOGLE_CLIENT_ID
