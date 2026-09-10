@@ -1,6 +1,6 @@
-import { start, currentPath } from './router.js?v=1789082332';
-import { loadCore, subjectMeta } from './store.js?v=1789082332';
-import * as views from './views.js?v=1789082332';
+import { start, currentPath } from './router.js?v=1789083176';
+import { loadCore, subjectMeta } from './store.js?v=1789083176';
+import * as views from './views.js?v=1789083176';
 
 const root = document.getElementById('app');
 

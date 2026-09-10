@@ -1,7 +1,8 @@
-import { STATUS, STATUS_CYCLE } from './config.js?v=1789082332';
-import { navigate, currentPath } from './router.js?v=1789082332';
-import * as store from './store.js?v=1789082332';
-import { saveEnabled, ensureToken, directSave } from './save.js?v=1789082332';
+import { STATUS, STATUS_CYCLE } from './config.js?v=1789083176';
+import { navigate, currentPath } from './router.js?v=1789083176';
+import * as store from './store.js?v=1789083176';
+import { saveEnabled, ensureToken, directSave } from './save.js?v=1789083176';
+import { openProgress } from './progress.js?v=1789083176';
 
 // --- helpers ---
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) =>
@@ -272,6 +273,7 @@ export async function renderSubject(root, subjectId, profile) {
       <div class="legend-row">
         <p class="legend">${chip('N')} not started ${chip('W')} working on it ${chip('C')} confident</p>
         <div class="legend-controls">
+          <button class="btn ghost sm" data-progress>Progress</button>
           <button class="btn ghost sm" data-toggle-confident>${hideConfident ? 'Show' : 'Hide'} Confident</button>
           <button class="btn ghost sm ${sortMode ? 'on' : ''}" data-sort>${sortMode ? 'Grouped' : 'Sort W·N·C'}</button>
         </div>
@@ -279,6 +281,7 @@ export async function renderSubject(root, subjectId, profile) {
       ${body}`;
 
     root.querySelectorAll('[data-tier]').forEach((b) => b.onclick = () => { tier = b.dataset.tier; setTierPref(tier); draw(); });
+    root.querySelector('[data-progress]').onclick = () => openProgress();
     root.querySelector('[data-toggle-confident]').onclick = () => { hideConfident = !hideConfident; draw(); };
     root.querySelector('[data-sort]').onclick = () => { sortMode = !sortMode; draw(); };
     root.querySelectorAll('[data-cycle]').forEach((b) => b.onclick = (e) => {

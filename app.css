@@ -214,6 +214,29 @@ h2 { font-size: 1.15rem; margin: 0 0 .5em; }
 .rb-opt .who { font-size: .62rem; text-transform: uppercase; color: var(--muted); letter-spacing: .03em; }
 .gbtn { display: flex; justify-content: center; margin: 14px 0; min-height: 40px; }
 
+/* Progress chart */
+.progress-modal { max-width: 640px; }
+.pg-head { display: flex; align-items: center; gap: 10px; margin-bottom: 4px; }
+.pg-head h2 { margin: 0; flex: 1; font-size: 1.2rem; }
+.pg-back { border: 0; background: transparent; font-size: 1.7rem; line-height: 1; cursor: pointer; color: var(--accent); padding: 0 6px; }
+.pg-sub { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin: 2px 0 12px; }
+.pg-sub[hidden] { display: none; }
+#pg-overall { font-weight: 700; }
+.pg-hint { color: var(--muted); font-size: .85rem; }
+.pg-chart { min-height: 60px; }
+.pg-chart text.pg-label { font: 600 .82rem -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: var(--ink); }
+.pg-chart text.pg-pct { font: 700 .72rem -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: var(--muted); }
+.pg-chart rect.pg-track { fill: #eef2f7; }
+.pg-chart rect.pg-track.hot { fill: #e2e8f0; }
+.pg-legend { display: flex; gap: 16px; margin-top: 14px; color: var(--muted); font-size: .8rem; }
+.pg-legend i { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 5px; vertical-align: middle; }
+.pg-prow { margin: 10px 0; }
+.pg-prow.click { cursor: pointer; }
+.pg-plabel { font-weight: 600; font-size: .82rem; margin-bottom: 3px; }
+.pg-ppct { color: var(--muted); font-weight: 700; font-size: .75rem; }
+.pg-pbar { display: flex; height: 16px; border-radius: 4px; overflow: hidden; background: #eef2f7; }
+.pg-pbar span { transition: width .5s ease; }
+
 .loading, .error { padding: 40px 0; color: var(--muted); }
 .error pre { white-space: pre-wrap; color: var(--n); }
 
