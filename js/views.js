@@ -1,8 +1,8 @@
-import { STATUS, STATUS_CYCLE } from './config.js?v=1789083176';
-import { navigate, currentPath } from './router.js?v=1789083176';
-import * as store from './store.js?v=1789083176';
-import { saveEnabled, ensureToken, directSave } from './save.js?v=1789083176';
-import { openProgress } from './progress.js?v=1789083176';
+import { STATUS, STATUS_CYCLE } from './config.js?v=1789083599';
+import { navigate, currentPath } from './router.js?v=1789083599';
+import * as store from './store.js?v=1789083599';
+import { saveEnabled, ensureToken, directSave } from './save.js?v=1789083599';
+import { openProgress } from './progress.js?v=1789083599';
 
 // --- helpers ---
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) =>
@@ -273,7 +273,7 @@ export async function renderSubject(root, subjectId, profile) {
       <div class="legend-row">
         <p class="legend">${chip('N')} not started ${chip('W')} working on it ${chip('C')} confident</p>
         <div class="legend-controls">
-          <button class="btn ghost sm" data-progress>Progress</button>
+          <button class="btn ghost sm" data-progress>Progress 🎉</button>
           <button class="btn ghost sm" data-toggle-confident>${hideConfident ? 'Show' : 'Hide'} Confident</button>
           <button class="btn ghost sm ${sortMode ? 'on' : ''}" data-sort>${sortMode ? 'Grouped' : 'Sort W·N·C'}</button>
         </div>

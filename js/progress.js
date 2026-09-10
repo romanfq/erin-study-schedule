@@ -1,7 +1,7 @@
 // Progress modal: stacked C/W/N bars per subject, drill into per-strand bars.
 // Uses d3 (lazy-loaded from CDN) for smooth transitions; falls back to CSS bars.
 
-import * as store from './store.js?v=1789083176';
+import * as store from './store.js?v=1789083599';
 
 const COLOUR = { C: '#16a34a', W: '#f59e0b', N: '#dc2626' };
 const el = (h) => { const t = document.createElement('template'); t.innerHTML = h.trim(); return t.content.firstElementChild; };
@@ -119,7 +119,7 @@ export async function openProgress() {
   overall.textContent = `Overall Progress: ${Math.floor(totalC * 100 / totalAll)}%`;
 
   const showGeneral = () => {
-    title.textContent = 'Progress';
+    title.textContent = 'Progress 🎉';
     sub.hidden = false; back.hidden = true;
     render(chart, d3, data.map((d) => ({ label: d.name, C: d.totals.C, W: d.totals.W, N: d.totals.N, _s: d })), (row) => showSubject(row._s));
   };
