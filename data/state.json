@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-09T20:08:40Z",
+  "updatedAt": "2026-09-10T07:36:18Z",
   "subjects": {
     "maths": {
       "topics": {
@@ -385,6 +385,10 @@
             {
               "label": "Algebraic Proof — mark scheme",
               "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Algebra/Higher/Notation-Vocabulary-and-Manipulation/MS/Algebraic%20Proof%20(H)%20MS.pdf"
+            },
+            {
+              "label": "Iteration (H)",
+              "url": "https://www.physicsandmathstutor.com/pdf-pages/?pdf=https%3A%2F%2Fpmt.physicsandmathstutor.com%2Fdownload%2FMaths%2FGCSE%2FTopic-Qs%2FEdexcel%2FSet-4%2FAlgebra%2FHigher%2FSolving-Equations-and-Inequalities%2FQP%2FIteration%20(H)%20QP.pdf"
             }
           ],
           "sessions": []
