@@ -1,7 +1,7 @@
-import { STATUS, STATUS_CYCLE } from './config.js?v=1789068452';
-import { navigate, currentPath } from './router.js?v=1789068452';
-import * as store from './store.js?v=1789068452';
-import { saveEnabled, ensureToken, directSave } from './save.js?v=1789068452';
+import { STATUS, STATUS_CYCLE } from './config.js?v=1789082332';
+import { navigate, currentPath } from './router.js?v=1789082332';
+import * as store from './store.js?v=1789082332';
+import { saveEnabled, ensureToken, directSave } from './save.js?v=1789082332';
 
 // --- helpers ---
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) =>
@@ -216,8 +216,7 @@ export function renderLanding(root, { subjects, profile }) {
   }).join('');
   root.innerHTML = `${header('Study Schedule', profile?.student ? `${profile.student}'s revision` : '')}
     <p class="lead">Pick a subject.</p>
-    <div class="subject-grid">${cards}</div>
-    <p class="merge-link"><a href="merge.html">Merge two people's downloaded status files →</a></p>`;
+    <div class="subject-grid">${cards}</div>`;
 }
 
 export async function renderSubject(root, subjectId, profile) {
