@@ -7,7 +7,7 @@
 // On load, if the committed file has moved on since the overlay was based on it,
 // the overlay is discarded so a freshly committed file always wins.
 
-import { url } from './config.js?v=1789066819';
+import { url } from './config.js?v=1789068452';
 
 const LS_KEY = 'ess:working';
 const STATE_FILE = 'data/state.json';
@@ -174,6 +174,79 @@ export function baseUpdatedAt() { return cache.base?.updatedAt || ''; }
 export function markSaved(saved) {
   cache.base = normalise(saved);
   cache.working = { basedOn: cache.base.updatedAt, subjects: structuredClone(cache.base.subjects) };
+  localStorage.setItem(LS_KEY, JSON.stringify(cache.working));
+}
+
+// --- three-way rebase, used to auto-resolve a save conflict (409) ---
+function canonUrl(u) {
+  u = u || '';
+  try { if (u.includes('pdf-pages') && u.includes('pdf=')) { const q = new URL(u, 'https://x/').searchParams.get('pdf'); if (q) u = q; } } catch { /* */ }
+  let prev = null;
+  while (prev !== u) { prev = u; try { u = decodeURIComponent(u); } catch { break; } }
+  return u.toLowerCase().trim();
+}
+function unionLinks(a, b) {
+  const out = [], seen = new Set();
+  for (const l of [...(a || []), ...(b || [])]) { const k = canonUrl(l.url); if (!seen.has(k)) { seen.add(k); out.push(l); } }
+  return out;
+}
+const sesKey = (s) => `${s.date}|${s.time || ''}|${s.type || ''}`;
+function mergeSessions(base, a, b) {
+  const bm = new Map((base || []).map((s) => [sesKey(s), s]));
+  const m = new Map();
+  for (const s of [...(a || []), ...(b || [])]) {
+    const k = sesKey(s);
+    if (!m.has(k)) m.set(k, { ...s });
+    else { const cur = m.get(k), bd = bm.get(k)?.done ?? false; cur.done = (cur.done === s.done) ? cur.done : (cur.done === bd) ? s.done : (s.done === bd) ? cur.done : (cur.done || s.done); }
+  }
+  return [...m.values()];
+}
+
+// The current committed file (fresh) — the "theirs" side of a rebase.
+// Keeps updatedBy (who last saved it) for display; normalise() drops it.
+export async function fetchCommitted() {
+  const raw = await getJSON(STATE_FILE);
+  return { ...normalise(raw), updatedBy: raw?.updatedBy };
+}
+
+// Rebase local edits (working) onto `theirs`, ancestor = cache.base (what we
+// loaded). Returns { subjects, conflicts:[{key,subjectId,topicId,base,ours,theirs}] }.
+// Non-conflicting status changes, and all link/session additions, merge
+// automatically; genuine same-topic status clashes are reported and resolved
+// via resolutions[key] === 'ours' | 'theirs' (default 'theirs').
+export function rebase(theirs, resolutions = {}) {
+  const ancestor = cache.base, ours = cache.working;
+  const subjects = {}, conflicts = [];
+  const sids = new Set([...Object.keys(ancestor.subjects), ...Object.keys(ours.subjects), ...Object.keys(theirs.subjects)]);
+  for (const sid of sids) {
+    const at = ancestor.subjects[sid]?.topics || {};
+    const yt = ours.subjects[sid]?.topics || {};
+    const tt = theirs.subjects[sid]?.topics || {};
+    const topics = {};
+    for (const tid of new Set([...Object.keys(at), ...Object.keys(yt), ...Object.keys(tt)])) {
+      const v0 = at[tid], oy = yt[tid], ot = tt[tid];
+      const bs = v0?.status ?? 'N', ys = oy?.status ?? 'N', ts = ot?.status ?? 'N';
+      let status;
+      if (ys === ts) status = ys;
+      else if (ys === bs) status = ts;
+      else if (ts === bs) status = ys;
+      else {
+        const key = sid + '::' + tid;
+        conflicts.push({ key, subjectId: sid, topicId: tid, base: bs, ours: ys, theirs: ts });
+        status = resolutions[key] === 'ours' ? ys : ts;
+      }
+      topics[tid] = { status, links: unionLinks(oy?.links, ot?.links), sessions: mergeSessions(v0?.sessions, oy?.sessions, ot?.sessions) };
+    }
+    subjects[sid] = { topics };
+  }
+  return { subjects, conflicts };
+}
+
+// Adopt `theirs` as the new base and the merged subjects as working, so the
+// next export/save carries the rebased content and the right concurrency stamp.
+export function applyRebase(theirs, mergedSubjects) {
+  cache.base = normalise(theirs);
+  cache.working = { basedOn: cache.base.updatedAt, subjects: mergedSubjects };
   localStorage.setItem(LS_KEY, JSON.stringify(cache.working));
 }
 

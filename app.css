@@ -203,6 +203,15 @@ h2 { font-size: 1.15rem; margin: 0 0 .5em; }
 .toast.show { opacity: 1; transform: translate(-50%, 0); }
 .toast.err { background: #b91c1c; }
 .modal.signin { text-align: center; max-width: 360px; }
+.rb-list { margin: 8px 0 4px; max-height: 50vh; overflow-y: auto; }
+.rb-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 9px 0; border-top: 1px solid var(--line); }
+.rb-row:first-child { border-top: 0; }
+.rb-title { font-weight: 500; }
+.rb-sub { color: var(--muted); font-weight: 400; font-size: .85em; }
+.rb-opts { display: flex; gap: 6px; flex: 0 0 auto; }
+.rb-opt { border: 2px solid var(--line); background: var(--card); border-radius: 8px; padding: 4px 9px; cursor: pointer; display: flex; align-items: center; gap: 6px; font: inherit; }
+.rb-opt.sel { border-color: var(--accent); background: #eff6ff; }
+.rb-opt .who { font-size: .62rem; text-transform: uppercase; color: var(--muted); letter-spacing: .03em; }
 .gbtn { display: flex; justify-content: center; margin: 14px 0; min-height: 40px; }
 
 .loading, .error { padding: 40px 0; color: var(--muted); }

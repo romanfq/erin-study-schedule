@@ -1,7 +1,7 @@
-import { STATUS, STATUS_CYCLE } from './config.js?v=1789066819';
-import { navigate } from './router.js?v=1789066819';
-import * as store from './store.js?v=1789066819';
-import { saveEnabled, ensureToken, directSave } from './save.js?v=1789066819';
+import { STATUS, STATUS_CYCLE } from './config.js?v=1789068452';
+import { navigate, currentPath } from './router.js?v=1789068452';
+import * as store from './store.js?v=1789068452';
+import { saveEnabled, ensureToken, directSave } from './save.js?v=1789068452';
 
 // --- helpers ---
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) =>
@@ -50,7 +50,7 @@ function mountSaveBar(root, subjectId) {
   </div>`);
   bar.querySelector('[data-act="save"]').onclick = () => save();
   bar.querySelector('[data-act="discard"]').onclick = () => {
-    if (confirm('Discard all unsaved changes on this device?')) { store.discardChanges(); navigate(location.pathname); }
+    if (confirm('Discard all unsaved changes on this device?')) { store.discardChanges(); navigate(currentPath()); }
   };
   document.body.appendChild(bar);
 }
@@ -65,8 +65,8 @@ function toast(msg, isError) {
 
 function conflictModal() {
   const m = el(`<div class="modal-bg"><div class="modal">
-    <h2>Schedule changed elsewhere</h2>
-    <p>Someone saved a newer version since you loaded this page. Your unsaved edits are still here — export them if you want to keep them, then reload to get the latest.</p>
+    <h2>Couldn't merge automatically</h2>
+    <p>The schedule changed on the server and we couldn't reconcile it. Export your changes if you want to keep them, then reload to get the latest.</p>
     <div class="modal-actions">
       <button class="btn ghost" data-x>Keep editing</button>
       <button class="btn" data-export>Export my changes</button>
@@ -79,7 +79,71 @@ function conflictModal() {
   document.body.appendChild(m);
 }
 
-async function save() {
+// Present per-topic status clashes; resolves to a { key: 'ours'|'theirs' } map
+// or null if cancelled. `savedBy` = who last saved the server version.
+async function resolveConflicts(conflicts, savedBy) {
+  const titles = {}, names = {};
+  for (const c of conflicts) {
+    if (c.subjectId in titles) continue;
+    titles[c.subjectId] = {};
+    try {
+      const { content, meta } = await store.loadSubject(c.subjectId);
+      names[c.subjectId] = meta.short || meta.name || c.subjectId;
+      for (const st of content.strands) for (const s of st.subtopics) titles[c.subjectId][s.id] = s.title;
+    } catch { names[c.subjectId] = c.subjectId; }
+  }
+  const who = savedBy ? ` (last saved by <strong>${esc(savedBy)}</strong>)` : '';
+  const rows = conflicts.map((c) => {
+    const title = titles[c.subjectId]?.[c.topicId] || c.topicId;
+    return `<div class="rb-row" data-key="${esc(c.key)}">
+      <div class="rb-title">${esc(title)} <span class="rb-sub">${esc(names[c.subjectId] || c.subjectId)}</span></div>
+      <div class="rb-opts">
+        <button class="rb-opt" data-choice="ours"><span class="who">Yours</span>${chip(c.ours)}</button>
+        <button class="rb-opt" data-choice="theirs"><span class="who">Server</span>${chip(c.theirs)}</button>
+      </div></div>`;
+  }).join('');
+  return new Promise((resolve) => {
+    const res = {};
+    const m = el(`<div class="modal-bg"><div class="modal">
+      <h2>Resolve ${conflicts.length} conflict${conflicts.length === 1 ? '' : 's'}</h2>
+      <p class="muted">These were changed both here and on the server${who}. Pick which to keep — everything else merged automatically.</p>
+      <div class="rb-list">${rows}</div>
+      <div class="modal-actions">
+        <button class="btn ghost" data-x>Cancel</button>
+        <button class="btn ghost" data-allmine>Keep all mine</button>
+        <button class="btn ghost" data-allserver>Keep all server</button>
+        <button class="btn primary" data-apply disabled>Apply &amp; save</button>
+      </div></div></div>`);
+    const applyBtn = m.querySelector('[data-apply]');
+    const refresh = () => { applyBtn.disabled = conflicts.some((c) => !res[c.key]); };
+    const select = (row, choice) => {
+      res[row.dataset.key] = choice;
+      row.querySelectorAll('.rb-opt').forEach((o) => o.classList.toggle('sel', o.dataset.choice === choice));
+    };
+    m.querySelectorAll('.rb-row').forEach((row) => row.querySelectorAll('.rb-opt').forEach((o) => o.onclick = () => { select(row, o.dataset.choice); refresh(); }));
+    m.querySelector('[data-allmine]').onclick = () => { m.querySelectorAll('.rb-row').forEach((r) => select(r, 'ours')); refresh(); };
+    m.querySelector('[data-allserver]').onclick = () => { m.querySelectorAll('.rb-row').forEach((r) => select(r, 'theirs')); refresh(); };
+    m.querySelector('[data-x]').onclick = () => { m.remove(); resolve(null); };
+    applyBtn.onclick = () => { m.remove(); resolve(res); };
+    document.body.appendChild(m);
+  });
+}
+
+// Fetch the latest committed file and rebase our edits onto it. Returns true
+// (ready to retry save), or false if the user cancelled conflict resolution.
+async function reconcile() {
+  const theirs = await store.fetchCommitted();
+  const { conflicts } = store.rebase(theirs);
+  let resolutions = {};
+  if (conflicts.length) {
+    resolutions = await resolveConflicts(conflicts, theirs.updatedBy);
+    if (!resolutions) return false;
+  }
+  store.applyRebase(theirs, store.rebase(theirs, resolutions).subjects);
+  return true;
+}
+
+async function save(attempt = 0, rebased = false) {
   if (!saveEnabled()) return openExport();
   const btn = document.querySelector('#savebar [data-act="save"], #update-btn');
   const prev = btn?.textContent;
@@ -89,11 +153,16 @@ async function save() {
     const { json } = store.exportState();
     await directSave(idToken, json, store.baseUpdatedAt());
     store.markSaved(JSON.parse(json));
-    mountSaveBar();
-    if (btn && document.body.contains(btn)) { btn.textContent = prev; btn.disabled = false; }
+    if (rebased) { navigate(currentPath()); } else { mountSaveBar(); if (btn && document.body.contains(btn)) { btn.textContent = prev; btn.disabled = false; } }
     toast('Saved ✓');
   } catch (e) {
     if (btn) { btn.textContent = prev; btn.disabled = false; }
+    if (e.code === 'conflict' && attempt < 3) {
+      let ok;
+      try { ok = await reconcile(); } catch { toast('Could not merge — reload', true); return conflictModal(); }
+      if (ok === false) return;              // cancelled
+      return save(attempt + 1, true);        // retry with rebased content
+    }
     if (e.code === 'conflict') return conflictModal();
     if (e.message === 'sign-in cancelled') return;
     if (e.code === 'forbidden') return toast(e.message, true);

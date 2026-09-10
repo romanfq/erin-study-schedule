@@ -2,7 +2,7 @@
 // Reads/writes still go through data/state.json in git; this just automates the
 // "commit the file" step for allow-listed Google accounts.
 
-import { SAVE } from './config.js?v=1789066819';
+import { SAVE } from './config.js?v=1789068452';
 
 export function saveEnabled() {
   return !!(SAVE.workerUrl && SAVE.googleClientId);

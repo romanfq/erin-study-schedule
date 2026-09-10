@@ -101,12 +101,14 @@ export default {
       return reply(409, { error: 'conflict', currentUpdatedAt }, headers);
     }
 
-    // 4. commit
+    // 4. commit — stamp who saved it (kept next to updatedAt) so the UI can show
+    // "last saved by …" when reconciling a conflict.
+    const stamped = JSON.stringify({ updatedAt: parsed.updatedAt, updatedBy: email, subjects: parsed.subjects }, null, 2) + '\n';
     const put = await gh(api, {
       method: 'PUT',
       body: JSON.stringify({
         message: `Update revision status (${email})`,
-        content: b64encode(content),
+        content: b64encode(stamped),
         sha: sha || undefined,
         branch: BRANCH,
       }),
