@@ -1,5 +1,6 @@
 {
-  "updatedAt": "2026-09-10T19:06:48Z",
+  "updatedAt": "2026-09-10T20:13:53Z",
+  "updatedBy": "3ekaur@gmail.com",
   "subjects": {
     "maths": {
       "topics": {
@@ -745,6 +746,13 @@
               "date": "2026-09-12",
               "time": "09:00",
               "type": "Review",
+              "duration": 120,
+              "done": false
+            },
+            {
+              "date": "2026-09-11",
+              "time": "16:00",
+              "type": "Practice",
               "duration": 120,
               "done": false
             }
