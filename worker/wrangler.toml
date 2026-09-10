@@ -1,0 +1,9 @@
+name = "gcse-schedule-updater"
+main = "src/index.js"
+compatibility_date = "2025-06-01"
+
+# Secrets/vars are NOT stored here — set them in the Cloudflare dashboard
+# (Worker → Settings → Variables and Secrets):
+#   GITHUB_TOKEN      (Secret)  fine-grained PAT, Contents:read/write on the repo
+#   ALLOWED_EMAILS    (Secret)  comma-separated Google emails allowed to write
+#   GOOGLE_CLIENT_ID  (Text)    the OAuth Web client id (public)
