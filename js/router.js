@@ -1,6 +1,6 @@
 // Tiny history-API router for clean sub-paths on GitHub Pages.
 // Deep links / refreshes work via the 404.html redirect shim.
-import { BASE, url } from './config.js?v=1788984986';
+import { BASE, url } from './config.js?v=1789066819';
 
 let handler = () => {};
 

@@ -7,7 +7,7 @@
 // On load, if the committed file has moved on since the overlay was based on it,
 // the overlay is discarded so a freshly committed file always wins.
 
-import { url } from './config.js?v=1788984986';
+import { url } from './config.js?v=1789066819';
 
 const LS_KEY = 'ess:working';
 const STATE_FILE = 'data/state.json';
@@ -163,6 +163,18 @@ export function exportState() {
 export function discardChanges() {
   cache.working = { basedOn: cache.base.updatedAt, subjects: structuredClone(cache.base.subjects) };
   localStorage.removeItem(LS_KEY);
+}
+
+// The committed base the UI is working from — sent to the Worker so it can
+// reject the write if the repo moved on (optimistic concurrency).
+export function baseUpdatedAt() { return cache.base?.updatedAt || ''; }
+
+// After a successful direct save, adopt the saved content as the new base so
+// the unsaved-count resets and the next save's concurrency check is correct.
+export function markSaved(saved) {
+  cache.base = normalise(saved);
+  cache.working = { basedOn: cache.base.updatedAt, subjects: structuredClone(cache.base.subjects) };
+  localStorage.setItem(LS_KEY, JSON.stringify(cache.working));
 }
 
 // All scheduled sessions across every active subject, flattened for the calendar.

@@ -14,3 +14,10 @@ export const STATUS = {
 };
 
 export const STATUS_CYCLE = ['N', 'W', 'C'];
+
+// Direct-save via the Cloudflare Worker (Google sign-in gates the write).
+// Clear googleClientId to disable and fall back to export → manual commit.
+export const SAVE = {
+  workerUrl: 'https://gcse-schedule-updater.roman-fq.workers.dev',
+  googleClientId: '953687426765-0nnnmd0kdt2l7imaijcn4p38l9s11jeb.apps.googleusercontent.com',
+};

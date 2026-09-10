@@ -1,6 +1,7 @@
-import { STATUS, STATUS_CYCLE } from './config.js?v=1788984986';
-import { navigate } from './router.js?v=1788984986';
-import * as store from './store.js?v=1788984986';
+import { STATUS, STATUS_CYCLE } from './config.js?v=1789066819';
+import { navigate } from './router.js?v=1789066819';
+import * as store from './store.js?v=1789066819';
+import { saveEnabled, ensureToken, directSave } from './save.js?v=1789066819';
 
 // --- helpers ---
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) =>
@@ -37,24 +38,72 @@ function header(title, sub) {
 function mountSaveBar(root, subjectId) {
   const existing = document.getElementById('savebar');
   if (existing) existing.remove();
-  const n = store.changeCount(subjectId);
+  const n = store.changeCount();
   if (!n) return;
+  const direct = saveEnabled();
   const bar = el(`<div id="savebar" class="savebar">
-    <span><strong>${n}</strong> unsaved change${n === 1 ? '' : 's'} — export the file and commit it to save.</span>
+    <span><strong>${n}</strong> unsaved change${n === 1 ? '' : 's'}${direct ? '' : ' — export the file and commit it to save'}.</span>
     <span class="savebar-actions">
       <button class="btn ghost" data-act="discard">Discard</button>
-      <button class="btn primary" data-act="export">Update file</button>
+      <button class="btn primary" data-act="save">${direct ? 'Save' : 'Update file'}</button>
     </span>
   </div>`);
-  bar.querySelector('[data-act="export"]').onclick = () => openExport(subjectId);
+  bar.querySelector('[data-act="save"]').onclick = () => save();
   bar.querySelector('[data-act="discard"]').onclick = () => {
-    if (confirm('Discard all unsaved changes on this device?')) { store.discardChanges(subjectId); navigate(location.pathname); }
+    if (confirm('Discard all unsaved changes on this device?')) { store.discardChanges(); navigate(location.pathname); }
   };
   document.body.appendChild(bar);
 }
 
-function openExport(subjectId) {
-  const { json, path } = store.exportState(subjectId);
+// --- Save: direct-to-repo via the Worker (Google sign-in), else export modal ---
+function toast(msg, isError) {
+  const t = el(`<div class="toast ${isError ? 'err' : ''}">${esc(msg)}</div>`);
+  document.body.appendChild(t);
+  requestAnimationFrame(() => t.classList.add('show'));
+  setTimeout(() => { t.classList.remove('show'); setTimeout(() => t.remove(), 300); }, 2600);
+}
+
+function conflictModal() {
+  const m = el(`<div class="modal-bg"><div class="modal">
+    <h2>Schedule changed elsewhere</h2>
+    <p>Someone saved a newer version since you loaded this page. Your unsaved edits are still here — export them if you want to keep them, then reload to get the latest.</p>
+    <div class="modal-actions">
+      <button class="btn ghost" data-x>Keep editing</button>
+      <button class="btn" data-export>Export my changes</button>
+      <button class="btn primary" data-reload>Reload latest</button>
+    </div></div></div>`);
+  m.querySelector('[data-x]').onclick = () => m.remove();
+  m.querySelector('[data-export]').onclick = () => { m.remove(); openExport(); };
+  m.querySelector('[data-reload]').onclick = () => location.reload();
+  m.addEventListener('click', (e) => { if (e.target === m) m.remove(); });
+  document.body.appendChild(m);
+}
+
+async function save() {
+  if (!saveEnabled()) return openExport();
+  const btn = document.querySelector('#savebar [data-act="save"], #update-btn');
+  const prev = btn?.textContent;
+  if (btn) { btn.textContent = 'Saving…'; btn.disabled = true; }
+  try {
+    const idToken = await ensureToken();
+    const { json } = store.exportState();
+    await directSave(idToken, json, store.baseUpdatedAt());
+    store.markSaved(JSON.parse(json));
+    mountSaveBar();
+    if (btn && document.body.contains(btn)) { btn.textContent = prev; btn.disabled = false; }
+    toast('Saved ✓');
+  } catch (e) {
+    if (btn) { btn.textContent = prev; btn.disabled = false; }
+    if (e.code === 'conflict') return conflictModal();
+    if (e.message === 'sign-in cancelled') return;
+    if (e.code === 'forbidden') return toast(e.message, true);
+    toast('Direct save failed — use manual export', true);
+    openExport();
+  }
+}
+
+function openExport() {
+  const { json, path } = store.exportState();
   const modal = el(`<div class="modal-bg">
     <div class="modal">
       <h2>Update the schedule file</h2>
@@ -279,8 +328,8 @@ export async function renderTopic(root, subjectId, topicId, profile) {
       </section>
 
       <div class="update-foot">
-        <button class="btn primary big" id="update-btn">Update schedule file</button>
-        <p class="muted">Saves your changes to a file you commit &amp; push.</p>
+        <button class="btn primary big" id="update-btn">${saveEnabled() ? 'Save' : 'Update schedule file'}</button>
+        <p class="muted">${saveEnabled() ? 'Signs in and saves to the shared schedule.' : 'Saves your changes to a file you commit &amp; push.'}</p>
       </div>`;
 
     // big badge cycle
@@ -311,7 +360,7 @@ export async function renderTopic(root, subjectId, topicId, profile) {
       store.setLinks(subjectId, topicId, arr); draw();
     });
 
-    root.querySelector('#update-btn').onclick = () => openExport(subjectId);
+    root.querySelector('#update-btn').onclick = () => save();
     mountSaveBar(root, subjectId);
   };
   draw();
