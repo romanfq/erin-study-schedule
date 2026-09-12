@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12T21:36:46Z",
+  "updatedAt": "2026-09-12T21:39:47Z",
   "updatedBy": "ranjk224@gmail.com",
   "subjects": {
     "maths": {
@@ -1196,7 +1196,15 @@
         "reversibility-and-equilibrium": {
           "status": "W",
           "links": [],
-          "sessions": []
+          "sessions": [
+            {
+              "date": "2026-09-17",
+              "time": "16:00",
+              "type": "Review",
+              "duration": 45,
+              "done": false
+            }
+          ]
         },
         "carbon-compounds-as-fuel-stock": {
           "status": "W",
