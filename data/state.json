@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12T22:01:24Z",
+  "updatedAt": "2026-09-12T22:02:03Z",
   "updatedBy": "ranjk224@gmail.com",
   "subjects": {
     "maths": {
@@ -1775,7 +1775,15 @@
         "the-problem-of-mary-queen-of-scots-1568-1569": {
           "status": "N",
           "links": [],
-          "sessions": []
+          "sessions": [
+            {
+              "date": "2026-09-17",
+              "time": "17:00",
+              "type": "Review",
+              "duration": 60,
+              "done": false
+            }
+          ]
         },
         "challenges-to-elizabeth-at-home-1569-1588": {
           "status": "N",
