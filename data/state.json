@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12T21:51:09Z",
+  "updatedAt": "2026-09-12T21:52:02Z",
   "updatedBy": "ranjk224@gmail.com",
   "subjects": {
     "maths": {
@@ -1587,7 +1587,15 @@
         "variations-in-physical-landscape": {
           "status": "N",
           "links": [],
-          "sessions": []
+          "sessions": [
+            {
+              "date": "2026-09-13",
+              "time": "13:00",
+              "type": "Review",
+              "duration": 60,
+              "done": false
+            }
+          ]
         },
         "coastal-change-and-conflict": {
           "status": "C",
