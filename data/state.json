@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12T21:57:39Z",
+  "updatedAt": "2026-09-12T21:58:36Z",
   "updatedBy": "ranjk224@gmail.com",
   "subjects": {
     "maths": {
@@ -1962,7 +1962,15 @@
         "power-and-conflict-context": {
           "status": "W",
           "links": [],
-          "sessions": []
+          "sessions": [
+            {
+              "date": "2026-09-14",
+              "time": "18:00",
+              "type": "Review",
+              "duration": 45,
+              "done": false
+            }
+          ]
         },
         "power-and-conflict-stagecraft-writer-s-methods": {
           "status": "W",
