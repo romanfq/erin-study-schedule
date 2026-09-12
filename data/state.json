@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12T21:55:40Z",
+  "updatedAt": "2026-09-12T21:57:39Z",
   "updatedBy": "ranjk224@gmail.com",
   "subjects": {
     "maths": {
@@ -2113,7 +2113,15 @@
         "religion-and-divorce": {
           "status": "N",
           "links": [],
-          "sessions": []
+          "sessions": [
+            {
+              "date": "2026-09-15",
+              "time": "17:00",
+              "type": "Review",
+              "duration": 60,
+              "done": false
+            }
+          ]
         },
         "religion-and-the-nature-of-families": {
           "status": "N",
