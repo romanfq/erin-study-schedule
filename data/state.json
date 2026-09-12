@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12T21:27:38Z",
+  "updatedAt": "2026-09-12T21:29:34Z",
   "updatedBy": "ranjk224@gmail.com",
   "subjects": {
     "maths": {
@@ -1029,7 +1029,7 @@
           "sessions": []
         },
         "food-production": {
-          "status": "N",
+          "status": "W",
           "links": [],
           "sessions": []
         },
