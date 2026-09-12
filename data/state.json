@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12T21:58:36Z",
+  "updatedAt": "2026-09-12T21:59:20Z",
   "updatedBy": "ranjk224@gmail.com",
   "subjects": {
     "maths": {
@@ -1964,10 +1964,17 @@
           "links": [],
           "sessions": [
             {
-              "date": "2026-09-14",
+              "date": "2026-09-15",
               "time": "18:00",
               "type": "Review",
-              "duration": 45,
+              "duration": 60,
+              "done": false
+            },
+            {
+              "date": "2026-09-12",
+              "time": "16:00",
+              "type": "Review",
+              "duration": 60,
               "done": false
             }
           ]
