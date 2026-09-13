@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-13T07:23:54Z",
+  "updatedAt": "2026-09-13T07:25:00Z",
   "updatedBy": "3ekaur@gmail.com",
   "subjects": {
     "maths": {
@@ -2125,12 +2125,12 @@
           "sessions": []
         },
         "religion-and-human-sexuality": {
-          "status": "N",
+          "status": "C",
           "links": [],
           "sessions": []
         },
         "religion-and-marriage": {
-          "status": "N",
+          "status": "C",
           "links": [],
           "sessions": []
         },
@@ -2213,7 +2213,7 @@
           "sessions": []
         },
         "religion-and-crime": {
-          "status": "W",
+          "status": "C",
           "links": [],
           "sessions": []
         },
@@ -2223,7 +2223,7 @@
           "sessions": []
         },
         "religion-and-suffering": {
-          "status": "W",
+          "status": "C",
           "links": [],
           "sessions": []
         },
@@ -2233,7 +2233,7 @@
           "sessions": []
         },
         "religion-and-the-death-penalty": {
-          "status": "W",
+          "status": "C",
           "links": [],
           "sessions": []
         }
