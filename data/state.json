@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-13T10:35:46Z",
+  "updatedAt": "2026-09-13T10:36:32Z",
   "updatedBy": "ranjk224@gmail.com",
   "subjects": {
     "maths": {
@@ -1994,7 +1994,7 @@
           "sessions": []
         },
         "dr-jekyll-and-mr-hyde-character-analysis": {
-          "status": "N",
+          "status": "W",
           "links": [],
           "sessions": [
             {
@@ -2002,7 +2002,7 @@
               "time": "11:00",
               "type": "Review",
               "duration": 60,
-              "done": false
+              "done": true
             }
           ]
         },
