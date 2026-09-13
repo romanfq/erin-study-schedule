@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-13T07:19:43Z",
+  "updatedAt": "2026-09-13T07:22:01Z",
   "updatedBy": "3ekaur@gmail.com",
   "subjects": {
     "maths": {
@@ -1716,12 +1716,12 @@
     "history": {
       "topics": {
         "exam-skills-medicine-in-britain-c1250-present": {
-          "status": "N",
+          "status": "C",
           "links": [],
           "sessions": []
         },
         "themes-in-medicine-in-britain-c1250-present": {
-          "status": "N",
+          "status": "C",
           "links": [],
           "sessions": []
         },
@@ -1766,17 +1766,17 @@
           "sessions": []
         },
         "exam-skills-early-elizabethan-england-1558-88": {
-          "status": "N",
+          "status": "C",
           "links": [],
           "sessions": []
         },
         "elizabeth-i-s-succession-1558-1569": {
-          "status": "N",
+          "status": "C",
           "links": [],
           "sessions": []
         },
         "how-did-elizabeth-solve-the-issue-of-religion": {
-          "status": "N",
+          "status": "W",
           "links": [],
           "sessions": []
         },
@@ -1864,7 +1864,7 @@
           "sessions": []
         },
         "exam-questions-weimar-and-nazi-germany-1918-39": {
-          "status": "N",
+          "status": "C",
           "links": [],
           "sessions": []
         },
