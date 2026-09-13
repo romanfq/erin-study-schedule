@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-12T22:02:46Z",
-  "updatedBy": "ranjk224@gmail.com",
+  "updatedAt": "2026-09-13T07:19:43Z",
+  "updatedBy": "3ekaur@gmail.com",
   "subjects": {
     "maths": {
       "topics": {
@@ -2031,17 +2031,17 @@
     "english_lang": {
       "topics": {
         "paper-1-and-2-overview": {
-          "status": "N",
+          "status": "C",
           "links": [],
           "sessions": []
         },
         "exam-skills": {
-          "status": "N",
+          "status": "C",
           "links": [],
           "sessions": []
         },
         "practice-questions": {
-          "status": "N",
+          "status": "W",
           "links": [],
           "sessions": []
         }
