@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-14T20:36:08Z",
+  "updatedAt": "2026-09-14T20:40:57Z",
   "updatedBy": "ranjk224@gmail.com",
   "subjects": {
     "maths": {
@@ -1666,15 +1666,7 @@
         "river-processes-and-pressure": {
           "status": "C",
           "links": [],
-          "sessions": [
-            {
-              "date": "2026-09-17",
-              "time": "18:00",
-              "type": "Review",
-              "duration": 60,
-              "done": false
-            }
-          ]
+          "sessions": []
         },
         "changing-people-and-places": {
           "status": "N",
