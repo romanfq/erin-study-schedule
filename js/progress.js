@@ -1,7 +1,7 @@
 // Progress modal: stacked C/W/N bars per subject, drill into per-strand bars.
 // Uses d3 (lazy-loaded from CDN) for smooth transitions; falls back to CSS bars.
 
-import * as store from './store.js?v=1789083599';
+import * as store from './store.js?v=1789412567';
 
 const COLOUR = { C: '#16a34a', W: '#f59e0b', N: '#dc2626' };
 const el = (h) => { const t = document.createElement('template'); t.innerHTML = h.trim(); return t.content.firstElementChild; };

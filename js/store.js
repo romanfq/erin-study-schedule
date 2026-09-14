@@ -7,7 +7,7 @@
 // On load, if the committed file has moved on since the overlay was based on it,
 // the overlay is discarded so a freshly committed file always wins.
 
-import { url } from './config.js?v=1789083599';
+import { url } from './config.js?v=1789412567';
 
 const LS_KEY = 'ess:working';
 const STATE_FILE = 'data/state.json';
@@ -250,11 +250,15 @@ export function applyRebase(theirs, mergedSubjects) {
   localStorage.setItem(LS_KEY, JSON.stringify(cache.working));
 }
 
+// Subjects without an exam board ("None", "N/A", "No board", blank…) are
+// time placeholders (e.g. Arts coursework) and don't count towards progress.
+const hasBoard = (s) => !['', 'none', 'na', 'noboard'].includes(String(s.board ?? '').toLowerCase().replace(/[^a-z]/g, ''));
+
 // Per-subject and per-strand status tallies for the Progress chart.
 export async function progress() {
   const out = [];
   for (const s of cache.subjects || []) {
-    if (s.status !== 'active') continue;
+    if (s.status !== 'active' || !hasBoard(s)) continue;
     try { await loadSubject(s.id); } catch { continue; }
     const totals = { C: 0, W: 0, N: 0 };
     const strands = new Map();
