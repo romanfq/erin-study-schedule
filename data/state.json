@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-14T19:27:34Z",
+  "updatedAt": "2026-09-14T19:29:07Z",
   "updatedBy": "roman.fq@gmail.com",
   "subjects": {
     "maths": {
@@ -202,7 +202,15 @@
               "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-4/Algebra/Higher/Notation-Vocabulary-and-Manipulation/MS/Expanding%20Triple%20Brackets%20(H)%20MS.pdf"
             }
           ],
-          "sessions": []
+          "sessions": [
+            {
+              "date": "2026-09-16",
+              "time": "16:00",
+              "type": "Review",
+              "duration": 60,
+              "done": false
+            }
+          ]
         },
         "linear-equations-inequalities": {
           "status": "C",
@@ -723,7 +731,15 @@
               "url": "https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Topic-Qs/Edexcel/Set-0/Grade-7/MA/Vectors%20MA.pdf"
             }
           ],
-          "sessions": []
+          "sessions": [
+            {
+              "date": "2026-09-19",
+              "time": "09:30",
+              "type": "Review",
+              "duration": 120,
+              "done": false
+            }
+          ]
         },
         "geometry-higher": {
           "status": "W",
@@ -755,6 +771,13 @@
               "type": "Practice",
               "duration": 120,
               "done": true
+            },
+            {
+              "date": "2026-09-17",
+              "time": "16:00",
+              "type": "Review",
+              "duration": 120,
+              "done": false
             }
           ]
         },
