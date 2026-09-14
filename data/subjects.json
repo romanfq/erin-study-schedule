@@ -80,6 +80,15 @@
       "colour": "#0d9488",
       "board": "AQA",
       "content": "data/re/content.json"
+    },
+    {
+      "id": "arts",
+      "name": "Arts",
+      "short": "Arts",
+      "status": "active",
+      "colour": "#95a316",
+      "board": "None",
+      "content": "data/arts/content.json"
     }
   ]
 }
