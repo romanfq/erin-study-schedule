@@ -237,6 +237,33 @@ h2 { font-size: 1.15rem; margin: 0 0 .5em; }
 .pg-pbar { display: flex; height: 16px; border-radius: 4px; overflow: hidden; background: #eef2f7; }
 .pg-pbar span { transition: width .5s ease; }
 
+
+/* important dates (landing + subject pages) */
+.idates { margin: 22px 0 10px; }
+.page-head + .idates { margin-top: 12px; }
+.idates-head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin-bottom: 6px; }
+.idates-head h2 { margin: 0; }
+.idate-list { list-style: none; margin: 0; padding: 0; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
+.idate {
+  display: grid; grid-template-columns: minmax(9.5rem, 14rem) minmax(0, 1fr) auto; gap: 4px 14px; align-items: center;
+  padding: 10px 14px; border-top: 1px solid var(--line); border-left: 5px solid var(--lvl);
+}
+.idate:first-child { border-top: 0; }
+.idate-date { font-weight: 600; }
+.idate-session { display: block; font-size: .78rem; color: var(--muted); }
+.idate-subj { display: inline-block; font-size: .72rem; font-weight: 700; color: #fff; background: var(--subj); border-radius: 999px; padding: 1px 8px; margin-right: 8px; vertical-align: 1px; }
+.idate-count { text-align: right; }
+.idate-days { display: inline-block; font-weight: 700; font-size: .85rem; padding: 2px 10px; border-radius: 999px; background: var(--lvl-bg); color: var(--lvl-ink); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.idate-phrase { display: block; font-size: .8rem; color: var(--muted); margin-top: 2px; }
+.lvl-red    { --lvl: var(--n); --lvl-bg: #fee2e2; --lvl-ink: #b91c1c; }
+.lvl-yellow { --lvl: var(--w); --lvl-bg: #fef3c7; --lvl-ink: #92400e; }
+.lvl-green  { --lvl: var(--c); --lvl-bg: #dcfce7; --lvl-ink: #166534; }
+.lvl-past   { --lvl: var(--line); --lvl-bg: var(--bg); --lvl-ink: var(--muted); color: var(--muted); }
+.idates-more { margin-top: 8px; }
+@media (max-width: 560px) {
+  .idate { grid-template-columns: minmax(0, 1fr) auto; }
+  .idate-what { grid-column: 1 / -1; grid-row: 2; }
+}
 .loading, .error { padding: 40px 0; color: var(--muted); }
 .error pre { white-space: pre-wrap; color: var(--n); }
 

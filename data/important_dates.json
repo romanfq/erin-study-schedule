@@ -1,0 +1,48 @@
+{
+  "exams": {
+    "maths": "Edexcel 1MA1",
+    "english_lit": "AQA 8702",
+    "english_lang": "AQA 8700",
+    "chem": "AQA 8462",
+    "phys": "AQA 8463",
+    "biology": "AQA 8461",
+    "geo": "Edexcel 1GB0",
+    "history": "Edexcel 1HI0",
+    "re": "AQA 8062"
+  },
+  "dates": [
+    { "title": "Mocks", "start": "2026-11-23", "end": "2026-12-11" },
+    { "title": "Parents' Evening", "start": "2027-01-13" },
+    { "title": "Mocks", "start": "2027-02-22", "end": "2027-03-05" },
+
+    { "subject": "maths", "title": "Paper 1 (Non-calculator)", "start": "2027-05-14", "session": "am" },
+    { "subject": "maths", "title": "Paper 2 (Calculator)", "start": "2027-05-27", "session": "am" },
+    { "subject": "maths", "title": "Paper 3 (Calculator)", "start": "2027-06-14", "session": "am" },
+
+    { "subject": "english_lit", "title": "Paper 1: Shakespeare and the 19th-Century Novel", "start": "2027-05-12", "session": "am" },
+    { "subject": "english_lit", "title": "Paper 2: Modern Texts and Poetry", "start": "2027-05-19", "session": "am" },
+
+    { "subject": "english_lang", "title": "Paper 1: Creative Writing and Reading", "start": "2027-05-24", "session": "am" },
+    { "subject": "english_lang", "title": "Paper 2: Writers' Viewpoints and Perspectives", "start": "2027-06-08", "session": "am" },
+
+    { "subject": "chem", "title": "Paper 1", "start": "2027-05-17", "session": "am" },
+    { "subject": "chem", "title": "Paper 2", "start": "2027-06-15", "session": "am" },
+
+    { "subject": "phys", "title": "Paper 1", "start": "2027-05-25", "session": "am" },
+    { "subject": "phys", "title": "Paper 2", "start": "2027-06-18", "session": "am" },
+
+    { "subject": "biology", "title": "Paper 1", "start": "2027-05-11", "session": "am" },
+    { "subject": "biology", "title": "Paper 2", "start": "2027-06-10", "session": "am" },
+
+    { "subject": "geo", "title": "Paper 1: Global Geographical Issues", "start": "2027-05-18", "session": "am" },
+    { "subject": "geo", "title": "Paper 2: UK Geographical Issues", "start": "2027-05-26", "session": "pm" },
+    { "subject": "geo", "title": "Paper 3: People and Environment Issues – Making Geographical Decisions", "start": "2027-06-10", "session": "pm" },
+
+    { "subject": "history", "title": "Paper 1: Thematic Study and Historic Environment", "start": "2027-05-20", "session": "am" },
+    { "subject": "history", "title": "Paper 2: Period Study and British Depth Study", "start": "2027-05-28", "session": "am" },
+    { "subject": "history", "title": "Paper 3: Modern Depth Study", "start": "2027-06-09", "session": "pm" },
+
+    { "subject": "re", "title": "Paper 1: Christianity / Catholic Christianity / Islam", "start": "2027-05-13", "session": "am" },
+    { "subject": "re", "title": "Paper 2A/2B: Thematic Studies", "start": "2027-05-21", "session": "am" }
+  ]
+}

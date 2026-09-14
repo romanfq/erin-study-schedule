@@ -7,7 +7,7 @@
 // On load, if the committed file has moved on since the overlay was based on it,
 // the overlay is discarded so a freshly committed file always wins.
 
-import { url } from './config.js?v=1789412567';
+import { url } from './config.js?v=1789413275';
 
 const LS_KEY = 'ess:working';
 const STATE_FILE = 'data/state.json';
@@ -48,6 +48,13 @@ export async function loadCore() {
     reconcileWorking();
   }
   return { subjects: cache.subjects, profile: cache.profile };
+}
+
+// Important dates (mocks, exams…) — read-only reference data, fetched once.
+let datesPromise = null;
+export function importantDates() {
+  if (!datesPromise) datesPromise = getJSON('data/important_dates.json').catch((e) => { datesPromise = null; throw e; });
+  return datesPromise;
 }
 
 export function subjectMeta(id) {

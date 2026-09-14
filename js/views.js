@@ -1,8 +1,9 @@
-import { STATUS, STATUS_CYCLE } from './config.js?v=1789412567';
-import { navigate, currentPath } from './router.js?v=1789412567';
-import * as store from './store.js?v=1789412567';
-import { saveEnabled, ensureToken, directSave } from './save.js?v=1789412567';
-import { openProgress } from './progress.js?v=1789412567';
+import { STATUS, STATUS_CYCLE } from './config.js?v=1789413275';
+import { navigate, currentPath } from './router.js?v=1789413275';
+import * as store from './store.js?v=1789413275';
+import { saveEnabled, ensureToken, directSave } from './save.js?v=1789413275';
+import { openProgress } from './progress.js?v=1789413275';
+import { mountDates } from './dates.js?v=1789413275';
 
 // --- helpers ---
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) =>
@@ -217,11 +218,21 @@ export function renderLanding(root, { subjects, profile }) {
   }).join('');
   root.innerHTML = `${header('Study Schedule', profile?.student ? `${profile.student}'s revision` : '')}
     <p class="lead">Pick a subject.</p>
-    <div class="subject-grid">${cards}</div>`;
+    <div class="subject-grid">${cards}</div>
+    <section class="idates" hidden></section>`;
+  // Countdowns are computed now, as the page opens; ignore the result if the
+  // user has already navigated away.
+  const box = root.querySelector('.idates');
+  store.importantDates()
+    .then((data) => { if (box.isConnected) mountDates(box, data, { subjects }); })
+    .catch(() => {});
 }
 
 export async function renderSubject(root, subjectId, profile) {
-  const { content } = await store.loadSubject(subjectId);
+  const [{ content }, dates] = await Promise.all([
+    store.loadSubject(subjectId),
+    store.importantDates().catch(() => null),
+  ]);
   const topics = store.allTopics(subjectId);
   let tier = tierPref(profile);
   let hideConfident = false;   // "Hide Confident" toggle (default: show all)
@@ -269,6 +280,7 @@ export async function renderSubject(root, subjectId, profile) {
     const etBtn = content.examTechnique ? `<a class="btn ghost" href="${esc(subjectId)}/exam-technique" data-link>Exam technique</a>` : '';
 
     root.innerHTML = `${header(content.subject, content.board)}
+      <section class="idates" hidden></section>
       <div class="toolbar">${tierToggle}${etBtn}</div>
       <div class="legend-row">
         <p class="legend">${chip('N')} not started ${chip('W')} working on it ${chip('C')} confident</p>
@@ -280,6 +292,7 @@ export async function renderSubject(root, subjectId, profile) {
       </div>
       ${body}`;
 
+    if (dates) mountDates(root.querySelector('.idates'), dates, { subjectId });
     root.querySelectorAll('[data-tier]').forEach((b) => b.onclick = () => { tier = b.dataset.tier; setTierPref(tier); draw(); });
     root.querySelector('[data-progress]').onclick = () => openProgress();
     root.querySelector('[data-toggle-confident]').onclick = () => { hideConfident = !hideConfident; draw(); };
