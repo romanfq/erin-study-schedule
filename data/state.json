@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-14T20:35:33Z",
+  "updatedAt": "2026-09-14T20:36:08Z",
   "updatedBy": "ranjk224@gmail.com",
   "subjects": {
     "maths": {
@@ -1866,7 +1866,15 @@
         "the-origins-of-the-cold-war-1941-1949": {
           "status": "N",
           "links": [],
-          "sessions": []
+          "sessions": [
+            {
+              "date": "2026-09-16",
+              "time": "18:00",
+              "type": "Review",
+              "duration": 60,
+              "done": false
+            }
+          ]
         },
         "the-development-of-the-cold-war-1947-1955": {
           "status": "N",
