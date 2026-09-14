@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-14T19:29:07Z",
+  "updatedAt": "2026-09-14T19:38:43Z",
   "updatedBy": "roman.fq@gmail.com",
   "subjects": {
     "maths": {
@@ -400,7 +400,29 @@
               "url": "https://www.physicsandmathstutor.com/pdf-pages/?pdf=https%3A%2F%2Fpmt.physicsandmathstutor.com%2Fdownload%2FMaths%2FGCSE%2FTopic-Qs%2FEdexcel%2FSet-4%2FAlgebra%2FHigher%2FSolving-Equations-and-Inequalities%2FQP%2FIteration%20(H)%20QP.pdf"
             }
           ],
-          "sessions": []
+          "sessions": [
+            {
+              "date": "2026-09-23",
+              "time": "17:00",
+              "type": "Review",
+              "duration": 60,
+              "done": false
+            },
+            {
+              "date": "2026-09-25",
+              "time": "16:00",
+              "type": "Review",
+              "duration": 120,
+              "done": false
+            },
+            {
+              "date": "2026-09-26",
+              "time": "09:30",
+              "type": "Review",
+              "duration": 120,
+              "done": false
+            }
+          ]
         },
         "ratio-basics": {
           "status": "C",
