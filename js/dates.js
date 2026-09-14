@@ -9,10 +9,6 @@ const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) =>
 const DAY = 86400000;
 const WDAY = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-const ONES = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten',
-  'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen'];
-const TENS = ['', '', 'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety'];
-const words = (n) => (n < 20 ? ONES[n] : n < 100 ? TENS[Math.floor(n / 10)] + (n % 10 ? '-' + ONES[n % 10] : '') : String(n));
 const SESSION = { am: 'Morning', pm: 'Afternoon' };
 
 // Dates are calendar days in the viewer's local time (midnight to midnight).
@@ -42,7 +38,7 @@ function monthsAndDays(from, to) {
   return { months, days: Math.round((to - addMonths(months)) / DAY) };
 }
 
-const plural = (n, unit) => (n === 1 ? `a ${unit}` : `${words(n)} ${unit}s`);
+const plural = (n, unit) => `${n} ${unit}${n === 1 ? '' : 's'}`;
 
 // "tomorrow", "a week and a half from now", "a month from now",
 // "eight months and three days from now"…
@@ -51,7 +47,7 @@ export function whenText(iso, from) {
   const days = Math.round((to - from) / DAY);
   if (days <= 0) return 'today';
   if (days === 1) return 'tomorrow';
-  if (days < 7) return `in ${words(days)} days`;
+  if (days < 7) return `in ${days} days`;
   const { months, days: rest } = monthsAndDays(from, to);
   if (months >= 1) {
     const y = Math.floor(months / 12), m = months % 12;
@@ -60,11 +56,11 @@ export function whenText(iso, from) {
     return `${joined} from now`;
   }
   const w = Math.floor(days / 7), r = days % 7;
-  const weeks = (n) => (n === 1 ? 'a week' : `${words(n)} weeks`);
+  const weeks = (n) => (n === 1 ? 'a week' : `${n} weeks`);
   if (r === 0) return `${weeks(w)} from now`;
   if (r <= 2) return `just over ${weeks(w)} from now`;
   if (r >= 5) return `almost ${weeks(w + 1)} from now`;
-  return w === 1 ? 'a week and a half from now' : `${words(w)} and a half weeks from now`;
+  return w === 1 ? 'a week and a half from now' : `${w} and a half weeks from now`;
 }
 
 // Red ≤ 7 days, yellow 8–30, green 31+; grey once it's over.
