@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-14T20:15:04Z",
+  "updatedAt": "2026-09-14T20:16:12Z",
   "updatedBy": "ranjk224@gmail.com",
   "subjects": {
     "maths": {
@@ -1594,7 +1594,7 @@
           "sessions": []
         },
         "practical-radiation": {
-          "status": "N",
+          "status": "W",
           "links": [],
           "sessions": [
             {
