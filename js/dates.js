@@ -9,7 +9,10 @@ const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) =>
 const DAY = 86400000;
 const WDAY = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-const WORDS = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve'];
+const ONES = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten',
+  'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen'];
+const TENS = ['', '', 'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety'];
+const words = (n) => (n < 20 ? ONES[n] : n < 100 ? TENS[Math.floor(n / 10)] + (n % 10 ? '-' + ONES[n % 10] : '') : String(n));
 const SESSION = { am: 'Morning', pm: 'Afternoon' };
 
 // Dates are calendar days in the viewer's local time (midnight to midnight).
@@ -27,24 +30,41 @@ const fmtRange = (ev) => {
   return `${fmt(ev.start, !sameYear)} – ${fmt(ev.end)}`;
 };
 
-// "tomorrow", "a week from now", "almost three weeks from now", "about eight months from now"…
-export function whenText(days) {
+// Whole calendar months from `from` to `to`, then the leftover days
+// (14 Sep → 17 Dec = 3 months, 3 days). Month-end days clamp (31 Jan + 1 month = 28 Feb).
+function monthsAndDays(from, to) {
+  const addMonths = (n) => {
+    const y = from.getFullYear(), m = from.getMonth() + n;
+    return new Date(y, m, Math.min(from.getDate(), new Date(y, m + 1, 0).getDate()));
+  };
+  let months = (to.getFullYear() - from.getFullYear()) * 12 + to.getMonth() - from.getMonth();
+  if (addMonths(months) > to) months--;
+  return { months, days: Math.round((to - addMonths(months)) / DAY) };
+}
+
+const plural = (n, unit) => (n === 1 ? `a ${unit}` : `${words(n)} ${unit}s`);
+
+// "tomorrow", "a week and a half from now", "a month from now",
+// "eight months and three days from now"…
+export function whenText(iso, from) {
+  const to = parse(iso);
+  const days = Math.round((to - from) / DAY);
   if (days <= 0) return 'today';
   if (days === 1) return 'tomorrow';
-  if (days < 7) return `in ${WORDS[days]} days`;
-  if (days < 30) {
-    const w = Math.floor(days / 7), r = days % 7;
-    const weeks = (n) => (n === 1 ? 'a week' : `${WORDS[n]} weeks`);
-    if (r === 0) return `${weeks(w)} from now`;
-    if (r <= 2) return `just over ${weeks(w)} from now`;
-    if (r >= 5) return `almost ${weeks(w + 1)} from now`;
-    return w === 1 ? 'a week and a half from now' : `${WORDS[w]} and a half weeks from now`;
+  if (days < 7) return `in ${words(days)} days`;
+  const { months, days: rest } = monthsAndDays(from, to);
+  if (months >= 1) {
+    const y = Math.floor(months / 12), m = months % 12;
+    const parts = [y && plural(y, 'year'), m && plural(m, 'month'), rest && plural(rest, 'day')].filter(Boolean);
+    const joined = parts.length > 1 ? `${parts.slice(0, -1).join(', ')} and ${parts.at(-1)}` : parts[0];
+    return `${joined} from now`;
   }
-  if (days < 45) return 'about a month from now';
-  if (days < 60) return 'about a month and a half from now';
-  const m = Math.round(days / 30.44);
-  if (m < 12) return `about ${WORDS[m]} months from now`;
-  return m < 18 ? 'about a year from now' : `about ${WORDS[Math.round(m / 12)] || Math.round(m / 12)} years from now`;
+  const w = Math.floor(days / 7), r = days % 7;
+  const weeks = (n) => (n === 1 ? 'a week' : `${words(n)} weeks`);
+  if (r === 0) return `${weeks(w)} from now`;
+  if (r <= 2) return `just over ${weeks(w)} from now`;
+  if (r >= 5) return `almost ${weeks(w + 1)} from now`;
+  return w === 1 ? 'a week and a half from now' : `${words(w)} and a half weeks from now`;
 }
 
 // Red ≤ 7 days, yellow 8–30, green 31+; grey once it's over.
@@ -54,12 +74,12 @@ function describe(ev, from) {
   const toStart = daysUntil(ev.start, from);
   const toEnd = ev.end ? daysUntil(ev.end, from) : toStart;
   if (toEnd < 0) return { past: true, lvl: 'past', badge: 'Done', phrase: '' };
-  if (toStart < 0) return { lvl: 'red', badge: 'On now', phrase: toEnd === 0 ? 'ends today' : `ends ${whenText(toEnd)}` };
+  if (toStart < 0) return { lvl: 'red', badge: 'On now', phrase: toEnd === 0 ? 'ends today' : `ends ${whenText(ev.end, from)}` };
   if (toStart === 0) return { lvl: 'red', badge: 'Today', phrase: ev.end ? 'starts today' : '' };
   return {
     lvl: level(toStart),
     badge: `${toStart} day${toStart === 1 ? '' : 's'}`,
-    phrase: (ev.end ? 'starts ' : '') + whenText(toStart),
+    phrase: (ev.end ? 'starts ' : '') + whenText(ev.start, from),
   };
 }
 
