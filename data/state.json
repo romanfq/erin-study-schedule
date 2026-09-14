@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-14T19:04:22Z",
-  "updatedBy": "ranjk224@gmail.com",
+  "updatedAt": "2026-09-14T19:27:34Z",
+  "updatedBy": "roman.fq@gmail.com",
   "subjects": {
     "maths": {
       "topics": {
@@ -747,14 +747,14 @@
               "time": "09:00",
               "type": "Review",
               "duration": 120,
-              "done": false
+              "done": true
             },
             {
               "date": "2026-09-11",
               "time": "16:00",
               "type": "Practice",
               "duration": 120,
-              "done": false
+              "done": true
             }
           ]
         },
