@@ -5,7 +5,16 @@
     {
       "id": "coursework",
       "name": "Coursework",
-      "subtopics": []
+      "subtopics": [
+        {
+          "id": "coursework",
+          "title": "Coursework",
+          "tier": "F",
+          "formulae": [],
+          "method": "",
+          "tips": []
+        }
+      ]
     }
   ]
 }
