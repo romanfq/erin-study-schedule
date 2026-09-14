@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-14T20:16:12Z",
+  "updatedAt": "2026-09-14T20:19:27Z",
   "updatedBy": "ranjk224@gmail.com",
   "subjects": {
     "maths": {
@@ -2285,7 +2285,13 @@
       }
     },
     "arts": {
-      "topics": {}
+      "topics": {
+        "coursework": {
+          "status": "C",
+          "links": [],
+          "sessions": []
+        }
+      }
     }
   }
 }
