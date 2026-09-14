@@ -66,17 +66,15 @@ export function whenText(iso, from) {
 // Red ≤ 7 days, yellow 8–30, green 31+; grey once it's over.
 const level = (days) => (days <= 7 ? 'red' : days <= 30 ? 'yellow' : 'green');
 
+const cap = (s) => s.charAt(0).toUpperCase() + s.slice(1);
+
 function describe(ev, from) {
   const toStart = daysUntil(ev.start, from);
   const toEnd = ev.end ? daysUntil(ev.end, from) : toStart;
-  if (toEnd < 0) return { past: true, lvl: 'past', badge: 'Done', phrase: '' };
-  if (toStart < 0) return { lvl: 'red', badge: 'On now', phrase: toEnd === 0 ? 'ends today' : `ends ${whenText(ev.end, from)}` };
-  if (toStart === 0) return { lvl: 'red', badge: 'Today', phrase: ev.end ? 'starts today' : '' };
-  return {
-    lvl: level(toStart),
-    badge: `${toStart} day${toStart === 1 ? '' : 's'}`,
-    phrase: (ev.end ? 'starts ' : '') + whenText(ev.start, from),
-  };
+  if (toEnd < 0) return { past: true, lvl: 'past', label: 'Done' };
+  if (toStart < 0) return { lvl: 'red', label: toEnd === 0 ? 'On now, ends today' : `On now, ends ${whenText(ev.end, from)}` };
+  if (toStart === 0) return { lvl: 'red', label: ev.end ? 'Starts today' : 'Today' };
+  return { lvl: level(toStart), label: cap((ev.end ? 'starts ' : '') + whenText(ev.start, from)) };
 }
 
 const sortKey = (ev) => `${ev.start}|${ev.session === 'pm' ? 1 : 0}|${ev.end || ''}`;
@@ -95,13 +93,13 @@ export function mountDates(box, data, { subjects = [], subjectId = null } = {}) 
   box.hidden = all.length === 0;
   if (!all.length) return;
 
-  const row = ({ ev, lvl, badge, phrase }) => {
+  const row = ({ ev, lvl, label }) => {
     const s = !subjectId && ev.subject ? meta[ev.subject] : null;
     const pill = s ? `<a class="idate-subj" style="--subj:${esc(s.colour || '#64748b')}" href="${esc(s.id)}" data-link>${esc(s.short || s.name)}</a>` : '';
     return `<li class="idate lvl-${lvl}">
       <div class="idate-when"><span class="idate-date">${esc(fmtRange(ev))}</span>${ev.session ? `<span class="idate-session">${esc(SESSION[ev.session] || ev.session)}</span>` : ''}</div>
       <div class="idate-what">${pill}${esc(ev.title)}</div>
-      <div class="idate-count"><span class="idate-days">${esc(badge)}</span>${phrase ? `<span class="idate-phrase">${esc(phrase)}</span>` : ''}</div>
+      <div class="idate-count"><span class="idate-days">${esc(label)}</span></div>
     </li>`;
   };
 
