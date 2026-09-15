@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-15T20:36:19Z",
+  "updatedAt": "2026-09-15T20:37:42Z",
   "updatedBy": "ranjk224@gmail.com",
   "subjects": {
     "maths": {
@@ -2018,7 +2018,15 @@
         "power-and-conflict-quotes": {
           "status": "C",
           "links": [],
-          "sessions": []
+          "sessions": [
+            {
+              "date": "2026-09-15",
+              "time": "19:00",
+              "type": "Review",
+              "duration": 60,
+              "done": false
+            }
+          ]
         },
         "power-and-conflict-context": {
           "status": "W",
