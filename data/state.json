@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-21T20:30:57Z",
-  "updatedBy": "ranjk224@gmail.com",
+  "updatedAt": "2026-09-26T09:10:43Z",
+  "updatedBy": "roman.fq@gmail.com",
   "subjects": {
     "maths": {
       "topics": {
@@ -764,7 +764,7 @@
           ]
         },
         "geometry-higher": {
-          "status": "W",
+          "status": "C",
           "links": [
             {
               "label": "Circle Theorems",
