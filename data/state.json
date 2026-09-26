@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-26T09:10:43Z",
-  "updatedBy": "roman.fq@gmail.com",
+  "updatedAt": "2026-09-26T10:26:35Z",
+  "updatedBy": "3ekaur@gmail.com",
   "subjects": {
     "maths": {
       "topics": {
@@ -742,7 +742,7 @@
           ]
         },
         "vectors": {
-          "status": "N",
+          "status": "C",
           "links": [
             {
               "label": "Vectors",
