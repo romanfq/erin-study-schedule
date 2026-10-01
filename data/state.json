@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-28T18:57:45Z",
+  "updatedAt": "2026-10-01T19:24:49Z",
   "updatedBy": "roman.fq@gmail.com",
   "subjects": {
     "maths": {
@@ -333,7 +333,7 @@
           "sessions": []
         },
         "quadratics-higher": {
-          "status": "W",
+          "status": "C",
           "links": [
             {
               "label": "Completing the Square",
