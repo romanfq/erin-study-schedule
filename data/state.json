@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-01T19:44:34Z",
+  "updatedAt": "2026-10-01T19:45:28Z",
   "updatedBy": "ranjk224@gmail.com",
   "subjects": {
     "maths": {
@@ -1035,12 +1035,12 @@
           "sessions": []
         },
         "homeostasis": {
-          "status": "W",
+          "status": "C",
           "links": [],
           "sessions": []
         },
         "nervous-system": {
-          "status": "W",
+          "status": "C",
           "links": [],
           "sessions": [
             {
@@ -1053,12 +1053,12 @@
           ]
         },
         "hormonal-control-in-humans": {
-          "status": "W",
+          "status": "C",
           "links": [],
           "sessions": []
         },
         "plant-hormones": {
-          "status": "W",
+          "status": "C",
           "links": [],
           "sessions": []
         },
@@ -1068,7 +1068,7 @@
           "sessions": []
         },
         "variation-and-evolution": {
-          "status": "N",
+          "status": "W",
           "links": [],
           "sessions": []
         },
@@ -1093,12 +1093,12 @@
           "sessions": []
         },
         "trophic-levels-in-an-ecosystem": {
-          "status": "W",
+          "status": "C",
           "links": [],
           "sessions": []
         },
         "food-production": {
-          "status": "W",
+          "status": "C",
           "links": [],
           "sessions": []
         },
@@ -1118,7 +1118,7 @@
           "sessions": []
         },
         "practical-food-tests": {
-          "status": "W",
+          "status": "C",
           "links": [],
           "sessions": []
         },
@@ -1128,7 +1128,7 @@
           "sessions": []
         },
         "practical-photosynthesis": {
-          "status": "W",
+          "status": "C",
           "links": [],
           "sessions": []
         },
