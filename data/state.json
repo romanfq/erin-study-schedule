@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-01T19:41:14Z",
+  "updatedAt": "2026-10-01T19:43:49Z",
   "updatedBy": "ranjk224@gmail.com",
   "subjects": {
     "maths": {
@@ -1659,7 +1659,7 @@
           "sessions": []
         },
         "rapid-urban-change": {
-          "status": "N",
+          "status": "C",
           "links": [],
           "sessions": []
         },
@@ -1692,7 +1692,7 @@
           "sessions": []
         },
         "changing-people-and-places": {
-          "status": "W",
+          "status": "C",
           "links": [],
           "sessions": [
             {
@@ -1705,7 +1705,7 @@
           ]
         },
         "dynamic-uk-cities": {
-          "status": "N",
+          "status": "C",
           "links": [],
           "sessions": []
         },
@@ -1720,17 +1720,17 @@
           "sessions": []
         },
         "investigating-river-processes-and-pressures": {
-          "status": "N",
+          "status": "C",
           "links": [],
           "sessions": []
         },
         "investigating-dynamic-urban-areas": {
-          "status": "N",
+          "status": "C",
           "links": [],
           "sessions": []
         },
         "investigating-changing-rural-areas": {
-          "status": "N",
+          "status": "C",
           "links": [],
           "sessions": []
         },
