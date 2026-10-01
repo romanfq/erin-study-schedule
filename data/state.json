@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-01T19:43:49Z",
+  "updatedAt": "2026-10-01T19:44:34Z",
   "updatedBy": "ranjk224@gmail.com",
   "subjects": {
     "maths": {
@@ -1467,7 +1467,7 @@
           "sessions": []
         },
         "forces-and-their-interactions": {
-          "status": "W",
+          "status": "C",
           "links": [],
           "sessions": []
         },
@@ -1517,7 +1517,7 @@
           "sessions": []
         },
         "electromagnetic-waves": {
-          "status": "W",
+          "status": "C",
           "links": [],
           "sessions": [
             {
@@ -1542,7 +1542,7 @@
           "sessions": []
         },
         "black-body-radiation": {
-          "status": "W",
+          "status": "C",
           "links": [],
           "sessions": []
         },
@@ -1592,7 +1592,7 @@
           "sessions": []
         },
         "practical-density": {
-          "status": "W",
+          "status": "C",
           "links": [],
           "sessions": []
         },
@@ -1602,7 +1602,7 @@
           "sessions": []
         },
         "practical-acceleration": {
-          "status": "N",
+          "status": "C",
           "links": [],
           "sessions": []
         },
