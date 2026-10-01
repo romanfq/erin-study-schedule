@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-01T19:45:51Z",
+  "updatedAt": "2026-10-01T19:46:15Z",
   "updatedBy": "ranjk224@gmail.com",
   "subjects": {
     "maths": {
@@ -2067,7 +2067,7 @@
           ]
         },
         "power-and-conflict-context": {
-          "status": "W",
+          "status": "C",
           "links": [],
           "sessions": []
         },
@@ -2077,7 +2077,7 @@
           "sessions": []
         },
         "dr-jekyll-and-mr-hyde-character-analysis": {
-          "status": "W",
+          "status": "C",
           "links": [],
           "sessions": [
             {
@@ -2090,7 +2090,7 @@
           ]
         },
         "dr-jekyll-and-mr-hyde-themes": {
-          "status": "N",
+          "status": "C",
           "links": [],
           "sessions": []
         },
@@ -2100,7 +2100,7 @@
           "sessions": []
         },
         "dr-jekyll-and-mr-hyde-context": {
-          "status": "N",
+          "status": "C",
           "links": [],
           "sessions": []
         },
