@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-01T19:45:28Z",
+  "updatedAt": "2026-10-01T19:45:51Z",
   "updatedBy": "ranjk224@gmail.com",
   "subjects": {
     "maths": {
@@ -1844,12 +1844,12 @@
           "sessions": []
         },
         "how-did-elizabeth-solve-the-issue-of-religion": {
-          "status": "W",
+          "status": "C",
           "links": [],
           "sessions": []
         },
         "the-problem-of-mary-queen-of-scots-1568-1569": {
-          "status": "W",
+          "status": "C",
           "links": [],
           "sessions": [
             {
@@ -1869,7 +1869,7 @@
           ]
         },
         "challenges-to-elizabeth-at-home-1569-1588": {
-          "status": "N",
+          "status": "C",
           "links": [],
           "sessions": []
         },
@@ -1884,7 +1884,7 @@
           "sessions": []
         },
         "elizabethan-society-1558-1588": {
-          "status": "N",
+          "status": "C",
           "links": [],
           "sessions": []
         },
