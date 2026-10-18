@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-18T19:15:50Z",
+  "updatedAt": "2026-10-18T19:16:53Z",
   "updatedBy": "roman.fq@gmail.com",
   "subjects": {
     "maths": {
@@ -2003,7 +2003,7 @@
           "sessions": []
         },
         "romeo-and-juliet-quotes": {
-          "status": "W",
+          "status": "C",
           "links": [],
           "sessions": [
             {
@@ -2079,7 +2079,7 @@
           "sessions": []
         },
         "power-and-conflict-stagecraft-writer-s-methods": {
-          "status": "W",
+          "status": "C",
           "links": [],
           "sessions": []
         },
@@ -2102,7 +2102,7 @@
           "sessions": []
         },
         "dr-jekyll-and-mr-hyde-quotes": {
-          "status": "N",
+          "status": "W",
           "links": [],
           "sessions": []
         },
@@ -2112,7 +2112,7 @@
           "sessions": []
         },
         "dr-jekyll-and-mr-hyde-stagecraft-writer-s-methods": {
-          "status": "N",
+          "status": "W",
           "links": [],
           "sessions": []
         }
