@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-18T19:16:53Z",
+  "updatedAt": "2026-10-18T19:17:18Z",
   "updatedBy": "roman.fq@gmail.com",
   "subjects": {
     "maths": {
@@ -1075,7 +1075,7 @@
           "sessions": []
         },
         "variation-and-evolution": {
-          "status": "W",
+          "status": "C",
           "links": [],
           "sessions": []
         },
@@ -1130,7 +1130,7 @@
           "sessions": []
         },
         "practical-enzymes": {
-          "status": "N",
+          "status": "C",
           "links": [],
           "sessions": []
         },
@@ -1145,7 +1145,7 @@
           "sessions": []
         },
         "practical-plant-responses": {
-          "status": "N",
+          "status": "W",
           "links": [],
           "sessions": []
         },
