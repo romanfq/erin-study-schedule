@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-18T19:12:48Z",
+  "updatedAt": "2026-10-18T19:15:01Z",
   "updatedBy": "roman.fq@gmail.com",
   "subjects": {
     "maths": {
@@ -1479,12 +1479,12 @@
           "sessions": []
         },
         "work-done-and-energy-transfers": {
-          "status": "N",
+          "status": "C",
           "links": [],
           "sessions": []
         },
         "forces-and-elasticity": {
-          "status": "N",
+          "status": "W",
           "links": [],
           "sessions": []
         },
@@ -1499,12 +1499,12 @@
           "sessions": []
         },
         "describing-motion": {
-          "status": "N",
+          "status": "C",
           "links": [],
           "sessions": []
         },
         "newton-s-law-of-motion": {
-          "status": "N",
+          "status": "W",
           "links": [],
           "sessions": []
         },
