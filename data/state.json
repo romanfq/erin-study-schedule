@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-18T19:02:07Z",
+  "updatedAt": "2026-10-18T19:12:48Z",
   "updatedBy": "roman.fq@gmail.com",
   "subjects": {
     "maths": {
@@ -67,7 +67,7 @@
           "sessions": []
         },
         "fdp-percentages": {
-          "status": "W",
+          "status": "C",
           "links": [
             {
               "label": "Fractions, Decimals and Percentages",
@@ -454,7 +454,7 @@
           "sessions": []
         },
         "direct-proportion": {
-          "status": "W",
+          "status": "C",
           "links": [
             {
               "label": "Direct and Inverse Proportion",
@@ -594,7 +594,7 @@
           "sessions": []
         },
         "circles": {
-          "status": "W",
+          "status": "C",
           "links": [
             {
               "label": "Area and Circumference of Circles",
@@ -953,7 +953,7 @@
           "sessions": []
         },
         "stats-higher-2": {
-          "status": "W",
+          "status": "C",
           "links": [
             {
               "label": "Box Plots",
