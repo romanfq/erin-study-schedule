@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-18T18:54:38Z",
+  "updatedAt": "2026-10-18T19:01:05Z",
   "updatedBy": "roman.fq@gmail.com",
   "subjects": {
     "maths": {
@@ -1194,7 +1194,7 @@
           "sessions": []
         },
         "bulk-and-surface-properties-of-matter": {
-          "status": "N",
+          "status": "C",
           "links": [],
           "sessions": []
         },
@@ -1219,7 +1219,7 @@
           "sessions": []
         },
         "amount-of-substance-and-gas-volume": {
-          "status": "W",
+          "status": "C",
           "links": [],
           "sessions": [
             {
@@ -1232,7 +1232,7 @@
           ]
         },
         "reactivity-of-metals": {
-          "status": "W",
+          "status": "C",
           "links": [],
           "sessions": []
         },
@@ -1257,7 +1257,7 @@
           "sessions": []
         },
         "rate-of-reaction": {
-          "status": "W",
+          "status": "C",
           "links": [],
           "sessions": []
         },
@@ -1305,7 +1305,7 @@
           "sessions": []
         },
         "purity-formulations-and-chromatography": {
-          "status": "N",
+          "status": "C",
           "links": [],
           "sessions": []
         },
@@ -1350,7 +1350,7 @@
           "sessions": []
         },
         "the-haber-process-and-npk-fertilisers": {
-          "status": "N",
+          "status": "W",
           "links": [],
           "sessions": []
         },
