@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-18T19:02:01Z",
+  "updatedAt": "2026-10-18T19:02:07Z",
   "updatedBy": "roman.fq@gmail.com",
   "subjects": {
     "maths": {
@@ -2126,7 +2126,7 @@
           "sessions": []
         },
         "exam-skills": {
-          "status": "N",
+          "status": "C",
           "links": [],
           "sessions": []
         },
