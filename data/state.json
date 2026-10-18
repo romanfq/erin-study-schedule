@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-01T19:46:29Z",
-  "updatedBy": "ranjk224@gmail.com",
+  "updatedAt": "2026-10-18T18:50:46Z",
+  "updatedBy": "roman.fq@gmail.com",
   "subjects": {
     "maths": {
       "topics": {
@@ -209,6 +209,13 @@
               "type": "Review",
               "duration": 60,
               "done": true
+            },
+            {
+              "date": "2026-10-12",
+              "time": "17:00",
+              "type": "Review",
+              "duration": 120,
+              "done": false
             }
           ]
         },
@@ -385,7 +392,7 @@
           "sessions": []
         },
         "algebra-higher-3": {
-          "status": "N",
+          "status": "W",
           "links": [
             {
               "label": "Algebraic Proof",
@@ -928,7 +935,7 @@
           "sessions": []
         },
         "stats-higher-1": {
-          "status": "N",
+          "status": "C",
           "links": [
             {
               "label": "Conditional Probability",
